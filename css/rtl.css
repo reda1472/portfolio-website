@@ -1,0 +1,66 @@
+﻿/* ==========================================================================
+   DEDICATED ARABIC RTL OPTICAL ALIGNMENTS & TYPOGRAPHY
+   Reda Mohamed Salah — Professional Developer Portfolio
+   ========================================================================== */
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-sans-ar);
+  letter-spacing: 0;
+}
+
+/* Headings in Arabic RTL */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  letter-spacing: 0;
+  line-height: 1.45;
+}
+
+/* Directional Icons Flipping */
+[dir="rtl"] .icon-flip-rtl {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .arrow-icon {
+  transform: scaleX(-1);
+}
+
+/* Badges & Section Tags */
+[dir="rtl"] .section-tag {
+  letter-spacing: 0;
+}
+
+/* Arabic Numbers & Monospace elements */
+[dir="rtl"] .font-mono,
+[dir="rtl"] code,
+[dir="rtl"] pre {
+  direction: ltr;
+  text-align: left;
+  display: inline-block;
+}
+
+/* Breadcrumbs & Path Indicators */
+[dir="rtl"] .breadcrumb-separator {
+  transform: scaleX(-1);
+}
+
+/* Metric values & cards */
+[dir="rtl"] .metric-number {
+  direction: ltr;
+  display: inline-block;
+}
+
+/* Print Styles for RTL CV */
+@media print {
+  [dir="rtl"] .cv-printable {
+    direction: rtl;
+    text-align: right;
+  }
+}
