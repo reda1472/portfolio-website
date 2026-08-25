@@ -75,6 +75,27 @@ const SITE_DATA = {
 
   projects: [
     {
+      id: "ecommerce-platform",
+      category: "frontend",
+      badge: { en: "Live Demo", ar: "معاينة مباشرة" },
+      title: {
+        en: "Modern Bilingual E-Commerce Storefront",
+        ar: "منصة متجر إلكتروني عصرية ثنائية اللغة"
+      },
+      tagline: {
+        en: "Full-featured consumer storefront with reactive shopping cart, promo discounts, and checkout flow.",
+        ar: "منصة تجارة إلكترونية متكاملة مع سلة تسوق تفاعلية، محرك أكواد خصم، ومسار إتمام طلبات احترافي."
+      },
+      description: {
+        en: "A consumer-facing e-commerce storefront showcasing instant multi-field search, category filtering, product quick-view modals, a reactive slide-in shopping cart with live coupon discounts, and a streamlined multi-step checkout with printable invoices.",
+        ar: "واجهة متجر إلكتروني للمستهلكين توضح البحث والتصفية اللحظية، معاينة سريعة للمنتجات، سلة تسوق تفاعلية قابلة للانزلاق مع حساب تلقائي لأكواد الخصم والضرائب، وتأكيد فوري للطلبات مع إمكانية طباعة الإيصال."
+      },
+      techStack: ["JavaScript (ES6+)", "Modern CSS Tokens", "Reactive Cart Store", "Coupon Engine", "Arabic RTL"],
+      githubUrl: "https://github.com/reda1472/ecommerce-platform",
+      demoUrl: "https://reda1472.github.io/ecommerce-platform/",
+      metrics: { en: "15% Coupon Engine • Fast LTR/RTL Toggle", ar: "محرك خصومات • تبديل فوري LTR/RTL" }
+    },
+    {
       id: "portfolio-website",
       category: "frontend",
       badge: { en: "Live & Active", ar: "مباشر ونشط" },
@@ -357,5 +378,6 @@ const SITE_DATA = {
     }
   }
 };
+
 
 
