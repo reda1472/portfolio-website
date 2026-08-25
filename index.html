@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Reda Mohamed Salah | Web Developer</title>
+  <meta name="title" content="Reda Mohamed Salah | Web Developer">
+  <meta name="description" content="Web developer with 7 years of hands-on experience in programming and web development, building practical websites, business dashboards, and Arabic-ready RTL interfaces.">
+  <meta name="author" content="Reda Mohamed Salah">
+  <meta name="keywords" content="Reda Mohamed Salah, Web Developer, Egypt, Python, PHP, JavaScript, MySQL, RTL, Arabic Web Development, Frontend Developer, Full Stack Developer, Dashboards">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://reda1472.github.io/portfolio-website/">
+  <meta property="og:title" content="Reda Mohamed Salah | Web Developer">
+  <meta property="og:description" content="Web developer with 7 years of hands-on experience in programming and web development, building practical websites, business dashboards, and Arabic-ready RTL interfaces.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ar_EG">
+
+  <!-- Fonts & Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/rtl.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Glow Background Orbs -->
+  <div class="bg-glow-orb glow-primary" style="top: -100px; inset-inline-start: 10%; width: 450px; height: 450px;"></div>
+  <div class="bg-glow-orb glow-secondary" style="top: 40%; inset-inline-end: 5%; width: 400px; height: 400px;"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Reda Mohamed Salah Home">
+        <span class="brand-monogram">RMS</span>
+        <span>Reda M. Salah</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+        <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
+        <a href="#blog" class="nav-link" data-i18n="nav.blog">Technical Blog</a>
+        <a href="#cv" class="nav-link" data-i18n="nav.cv">CV</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher Button -->
+        <button class="ctrl-btn" data-lang-toggle aria-label="Switch Language">
+          عربي
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button class="ctrl-btn" data-theme-toggle aria-label="Toggle Theme" title="Toggle Theme">
+          <svg class="btn-icon theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="btn-icon theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Mobile Menu">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <a href="#home" class="nav-link" data-i18n="nav.home">Home</a>
+      <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+      <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+      <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
+      <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
+      <a href="#blog" class="nav-link" data-i18n="nav.blog">Technical Blog</a>
+      <a href="#cv" class="nav-link" data-i18n="nav.cv">CV</a>
+      <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+    
+    <!-- 1. HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div>
+              <span class="badge badge-emerald">
+                <span class="pulse-dot"></span>
+                <span data-i18n="hero.badge">Available for Select Web Projects</span>
+              </span>
+            </div>
+
+            <div>
+              <p class="hero-greeting" data-i18n="hero.greeting">Hello, I'm</p>
+              <h1 class="hero-title" data-i18n="hero.name">Reda Mohamed Salah</h1>
+              <p class="text-primary-accent" style="font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 600; margin-top: 0.25rem;" data-i18n="hero.title">
+                Web Developer & Systems Builder
+              </p>
+            </div>
+
+            <p class="lead-text" data-i18n="hero.lead">
+              7 years of hands-on experience in programming and web development, building practical websites, business dashboards, and Arabic-ready RTL interfaces.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                <span data-i18n="hero.cta.projects">Explore Projects</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span data-i18n="hero.cta.contact">Get in Touch</span>
+              </a>
+              <a href="#cv" class="btn btn-outline">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                <span data-i18n="hero.cta.cv">View Full CV</span>
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-value">7+</span>
+                <span class="stat-label" data-i18n="hero.stat.exp">Years Hands-on Coding</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">100%</span>
+                <span class="stat-label" data-i18n="hero.stat.focus">Arabic RTL Specialist</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">0</span>
+                <span class="stat-label" data-i18n="hero.stat.quality">Runtime Bloat</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Architecture Code Card -->
+          <div class="hero-card">
+            <div class="card-header-bar">
+              <div class="window-dots">
+                <div class="dot dot-red"></div>
+                <div class="dot dot-yellow"></div>
+                <div class="dot dot-green"></div>
+              </div>
+              <span class="card-title-tab">developer_profile.json</span>
+            </div>
+            <pre class="card-code-body"><code>{
+  <span class="code-property">"engineer"</span>: <span class="code-string">"Reda Mohamed Salah"</span>,
+  <span class="code-property">"role"</span>: <span class="code-string">"Web Developer"</span>,
+  <span class="code-property">"experience_years"</span>: <span class="code-keyword">7</span>,
+  <span class="code-property">"location"</span>: <span class="code-string">"Egypt"</span>,
+  <span class="code-property">"core_stack"</span>: [
+    <span class="code-string">"Python"</span>, <span class="code-string">"PHP"</span>, <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"HTML5"</span>, <span class="code-string">"CSS3"</span>, <span class="code-string">"MySQL"</span>
+  ],
+  <span class="code-property">"specializations"</span>: [
+    <span class="code-string">"Business Dashboards"</span>,
+    <span class="code-string">"Bi-Directional RTL/LTR Systems"</span>,
+    <span class="code-string">"Relational Database Design"</span>
+  ],
+  <span class="code-property">"official_employment"</span>: <span class="code-string">"Visual Merchandiser at AL NASSER"</span>,
+  <span class="code-property">"verified_status"</span>: <span class="code-keyword">true</span>
+}</code></pre>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT SECTION -->
+    <section id="about" class="section" style="background-color: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="about.tag">Profile & Background</span>
+          <h2 class="section-title" data-i18n="about.title">Engineering Practical Web Solutions with Precision</h2>
+          <p class="section-subtitle" data-i18n="about.lead">Bridging structured programming with a strong sense of visual hierarchy and order.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p data-i18n="about.p1">
+              I am a web developer with 7 years of hands-on programming practice based in Egypt. Over the years, I have built web applications, administrative dashboards, and database-driven business tools utilizing Python, PHP, JavaScript, HTML, CSS, and MySQL.
+            </p>
+            <p data-i18n="about.p2">
+              In addition to independent software development, I currently work officially as a <strong>Visual Merchandiser / Display Coordinator at AL NASSER</strong>. This background provides me with an exceptional understanding of spatial arrangement, visual flow, attention to detail, and presentation consistency — principles that directly translate into clean user interfaces, intuitive navigation structures, and high-performance digital tools.
+            </p>
+            <p data-i18n="about.p3">
+              I place immense value on authentic, verifiable craftsmanship: zero bloated dependencies, zero fake claims, and clean, maintainable code that solves real business problems.
+            </p>
+          </div>
+
+          <div class="about-info-box">
+            <div class="info-item">
+              <span class="info-label" data-i18n="about.info.location">Location</span>
+              <span class="info-value" data-i18n="about.info.location.val">Egypt</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label" data-i18n="about.info.languages">Languages</span>
+              <span class="info-value" data-i18n="about.info.languages.val">Arabic (Native), English (Professional)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label" data-i18n="about.info.codeExp">Programming Experience</span>
+              <span class="info-value" data-i18n="about.info.codeExp.val">7 Years Hands-on Practice</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label" data-i18n="about.info.employment">Official Employment</span>
+              <span class="info-value" data-i18n="about.info.employment.val">Visual Merchandiser / Display Coordinator at AL NASSER</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="skills.tag">Core Competencies</span>
+          <h2 class="section-title" data-i18n="skills.title">Confirmed Technical Stack</h2>
+          <p class="section-subtitle" data-i18n="skills.subtitle">Technologies and engineering disciplines verified and utilized across my projects.</p>
+        </div>
+
+        <div class="grid grid-2 gap-3" id="skills-container">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURED PROJECTS SECTION -->
+    <section id="projects" class="section" style="background-color: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="projects.tag">Portfolio Repositories</span>
+          <h2 class="section-title" data-i18n="projects.title">Featured Engineering Projects</h2>
+          <p class="section-subtitle" data-i18n="projects.subtitle">Independent web systems built to demonstrate architectural discipline, code quality, and domain thinking.</p>
+        </div>
+
+        <div id="projects-container">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SERVICES SECTION -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="services.tag">What I Build</span>
+          <h2 class="section-title" data-i18n="services.title">Professional Services</h2>
+          <p class="section-subtitle" data-i18n="services.subtitle">Practical digital services and development capabilities I provide to businesses and individuals.</p>
+        </div>
+
+        <div class="grid grid-3 gap-3" id="services-container">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. TECHNICAL BLOG SECTION -->
+    <section id="blog" class="section" style="background-color: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="blog.tag">Engineering Notes</span>
+          <h2 class="section-title" data-i18n="blog.title">Technical Articles & Guides</h2>
+          <p class="section-subtitle" data-i18n="blog.subtitle">Practical write-ups documenting real technical decisions, RTL architecture, and database strategies.</p>
+        </div>
+
+        <div class="grid grid-3 gap-3" id="articles-container">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CV SECTION -->
+    <section id="cv" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="cv.tag">Professional Profile</span>
+          <h2 class="section-title" data-i18n="cv.title">Curriculum Vitae</h2>
+          <p class="section-subtitle" data-i18n="cv.subtitle">Transparent, verifiable record of employment history, technical skills, and software development practice.</p>
+        </div>
+
+        <div id="cv-content-container">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CONTACT SECTION -->
+    <section id="contact" class="section" style="background-color: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="contact.tag">Let's Connect</span>
+          <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
+          <p class="section-subtitle" data-i18n="contact.subtitle">Have a project in mind, an inquiry, or want to discuss technical collaboration? Reach out directly.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3 style="font-size: 1.35rem;">Contact Information</h3>
+            <p class="text-secondary" style="font-size: 0.95rem;">
+              Feel free to reach out via direct email, LinkedIn, or GitHub. I am open to discussing web projects, dashboards, and RTL implementations.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <div class="contact-icon">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <span class="text-muted" style="font-size: 0.8rem;" data-i18n="contact.emailLabel">Email Address</span>
+                  <p class="font-mono" style="font-weight: 600; font-size: 0.95rem;">redamohamed1477@gmail.com</p>
+                </div>
+              </div>
+
+              <div>
+                <button class="btn btn-secondary btn-sm" id="copy-email-btn">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span data-i18n="contact.copyEmail">Copy Email</span>
+                </button>
+                <span id="copy-feedback" class="badge badge-emerald" style="display: none; margin-inline-start: 0.5rem;" data-i18n="contact.copied">
+                  Copied to clipboard!
+                </span>
+              </div>
+            </div>
+
+            <div style="padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
+              <span class="text-muted" style="font-size: 0.85rem;">Profiles & Ecosystem:</span>
+              <div class="flex gap-2" style="margin-top: 0.75rem;">
+                <a href="https://www.linkedin.com/in/reda-mohamed-a88b96257/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile" aria-label="LinkedIn">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://github.com/reda1472" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile" aria-label="GitHub">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Message Form -->
+          <div class="contact-card">
+            <h3 style="font-size: 1.35rem;">Send a Message</h3>
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label" data-i18n="contact.form.name">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" required data-i18n-placeholder="contact.form.namePlaceholder" placeholder="e.g. John Doe">
+              </div>
+              <div class="form-group">
+                <label for="contact-subject" class="form-label" data-i18n="contact.form.subject">Subject</label>
+                <input type="text" id="contact-subject" class="form-input" required data-i18n-placeholder="contact.form.subjectPlaceholder" placeholder="e.g. Project Inquiry / Business Website">
+              </div>
+              <div class="form-group">
+                <label for="contact-message" class="form-label" data-i18n="contact.form.message">Message</label>
+                <textarea id="contact-message" class="form-textarea" required data-i18n-placeholder="contact.form.messagePlaceholder" placeholder="Tell me about your project or requirements..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem;">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span data-i18n="contact.form.send">Send Message via Email Client</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Article Reader Modal -->
+  <div class="modal-backdrop" id="article-modal" role="dialog" aria-modal="true" aria-labelledby="article-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <span class="badge badge-primary">Technical Article</span>
+        <button class="modal-close-btn" id="article-modal-close" aria-label="Close Article">&times;</button>
+      </div>
+      <div class="modal-body" id="article-modal-body">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="brand-logo">
+        <span class="brand-monogram">RMS</span>
+        <span>Reda Mohamed Salah</span>
+      </div>
+      <div class="footer-social-links">
+        <a href="https://www.linkedin.com/in/reda-mohamed-a88b96257/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="https://github.com/reda1472" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+      </div>
+      <p class="footer-text">
+        &copy; 2026 Reda Mohamed Salah. <span data-i18n="footer.rights">All rights reserved.</span>
+      </p>
+      <p class="footer-text" style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="footer.tagline">
+        Built with pure HTML, modern CSS, and JavaScript. 100% authentic engineering.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
