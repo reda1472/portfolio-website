@@ -75,6 +75,27 @@ const SITE_DATA = {
 
   projects: [
     {
+      id: "crm-sales-pipeline",
+      category: "systems",
+      badge: { en: "Live Demo", ar: "معاينة مباشرة" },
+      title: {
+        en: "Enterprise Sales Pipeline & CRM System",
+        ar: "منصة إدارة علاقات العملاء وخط سير المبيعات"
+      },
+      tagline: {
+        en: "Interactive visual Kanban board with stage transition tracking, communication feeds, and sales analytics.",
+        ar: "لوحة كانبان تفاعلية لمتابعة مراحل الصفقات وتتبع التواصل مع العملاء وتحليلات الأداء البيعي."
+      },
+      description: {
+        en: "An enterprise CRM solution demonstrating interactive sales stages (New Leads, Qualified, Proposal, Negotiation, Closed Won), automated activity audit logging, deal value summaries per column, and conversion analytics in full English and Arabic RTL.",
+        ar: "نظام إدارة علاقات عملاء متكامل يوضح مراحل المبيعات التفاعلية عبر لوحة كانبان، التوثيق الآلي لسجلات المتابعة والاتصالات، وحساب القيمة التقديرية ومعدلات الإغلاق باللغتين العربية والإنجليزية."
+      },
+      techStack: ["JavaScript (ES6+)", "Visual Kanban Board", "Reactive CRM Store", "Activity Audit Log", "Arabic RTL"],
+      githubUrl: "https://github.com/reda1472/crm-sales-pipeline",
+      demoUrl: "https://reda1472.github.io/crm-sales-pipeline/",
+      metrics: { en: "Visual Kanban Pipeline • Interaction Audit Feed", ar: "لوحة كانبان تفاعلية • سجل متابعة" }
+    },
+    {
       id: "booking-appointment-system",
       category: "systems",
       badge: { en: "Live Demo", ar: "معاينة مباشرة" },
@@ -399,6 +420,7 @@ const SITE_DATA = {
     }
   }
 };
+
 
 
 
