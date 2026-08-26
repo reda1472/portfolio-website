@@ -75,6 +75,27 @@ const SITE_DATA = {
 
   projects: [
     {
+      id: "booking-appointment-system",
+      category: "systems",
+      badge: { en: "Live Demo", ar: "معاينة مباشرة" },
+      title: {
+        en: "Service Appointment & Scheduling Platform",
+        ar: "منصة حجز المواعيد والاستشارات وإدارة الجداول"
+      },
+      tagline: {
+        en: "Interactive appointment booking system with real-time slot conflict prevention and digital confirmation tickets.",
+        ar: "نظام حجز واستشارات تفاعلي مع محرك لمنع تضارب المواعيد الفترية وإصدار بطاقات الحجز الإلكترونية."
+      },
+      description: {
+        en: "A robust service booking platform demonstrating dynamic time-slot availability calculation, conflict prevention across consultants, appointment lifecycle tracking (Pending, Confirmed, Completed, Cancelled), and printable confirmation passes in full English and Arabic RTL.",
+        ar: "نظام حجز مواعيد واستشارات متكامل يوضح حساب الفترات المتاحة لحظياً، تفادي تضارب المواعيد بين المستشارين، متابعة دورة حياة الحجز (قيد المراجعة، مؤكد، مكتمل، ملغي)، وإصدار بطاقات الحجز الإلكترونية للطباعة باللغتين العربية والإنجليزية."
+      },
+      techStack: ["JavaScript (ES6+)", "Schedule Matrix", "Slot Conflict Engine", "Digital Ticket Pass", "Arabic RTL"],
+      githubUrl: "https://github.com/reda1472/booking-appointment-system",
+      demoUrl: "https://reda1472.github.io/booking-appointment-system/",
+      metrics: { en: "Zero Slot Conflicts • Printable Digital Pass", ar: "منع تضارب المواعيد • تذاكر إلكترونية" }
+    },
+    {
       id: "ecommerce-platform",
       category: "frontend",
       badge: { en: "Live Demo", ar: "معاينة مباشرة" },
@@ -378,6 +399,7 @@ const SITE_DATA = {
     }
   }
 };
+
 
 
 
