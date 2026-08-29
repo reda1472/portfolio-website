@@ -75,6 +75,27 @@ const SITE_DATA = {
 
   projects: [
     {
+      id: "arabic-rtl-components",
+      category: "frameworks",
+      badge: { en: "Open Source", ar: "مفتوح المصدر" },
+      title: {
+        en: "Sanad UI: Arabic RTL Component Library",
+        ar: "مكتبة مكونات سند (Sanad UI) لواجهات الويب العربية RTL"
+      },
+      tagline: {
+        en: "Production-ready, zero-dependency Arabic RTL design system engineered with CSS Logical Properties.",
+        ar: "مكتبة تصميم ومكونات ويب عربية نقية مفتوحة المصدر بدون أي حزم خارجية مبنية بخصائص CSS المنطقية."
+      },
+      description: {
+        en: "An open-source Arabic RTL UI component library providing buttons, form controls, modals, badges, data tables, and alerts. Engineered entirely with CSS Logical Properties for zero-glitch bidirectional (RTL & LTR) web applications and instant CDN integration.",
+        ar: "مكتبة مكونات ويب عربية مفتوحة المصدر توفر أزراراً ونماذج إدخال ونوافذ منبثقة وجداول بيانات وتنبيهات. تم بناؤها بالكامل بخصائص CSS المنطقية لضمان التوافق السلس بين الاتجاهين العربي والإنجليزي والتضمين المباشر عبر الـ CDN."
+      },
+      techStack: ["CSS Logical Properties", "Vanilla JavaScript", "Design Systems", "Arabic Typography (Cairo)", "Open Source"],
+      githubUrl: "https://github.com/reda1472/arabic-rtl-components",
+      demoUrl: "https://reda1472.github.io/arabic-rtl-components/",
+      metrics: { en: "0 Dependencies • Pure CSS Logical Architecture", ar: "بدون حزم خارجية • بنية CSS منطقية نقية" }
+    },
+    {
       id: "invoice-expense-management",
       category: "systems",
       badge: { en: "Live Demo", ar: "معاينة مباشرة" },
@@ -462,6 +483,7 @@ const SITE_DATA = {
     }
   }
 };
+
 
 
 
