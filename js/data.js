@@ -75,6 +75,27 @@ const SITE_DATA = {
 
   projects: [
     {
+      id: "invoice-expense-management",
+      category: "systems",
+      badge: { en: "Live Demo", ar: "معاينة مباشرة" },
+      title: {
+        en: "Financial Invoicing, Expense & P&L System",
+        ar: "منصة الفواتير التجارية وإدارة المصروفات وتقارير P&L"
+      },
+      tagline: {
+        en: "Bilingual financial management suite with dynamic tax invoices, overhead expense tracking, and real-time profit margins.",
+        ar: "منظومة مالية متكاملة لإنشاء الفواتير الضريبية وتتبع المصروفات التشغيلية وحساب هوامش الأرباح."
+      },
+      description: {
+        en: "An enterprise financial ledger showcasing dynamic commercial invoice generation, VAT calculations, printable A4 tax invoice formatting, expense categorisation, and instant Profit & Loss (P&L) statements in full English and Arabic RTL.",
+        ar: "نظام مالي تجاري متكامل يوضح إصدار الفواتير الضريبية وحساب القيمة المضافة، نموذج الفاتورة القابل للطباعة، تصنيف المصروفات التشغيلية، وحساب قائمة الأرباح والخسائر الفورية باللغتين العربية والإنجليزية."
+      },
+      techStack: ["JavaScript (ES6+)", "Financial Calculation Engine", "Tax & VAT Logic", "Printable Invoicing", "Arabic RTL"],
+      githubUrl: "https://github.com/reda1472/invoice-expense-management",
+      demoUrl: "https://reda1472.github.io/invoice-expense-management/",
+      metrics: { en: "Real-Time P&L Engine • Printable Tax Invoices", ar: "محرك أرباح وخسائر • فواتير ضريبية جاهزة للطباعة" }
+    },
+    {
       id: "warehouse-inventory-system",
       category: "systems",
       badge: { en: "Live Demo", ar: "معاينة مباشرة" },
@@ -441,6 +462,7 @@ const SITE_DATA = {
     }
   }
 };
+
 
 
 
