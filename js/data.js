@@ -75,6 +75,27 @@ const SITE_DATA = {
 
   projects: [
     {
+      id: "python-automation-reporter",
+      category: "tools",
+      badge: { en: "CLI & Web", ar: "أداة بايثون وويب" },
+      title: {
+        en: "PyReport Auto: Data Analytics & Report Generator",
+        ar: "أداة بايثون لمعالجة البيانات والإحصاء وتوليد التقارير"
+      },
+      tagline: {
+        en: "Production-grade Python automation CLI and web app for processing commercial datasets and generating standalone executive reports.",
+        ar: "أداة بايثون برمجية متقدمة وواجهة ويب لمعالجة ملفات البيانات الضخمة وحساب الإحصائيات وتوليد التقارير التنفيذية."
+      },
+      description: {
+        en: "A robust Python automation utility and interactive web dashboard engineered for parsing CSV/JSON business records, computing core statistical metrics (mean, median, min, max, standard deviation), and generating standalone HTML, JSON, and text analytical reports with 0 external dependencies.",
+        ar: "أداة برمجية متكاملة بلغة بايثون وواجهة ويب تفاعلية لمعالجة ملفات البيانات التجارية CSV/JSON، وحساب المؤشرات الإحصائية الدقيقة (المتوسط، الوسيط، الانحراف المعياري)، وتوليد تقارير تنفيذية قائمة بذاتها بصيغ HTML وJSON وText بدون أي مكتبات خارجية."
+      },
+      techStack: ["Python 3 (Standard Library)", "Data Processing & CSV", "Unit Testing (unittest)", "HTML Report Templating", "Web Analytics Hub"],
+      githubUrl: "https://github.com/reda1472/python-automation-reporter",
+      demoUrl: "https://reda1472.github.io/python-automation-reporter/",
+      metrics: { en: "Zero Dependencies • CLI & Web Interface", ar: "بدون حزم خارجية • طرفية أوامر وواجهة ويب" }
+    },
+    {
       id: "arabic-rtl-components",
       category: "frameworks",
       badge: { en: "Open Source", ar: "مفتوح المصدر" },
@@ -483,6 +504,7 @@ const SITE_DATA = {
     }
   }
 };
+
 
 
 
