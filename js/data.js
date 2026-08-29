@@ -75,6 +75,27 @@ const SITE_DATA = {
 
   projects: [
     {
+      id: "warehouse-inventory-system",
+      category: "systems",
+      badge: { en: "Live Demo", ar: "معاينة مباشرة" },
+      title: {
+        en: "Multi-Hub Inventory & Warehouse System",
+        ar: "نظام إدارة المخازن المتعددة وحركات البضائع والباركود"
+      },
+      tagline: {
+        en: "Logistics stock management platform with inter-hub transfers, barcode scanning simulator, and location bins.",
+        ar: "نظام لوجستي لإدارة المخازن المتعددة وتنفيذ التحويلات بين الفروع ومحاكي مسح الباركود."
+      },
+      description: {
+        en: "An industrial-grade warehouse management system demonstrating stock distribution across 3 physical facilities (Cairo, Alexandria, Giza), real-time inter-hub transfers, inbound/outbound transactions, location bin tracking, and barcode lookup simulations in full English and Arabic RTL.",
+        ar: "نظام إدارة مستودعات متكامل يوضح توزيع المخزون عبر 3 فروع رئيسية (القاهرة، الإسكندرية، الجيزة)، تنفيذ التحويلات البينية بين المخازن، حركات الوارد والمنصرف، وتتبع ممرات وأرفف البضائع ومحاكي الباركود باللغتين العربية والإنجليزية."
+      },
+      techStack: ["JavaScript (ES6+)", "Multi-Hub Logistics", "Inter-Hub Transfer Engine", "Barcode Simulator", "Arabic RTL"],
+      githubUrl: "https://github.com/reda1472/warehouse-inventory-system",
+      demoUrl: "https://reda1472.github.io/warehouse-inventory-system/",
+      metrics: { en: "Multi-Warehouse Sync • Barcode Scan Engine", ar: "مزامنة المخازن • قارئ باركود تفاعلي" }
+    },
+    {
       id: "crm-sales-pipeline",
       category: "systems",
       badge: { en: "Live Demo", ar: "معاينة مباشرة" },
@@ -420,6 +441,7 @@ const SITE_DATA = {
     }
   }
 };
+
 
 
 
