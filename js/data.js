@@ -75,6 +75,69 @@ const SITE_DATA = {
 
   projects: [
     {
+      id: "fashion-mannequin-stylist",
+      category: "retail",
+      badge: { en: "Retail & Fashion Tech", ar: "ريتيل وعرض بصري" },
+      title: {
+        en: "Mannequin Studio Pro: Retail Visual Styling & Outfitting Platform",
+        ar: "أستوديو تنسيق مانيكانات المتاجر وتوزيع العرض البصري"
+      },
+      tagline: {
+        en: "Interactive multi-mannequin styling canvas with color harmony scoring and branch SOP guideline generation.",
+        ar: "منصة ويب تفاعلية لتنسيق منصات المانيكانات وفحص تناغم الألوان واستخراج دليل التنسيق التشغيلي للفروع."
+      },
+      description: {
+        en: "A domain-driven visual merchandising application built for store display coordinators. Features 3-mannequin and 5-mannequin podium staging, dynamic outfit layering (outerwear, tops, bottoms, accessories), color theory balance evaluation, and printable branch SOP sheets.",
+        ar: "تطبيق متخصص في العرض البصري وهندسة المتاجر، يتيح تنسيق منصات المانيكانات المتعددة، وتركيب طبقات الملابس، وحساب مؤشر تناغم الألوان، وتوليد دليل التشغيل الموحد (SOP) لفروع المتاجر."
+      },
+      techStack: ["JavaScript (ES6+)", "Retail Staging Canvas", "Color Theory Algorithm", "SOP Guideline Generator", "Bilingual RTL"],
+      githubUrl: "https://github.com/reda1472/fashion-mannequin-stylist",
+      demoUrl: "https://reda1472.github.io/fashion-mannequin-stylist/",
+      metrics: { en: "Multi-Mannequin Podium • SOP Generator", ar: "منصات متعددة • توليد أدلة التنسيق" }
+    },
+    {
+      id: "store-window-display-planner",
+      category: "retail",
+      badge: { en: "Retail Architecture", ar: "واجهات المتاجر" },
+      title: {
+        en: "Window Planner Pro: Store Facade Staging & Lighting Simulator",
+        ar: "نظام تخطيط وتصميم واجهات المتاجر ومحاكاة الإضاءة"
+      },
+      tagline: {
+        en: "Storefront window staging platform with simulated glass reflections, directional spotlighting, and BOM estimation.",
+        ar: "منصة هندسية لتخطيط وتصميم فاترينات المتاجر ومحاكاة الإضاءة الموجهة وحساب تكلفة خامات العرض."
+      },
+      description: {
+        en: "Architectural visual merchandising tool for designing retail window displays. Features Kelvin color temperature adjustments (2700K-5500K), dynamic spotlight cones, seasonal backdrop arches, live Bill of Materials (BOM) cost ledger, and printable blueprints.",
+        ar: "أداة هندسية لتصميم فاترينات وواجهات المتاجر الخارجية، تدعم محاكاة درجات حرارة الإضاءة (كلفن)، وتركيب الديكورات الموسمية، وحساب جدول تكاليف المواد (BOM)، وطباعة المخطط الإنشائي."
+      },
+      techStack: ["JavaScript (ES6+)", "Photometric Lighting Engine", "Storefront Facade Grid", "BOM Cost Calculator", "Bilingual RTL"],
+      githubUrl: "https://github.com/reda1472/store-window-display-planner",
+      demoUrl: "https://reda1472.github.io/store-window-display-planner/",
+      metrics: { en: "Lighting Simulator • BOM Blueprint", ar: "محاكاة الإضاءة • جدول تكاليف الخامات" }
+    },
+    {
+      id: "branch-vm-audit-system",
+      category: "retail",
+      badge: { en: "Retail Operations", ar: "إدارة العمليات" },
+      title: {
+        en: "Retail VM Auditor: Multi-Branch Compliance Suite",
+        ar: "نظام تدقيق وتقييم الامتثال البصري لفروع المتاجر"
+      },
+      tagline: {
+        en: "Store inspection and audit platform across branch networks with weighted compliance scoring and action ticketing.",
+        ar: "منصة تدقيق وفحص العرض البصري لفروع المتاجر بحساب أوزان التقييم وإدارة المهام التصحيحية."
+      },
+      description: {
+        en: "Multi-branch store inspection platform covering Cairo, Mansoura, Tanta, and Damanhour locations. Evaluates window displays, entrance tables, wall folding standards, and lighting with real-time Pass/Partial/Fail checklist toggles and printable executive audit reports.",
+        ar: "نظام فحص وتقييم الامتثال البصري لشبكة فروع المتاجر (القاهرة، المنصورة، طنطا، دمنهور)، يحلل معايير الواجهات ومداخل المتاجر وتطبيق الملابس والإضاءة مع تقارير تنفيذية شاملة."
+      },
+      techStack: ["JavaScript (ES6+)", "Weighted Audit Engine", "Branch Matrix", "Executive Reporting", "Bilingual RTL"],
+      githubUrl: "https://github.com/reda1472/branch-vm-audit-system",
+      demoUrl: "https://reda1472.github.io/branch-vm-audit-system/",
+      metrics: { en: "5 Branch Network • Weighted Scoring", ar: "شبكة 5 فروع • تقييم مرجح" }
+    },
+    {
       id: "python-automation-reporter",
       category: "tools",
       badge: { en: "CLI & Web", ar: "أداة بايثون وويب" },
@@ -504,6 +567,7 @@ const SITE_DATA = {
     }
   }
 };
+
 
 
 
