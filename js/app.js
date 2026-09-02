@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Application Controller & Dynamic UI Renderer
  * Reda Mohamed Salah — Professional Developer Portfolio
  */
@@ -52,52 +52,74 @@ const App = (function () {
     `).join('');
   }
 
+  let activeProjectFilter = 'all';
+
   // Render Projects
-  function renderProjects() {
+  function renderProjects(filterCategory) {
+    if (filterCategory !== undefined) {
+      activeProjectFilter = filterCategory;
+    }
     const container = document.getElementById('projects-container');
     if (!container) return;
     const lang = getLang();
 
-    container.innerHTML = SITE_DATA.projects.map(proj => `
+    const filtered = activeProjectFilter === 'all'
+      ? SITE_DATA.projects
+      : SITE_DATA.projects.filter(p => p.category === activeProjectFilter);
+
+    // Update filter buttons UI state
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      if (btn.getAttribute('data-filter') === activeProjectFilter) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    container.innerHTML = filtered.map(proj => `
       <article class="project-card">
         <div class="project-card-body">
           <div class="project-header-row">
-            <span class="badge badge-emerald"><span class="pulse-dot"></span>${proj.badge[lang]}</span>
-            <span class="tech-pill font-mono">${proj.category.toUpperCase()}</span>
+            <span class="badge badge-emerald"><span class="pulse-dot"></span>${proj.badge ? (proj.badge[lang] || proj.badge.en || '') : ''}</span>
+            <span class="tech-pill font-mono">${(proj.category || 'PROJECT').toUpperCase()}</span>
           </div>
 
-          <h3 class="project-title">${proj.title[lang]}</h3>
-          <p class="project-tagline">${proj.tagline[lang]}</p>
-          <p class="project-desc">${proj.description[lang]}</p>
+          <h3 class="project-title">${proj.title ? (proj.title[lang] || proj.title.en) : ''}</h3>
+          <p class="project-tagline">${proj.tagline ? (proj.tagline[lang] || proj.tagline.en) : ''}</p>
+          <p class="project-desc">${proj.description ? (proj.description[lang] || proj.description.en) : ''}</p>
 
           <div class="tech-pills">
-            ${proj.techStack.map(t => `<span class="tech-pill">${t}</span>`).join('')}
+            ${(proj.techStack || []).map(t => `<span class="tech-pill">${t}</span>`).join('')}
           </div>
 
-          <div class="project-metrics-grid">
-            ${proj.metrics.map(m => `
-              <div class="metric-item">
-                <span class="metric-val metric-number">${m.value}</span>
-                <span class="metric-lbl">${m.label[lang]}</span>
-              </div>
-            `).join('')}
-          </div>
+          ${Array.isArray(proj.metrics) && proj.metrics.length ? `
+            <div class="project-metrics-grid">
+              ${proj.metrics.map(m => `
+                <div class="metric-item">
+                  <span class="metric-val metric-number">${m.value}</span>
+                  <span class="metric-lbl">${m.label ? (m.label[lang] || m.label.en || m.label) : ''}</span>
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
 
-          <div class="highlights-list">
-            <strong style="font-size: 0.9rem; color: var(--text-primary);">${I18N.t('projects.highlightsTitle')}</strong>
-            ${proj.highlights.map(h => `
-              <div class="highlight-item">
-                <span class="highlight-bullet">✔</span>
-                <span>${h[lang]}</span>
-              </div>
-            `).join('')}
-          </div>
+          ${Array.isArray(proj.highlights) && proj.highlights.length ? `
+            <div class="highlights-list">
+              <strong style="font-size: 0.9rem; color: var(--text-primary);">${I18N.t('projects.highlightsTitle')}</strong>
+              ${proj.highlights.map(h => `
+                <div class="highlight-item">
+                  <span class="highlight-bullet">✔</span>
+                  <span>${h[lang] || h.en || h}</span>
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
 
           <div class="project-actions">
             <a href="${proj.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
               ${ICONS.github} ${I18N.t('projects.viewCode')}
             </a>
-            ${proj.demoUrl !== '#' ? `
+            ${proj.demoUrl && proj.demoUrl !== '#' ? `
               <a href="${proj.demoUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
                 ${ICONS.externalLink} ${I18N.t('projects.viewLive')}
               </a>
@@ -356,6 +378,18 @@ border-inline-start: 2px solid var(--primary);</code></pre>
   }
 
   function setupEventListeners() {
+    // Project Category Filters
+    const filterContainer = document.getElementById('project-filters');
+    if (filterContainer) {
+      filterContainer.addEventListener('click', (e) => {
+        const btn = e.target.closest('.filter-btn');
+        if (btn) {
+          const cat = btn.getAttribute('data-filter');
+          renderProjects(cat);
+        }
+      });
+    }
+
     // Mobile Drawer Toggle
     const mobileBtn = document.getElementById('mobile-menu-toggle');
     const drawer = document.getElementById('mobile-drawer');

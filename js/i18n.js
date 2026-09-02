@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Bilingual (EN/AR) Translation & Direction Engine
  * Reda Mohamed Salah Portfolio
  */
@@ -64,6 +64,13 @@ const I18N = (function () {
       "projects.viewLive": "Live Demo",
       "projects.highlightsTitle": "Key Technical Highlights:",
       "projects.syntheticNotice": "Note: Retail & business demo applications use 100% fictional/synthetic data.",
+      "filter.all": "All Projects (13)",
+      "filter.retail": "Retail Tech & VM (4)",
+      "filter.systems": "Operations & CRM (4)",
+      "filter.logistics": "Logistics & Warehouse (1)",
+      "filter.finance": "Finance & Billing (1)",
+      "filter.tools": "Tools & Open Source (2)",
+      "filter.frontend": "Portfolio (1)",
 
       // Services Section
       "services.tag": "What I Build",
@@ -163,6 +170,13 @@ const I18N = (function () {
       "projects.viewLive": "المعاينة المباشرة",
       "projects.highlightsTitle": "أبرز الخصائص التقنية:",
       "projects.syntheticNotice": "ملاحظة: المشاريع التجريبية والتجارية تستخدم بيانات اصطناعية وتجريبية بنسبة 100%.",
+      "filter.all": "عرض الكل (13)",
+      "filter.retail": "تكنولوجيا المتاجر والعرض البصري (4)",
+      "filter.systems": "إدارة الأعمال والعملاء (4)",
+      "filter.logistics": "المخازن واللوجستيات (1)",
+      "filter.finance": "الأنظمة المالية والفواتير (1)",
+      "filter.tools": "أدوات برمجية ومفتوحة المصدر (2)",
+      "filter.frontend": "المعرض البرمجي (1)",
 
       // Services Section
       "services.tag": "ما أقدمه",

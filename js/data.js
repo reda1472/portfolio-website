@@ -75,305 +75,864 @@ const SITE_DATA = {
 
   projects: [
     {
-      id: "fashion-mannequin-stylist",
-      category: "retail",
-      badge: { en: "Retail & Fashion Tech", ar: "ريتيل وعرض بصري" },
-      title: {
-        en: "Mannequin Studio Pro: Retail Visual Styling & Outfitting Platform",
-        ar: "أستوديو تنسيق مانيكانات المتاجر وتوزيع العرض البصري"
+      "id": "fashion-mannequin-stylist",
+      "category": "retail",
+      "badge": {
+            "en": "Retail & Fashion Tech",
+            "ar": "ريتيل وعرض بصري"
       },
-      tagline: {
-        en: "Interactive multi-mannequin styling canvas with color harmony scoring and branch SOP guideline generation.",
-        ar: "منصة ويب تفاعلية لتنسيق منصات المانيكانات وفحص تناغم الألوان واستخراج دليل التنسيق التشغيلي للفروع."
+      "title": {
+            "en": "Mannequin Studio Pro: Retail Styling & Outfitting Platform",
+            "ar": "أستوديو تنسيق مانيكانات المتاجر وتوزيع العرض البصري"
       },
-      description: {
-        en: "A domain-driven visual merchandising application built for store display coordinators. Features 3-mannequin and 5-mannequin podium staging, dynamic outfit layering (outerwear, tops, bottoms, accessories), color theory balance evaluation, and printable branch SOP sheets.",
-        ar: "تطبيق متخصص في العرض البصري وهندسة المتاجر، يتيح تنسيق منصات المانيكانات المتعددة، وتركيب طبقات الملابس، وحساب مؤشر تناغم الألوان، وتوليد دليل التشغيل الموحد (SOP) لفروع المتاجر."
+      "tagline": {
+            "en": "Interactive multi-mannequin staging canvas with color harmony scoring and branch SOP guideline generation.",
+            "ar": "منصة ويب تفاعلية لتنسيق منصات المانيكانات وفحص تناغم الألوان واستخراج دليل التنسيق التشغيلي للفروع."
       },
-      techStack: ["JavaScript (ES6+)", "Retail Staging Canvas", "Color Theory Algorithm", "SOP Guideline Generator", "Bilingual RTL"],
-      githubUrl: "https://github.com/reda1472/fashion-mannequin-stylist",
-      demoUrl: "https://reda1472.github.io/fashion-mannequin-stylist/",
-      metrics: { en: "Multi-Mannequin Podium • SOP Generator", ar: "منصات متعددة • توليد أدلة التنسيق" }
-    },
-    {
-      id: "store-window-display-planner",
-      category: "retail",
-      badge: { en: "Retail Architecture", ar: "واجهات المتاجر" },
-      title: {
-        en: "Window Planner Pro: Store Facade Staging & Lighting Simulator",
-        ar: "نظام تخطيط وتصميم واجهات المتاجر ومحاكاة الإضاءة"
+      "description": {
+            "en": "A domain-driven visual merchandising application built for store display coordinators. Features 3-mannequin and 5-mannequin podium staging, dynamic outfit layering (outerwear, tops, bottoms, accessories), color theory balance evaluation, and printable branch SOP sheets.",
+            "ar": "تطبيق متخصص في العرض البصري وهندسة المتاجر، يتيح تنسيق منصات المانيكانات المتعددة، وتركيب طبقات الملابس، وحساب مؤشر تناغم الألوان، وتوليد دليل التشغيل الموحد (SOP) لفروع المتاجر."
       },
-      tagline: {
-        en: "Storefront window staging platform with simulated glass reflections, directional spotlighting, and BOM estimation.",
-        ar: "منصة هندسية لتخطيط وتصميم فاترينات المتاجر ومحاكاة الإضاءة الموجهة وحساب تكلفة خامات العرض."
-      },
-      description: {
-        en: "Architectural visual merchandising tool for designing retail window displays. Features Kelvin color temperature adjustments (2700K-5500K), dynamic spotlight cones, seasonal backdrop arches, live Bill of Materials (BOM) cost ledger, and printable blueprints.",
-        ar: "أداة هندسية لتصميم فاترينات وواجهات المتاجر الخارجية، تدعم محاكاة درجات حرارة الإضاءة (كلفن)، وتركيب الديكورات الموسمية، وحساب جدول تكاليف المواد (BOM)، وطباعة المخطط الإنشائي."
-      },
-      techStack: ["JavaScript (ES6+)", "Photometric Lighting Engine", "Storefront Facade Grid", "BOM Cost Calculator", "Bilingual RTL"],
-      githubUrl: "https://github.com/reda1472/store-window-display-planner",
-      demoUrl: "https://reda1472.github.io/store-window-display-planner/",
-      metrics: { en: "Lighting Simulator • BOM Blueprint", ar: "محاكاة الإضاءة • جدول تكاليف الخامات" }
-    },
-    {
-      id: "branch-vm-audit-system",
-      category: "retail",
-      badge: { en: "Retail Operations", ar: "إدارة العمليات" },
-      title: {
-        en: "Retail VM Auditor: Multi-Branch Compliance Suite",
-        ar: "نظام تدقيق وتقييم الامتثال البصري لفروع المتاجر"
-      },
-      tagline: {
-        en: "Store inspection and audit platform across branch networks with weighted compliance scoring and action ticketing.",
-        ar: "منصة تدقيق وفحص العرض البصري لفروع المتاجر بحساب أوزان التقييم وإدارة المهام التصحيحية."
-      },
-      description: {
-        en: "Multi-branch store inspection platform covering Cairo, Mansoura, Tanta, and Damanhour locations. Evaluates window displays, entrance tables, wall folding standards, and lighting with real-time Pass/Partial/Fail checklist toggles and printable executive audit reports.",
-        ar: "نظام فحص وتقييم الامتثال البصري لشبكة فروع المتاجر (القاهرة، المنصورة، طنطا، دمنهور)، يحلل معايير الواجهات ومداخل المتاجر وتطبيق الملابس والإضاءة مع تقارير تنفيذية شاملة."
-      },
-      techStack: ["JavaScript (ES6+)", "Weighted Audit Engine", "Branch Matrix", "Executive Reporting", "Bilingual RTL"],
-      githubUrl: "https://github.com/reda1472/branch-vm-audit-system",
-      demoUrl: "https://reda1472.github.io/branch-vm-audit-system/",
-      metrics: { en: "5 Branch Network • Weighted Scoring", ar: "شبكة 5 فروع • تقييم مرجح" }
-    },
-    {
-      id: "python-automation-reporter",
-      category: "tools",
-      badge: { en: "CLI & Web", ar: "أداة بايثون وويب" },
-      title: {
-        en: "PyReport Auto: Data Analytics & Report Generator",
-        ar: "أداة بايثون لمعالجة البيانات والإحصاء وتوليد التقارير"
-      },
-      tagline: {
-        en: "Production-grade Python automation CLI and web app for processing commercial datasets and generating standalone executive reports.",
-        ar: "أداة بايثون برمجية متقدمة وواجهة ويب لمعالجة ملفات البيانات الضخمة وحساب الإحصائيات وتوليد التقارير التنفيذية."
-      },
-      description: {
-        en: "A robust Python automation utility and interactive web dashboard engineered for parsing CSV/JSON business records, computing core statistical metrics (mean, median, min, max, standard deviation), and generating standalone HTML, JSON, and text analytical reports with 0 external dependencies.",
-        ar: "أداة برمجية متكاملة بلغة بايثون وواجهة ويب تفاعلية لمعالجة ملفات البيانات التجارية CSV/JSON، وحساب المؤشرات الإحصائية الدقيقة (المتوسط، الوسيط، الانحراف المعياري)، وتوليد تقارير تنفيذية قائمة بذاتها بصيغ HTML وJSON وText بدون أي مكتبات خارجية."
-      },
-      techStack: ["Python 3 (Standard Library)", "Data Processing & CSV", "Unit Testing (unittest)", "HTML Report Templating", "Web Analytics Hub"],
-      githubUrl: "https://github.com/reda1472/python-automation-reporter",
-      demoUrl: "https://reda1472.github.io/python-automation-reporter/",
-      metrics: { en: "Zero Dependencies • CLI & Web Interface", ar: "بدون حزم خارجية • طرفية أوامر وواجهة ويب" }
-    },
-    {
-      id: "arabic-rtl-components",
-      category: "frameworks",
-      badge: { en: "Open Source", ar: "مفتوح المصدر" },
-      title: {
-        en: "Sanad UI: Arabic RTL Component Library",
-        ar: "مكتبة مكونات سند (Sanad UI) لواجهات الويب العربية RTL"
-      },
-      tagline: {
-        en: "Production-ready, zero-dependency Arabic RTL design system engineered with CSS Logical Properties.",
-        ar: "مكتبة تصميم ومكونات ويب عربية نقية مفتوحة المصدر بدون أي حزم خارجية مبنية بخصائص CSS المنطقية."
-      },
-      description: {
-        en: "An open-source Arabic RTL UI component library providing buttons, form controls, modals, badges, data tables, and alerts. Engineered entirely with CSS Logical Properties for zero-glitch bidirectional (RTL & LTR) web applications and instant CDN integration.",
-        ar: "مكتبة مكونات ويب عربية مفتوحة المصدر توفر أزراراً ونماذج إدخال ونوافذ منبثقة وجداول بيانات وتنبيهات. تم بناؤها بالكامل بخصائص CSS المنطقية لضمان التوافق السلس بين الاتجاهين العربي والإنجليزي والتضمين المباشر عبر الـ CDN."
-      },
-      techStack: ["CSS Logical Properties", "Vanilla JavaScript", "Design Systems", "Arabic Typography (Cairo)", "Open Source"],
-      githubUrl: "https://github.com/reda1472/arabic-rtl-components",
-      demoUrl: "https://reda1472.github.io/arabic-rtl-components/",
-      metrics: { en: "0 Dependencies • Pure CSS Logical Architecture", ar: "بدون حزم خارجية • بنية CSS منطقية نقية" }
-    },
-    {
-      id: "invoice-expense-management",
-      category: "systems",
-      badge: { en: "Live Demo", ar: "معاينة مباشرة" },
-      title: {
-        en: "Financial Invoicing, Expense & P&L System",
-        ar: "منصة الفواتير التجارية وإدارة المصروفات وتقارير P&L"
-      },
-      tagline: {
-        en: "Bilingual financial management suite with dynamic tax invoices, overhead expense tracking, and real-time profit margins.",
-        ar: "منظومة مالية متكاملة لإنشاء الفواتير الضريبية وتتبع المصروفات التشغيلية وحساب هوامش الأرباح."
-      },
-      description: {
-        en: "An enterprise financial ledger showcasing dynamic commercial invoice generation, VAT calculations, printable A4 tax invoice formatting, expense categorisation, and instant Profit & Loss (P&L) statements in full English and Arabic RTL.",
-        ar: "نظام مالي تجاري متكامل يوضح إصدار الفواتير الضريبية وحساب القيمة المضافة، نموذج الفاتورة القابل للطباعة، تصنيف المصروفات التشغيلية، وحساب قائمة الأرباح والخسائر الفورية باللغتين العربية والإنجليزية."
-      },
-      techStack: ["JavaScript (ES6+)", "Financial Calculation Engine", "Tax & VAT Logic", "Printable Invoicing", "Arabic RTL"],
-      githubUrl: "https://github.com/reda1472/invoice-expense-management",
-      demoUrl: "https://reda1472.github.io/invoice-expense-management/",
-      metrics: { en: "Real-Time P&L Engine • Printable Tax Invoices", ar: "محرك أرباح وخسائر • فواتير ضريبية جاهزة للطباعة" }
-    },
-    {
-      id: "warehouse-inventory-system",
-      category: "systems",
-      badge: { en: "Live Demo", ar: "معاينة مباشرة" },
-      title: {
-        en: "Multi-Hub Inventory & Warehouse System",
-        ar: "نظام إدارة المخازن المتعددة وحركات البضائع والباركود"
-      },
-      tagline: {
-        en: "Logistics stock management platform with inter-hub transfers, barcode scanning simulator, and location bins.",
-        ar: "نظام لوجستي لإدارة المخازن المتعددة وتنفيذ التحويلات بين الفروع ومحاكي مسح الباركود."
-      },
-      description: {
-        en: "An industrial-grade warehouse management system demonstrating stock distribution across 3 physical facilities (Cairo, Alexandria, Giza), real-time inter-hub transfers, inbound/outbound transactions, location bin tracking, and barcode lookup simulations in full English and Arabic RTL.",
-        ar: "نظام إدارة مستودعات متكامل يوضح توزيع المخزون عبر 3 فروع رئيسية (القاهرة، الإسكندرية، الجيزة)، تنفيذ التحويلات البينية بين المخازن، حركات الوارد والمنصرف، وتتبع ممرات وأرفف البضائع ومحاكي الباركود باللغتين العربية والإنجليزية."
-      },
-      techStack: ["JavaScript (ES6+)", "Multi-Hub Logistics", "Inter-Hub Transfer Engine", "Barcode Simulator", "Arabic RTL"],
-      githubUrl: "https://github.com/reda1472/warehouse-inventory-system",
-      demoUrl: "https://reda1472.github.io/warehouse-inventory-system/",
-      metrics: { en: "Multi-Warehouse Sync • Barcode Scan Engine", ar: "مزامنة المخازن • قارئ باركود تفاعلي" }
-    },
-    {
-      id: "crm-sales-pipeline",
-      category: "systems",
-      badge: { en: "Live Demo", ar: "معاينة مباشرة" },
-      title: {
-        en: "Enterprise Sales Pipeline & CRM System",
-        ar: "منصة إدارة علاقات العملاء وخط سير المبيعات"
-      },
-      tagline: {
-        en: "Interactive visual Kanban board with stage transition tracking, communication feeds, and sales analytics.",
-        ar: "لوحة كانبان تفاعلية لمتابعة مراحل الصفقات وتتبع التواصل مع العملاء وتحليلات الأداء البيعي."
-      },
-      description: {
-        en: "An enterprise CRM solution demonstrating interactive sales stages (New Leads, Qualified, Proposal, Negotiation, Closed Won), automated activity audit logging, deal value summaries per column, and conversion analytics in full English and Arabic RTL.",
-        ar: "نظام إدارة علاقات عملاء متكامل يوضح مراحل المبيعات التفاعلية عبر لوحة كانبان، التوثيق الآلي لسجلات المتابعة والاتصالات، وحساب القيمة التقديرية ومعدلات الإغلاق باللغتين العربية والإنجليزية."
-      },
-      techStack: ["JavaScript (ES6+)", "Visual Kanban Board", "Reactive CRM Store", "Activity Audit Log", "Arabic RTL"],
-      githubUrl: "https://github.com/reda1472/crm-sales-pipeline",
-      demoUrl: "https://reda1472.github.io/crm-sales-pipeline/",
-      metrics: { en: "Visual Kanban Pipeline • Interaction Audit Feed", ar: "لوحة كانبان تفاعلية • سجل متابعة" }
-    },
-    {
-      id: "booking-appointment-system",
-      category: "systems",
-      badge: { en: "Live Demo", ar: "معاينة مباشرة" },
-      title: {
-        en: "Service Appointment & Scheduling Platform",
-        ar: "منصة حجز المواعيد والاستشارات وإدارة الجداول"
-      },
-      tagline: {
-        en: "Interactive appointment booking system with real-time slot conflict prevention and digital confirmation tickets.",
-        ar: "نظام حجز واستشارات تفاعلي مع محرك لمنع تضارب المواعيد الفترية وإصدار بطاقات الحجز الإلكترونية."
-      },
-      description: {
-        en: "A robust service booking platform demonstrating dynamic time-slot availability calculation, conflict prevention across consultants, appointment lifecycle tracking (Pending, Confirmed, Completed, Cancelled), and printable confirmation passes in full English and Arabic RTL.",
-        ar: "نظام حجز مواعيد واستشارات متكامل يوضح حساب الفترات المتاحة لحظياً، تفادي تضارب المواعيد بين المستشارين، متابعة دورة حياة الحجز (قيد المراجعة، مؤكد، مكتمل، ملغي)، وإصدار بطاقات الحجز الإلكترونية للطباعة باللغتين العربية والإنجليزية."
-      },
-      techStack: ["JavaScript (ES6+)", "Schedule Matrix", "Slot Conflict Engine", "Digital Ticket Pass", "Arabic RTL"],
-      githubUrl: "https://github.com/reda1472/booking-appointment-system",
-      demoUrl: "https://reda1472.github.io/booking-appointment-system/",
-      metrics: { en: "Zero Slot Conflicts • Printable Digital Pass", ar: "منع تضارب المواعيد • تذاكر إلكترونية" }
-    },
-    {
-      id: "ecommerce-platform",
-      category: "frontend",
-      badge: { en: "Live Demo", ar: "معاينة مباشرة" },
-      title: {
-        en: "Modern Bilingual E-Commerce Storefront",
-        ar: "منصة متجر إلكتروني عصرية ثنائية اللغة"
-      },
-      tagline: {
-        en: "Full-featured consumer storefront with reactive shopping cart, promo discounts, and checkout flow.",
-        ar: "منصة تجارة إلكترونية متكاملة مع سلة تسوق تفاعلية، محرك أكواد خصم، ومسار إتمام طلبات احترافي."
-      },
-      description: {
-        en: "A consumer-facing e-commerce storefront showcasing instant multi-field search, category filtering, product quick-view modals, a reactive slide-in shopping cart with live coupon discounts, and a streamlined multi-step checkout with printable invoices.",
-        ar: "واجهة متجر إلكتروني للمستهلكين توضح البحث والتصفية اللحظية، معاينة سريعة للمنتجات، سلة تسوق تفاعلية قابلة للانزلاق مع حساب تلقائي لأكواد الخصم والضرائب، وتأكيد فوري للطلبات مع إمكانية طباعة الإيصال."
-      },
-      techStack: ["JavaScript (ES6+)", "Modern CSS Tokens", "Reactive Cart Store", "Coupon Engine", "Arabic RTL"],
-      githubUrl: "https://github.com/reda1472/ecommerce-platform",
-      demoUrl: "https://reda1472.github.io/ecommerce-platform/",
-      metrics: { en: "15% Coupon Engine • Fast LTR/RTL Toggle", ar: "محرك خصومات • تبديل فوري LTR/RTL" }
-    },
-    {
-      id: "portfolio-website",
-      category: "frontend",
-      badge: { en: "Live & Active", ar: "مباشر ونشط" },
-      title: {
-        en: "Developer Brand & Technical Ecosystem Hub",
-        ar: "الموقع المهني ومنصة التوثيق التقني"
-      },
-      tagline: {
-        en: "High-performance bilingual (EN/AR RTL) portfolio, documentation system, and interactive CV.",
-        ar: "موقع مهني ثنائي اللغة فائق السرعة، مزود بمحرك توثيق تقني واستعراض تفاعلي للسيرة الذاتية."
-      },
-      description: {
-        en: "The primary digital hub for Reda Mohamed Salah. Built with zero runtime bloat, featuring first-class bi-directional layout support, responsive mobile-first typography, fluid dark/light theming, and an interactive technical article reader.",
-        ar: "المنصة الرقمية الرئيسية لعرض المشاريع والخبرات البرمجية. مصممة بدون أطر عمل ثقيلة لتحقيق أقصى سرعة تحميل، مع دعم كامل ومتقن للاتجاهين (LTR/RTL)، ونظام سمات متقدم، واستعراض تفاعلي للمقالات التقنية."
-      },
-      techStack: ["HTML5", "CSS3 / Tokens", "JavaScript (ES6+)", "i18n Engine", "RTL Architecture", "GitHub Pages"],
-      githubUrl: "https://github.com/reda1472/portfolio-website",
-      demoUrl: "https://reda1472.github.io/portfolio-website/",
-      metrics: [
-        { label: { en: "Lighthouse Score", ar: "تقييم الأداء" }, value: "100/100" },
-        { label: { en: "Bilingual Support", ar: "دعم اللغات" }, value: "EN / AR RTL" },
-        { label: { en: "Dependencies", ar: "الاعتماديات الخارجية" }, value: "0 Runtime Bloat" }
+      "techStack": [
+            "JavaScript (ES6+)",
+            "Retail Staging Canvas",
+            "Color Theory Algorithm",
+            "SOP Guideline Generator",
+            "Bilingual RTL"
       ],
-      highlights: [
-        { en: "Native bi-directional switching without layout breakage using CSS logical properties.", ar: "تبديل سلس بين العربية والإنجليزية دون أي خلل في التخطيط باستخدام الخصائص المنطقية." },
-        { en: "Accessible semantic structure with keyboard navigation and WCAG contrast compliance.", ar: "هيكلة دلالية تدعم التنقل عبر لوحة المفاتيح ومعايير الوصول القياسية." },
-        { en: "Automated GitHub Actions CI/CD deployment pipeline.", ar: "خط نشر تلقائي مستمر عبر GitHub Actions." }
-      ]
-    },
-    {
-      id: "business-management-dashboard",
-      category: "fullstack",
-      badge: { en: "Core Project", ar: "مشروع رئيسي" },
-      title: {
-        en: "Business Operations & Inventory Dashboard",
-        ar: "لوحة تحكم إدارة العمليات والمخزون التجاري"
-      },
-      tagline: {
-        en: "Full-featured operational dashboard for orders, product catalog, customer relations, and business metrics.",
-        ar: "نظام إداري متكامل لمتابعة الطلبات، كتالوج المنتجات، علاقات العملاء ومؤشرات الأداء التجاري."
-      },
-      description: {
-        en: "A robust web dashboard demonstrating real-world business system design: role-based access control, product inventory management, real-time KPI metrics calculation, searchable data tables with multi-criteria filtering, and exportable reports in full English and Arabic RTL.",
-        ar: "نظام إدارة عمليات تجارية متكامل يوضح تصميم الأنظمة الواقعية: صلاحيات المستخدمين، إدارة المخزون وحركات المنتجات، حساب مؤشرات الأداء اللحظية، جداول بيانات قابلة للبحث والتصفية، وتصدير التقارير باللغتين العربية والإنجليزية."
-      },
-      techStack: ["JavaScript", "Python / PHP APIs", "MySQL Relational Schema", "CSS Grid/Flex", "RTL Tables", "Data Export"],
-      githubUrl: "https://github.com/reda1472/business-management-dashboard",
-      demoUrl: "#",
-      metrics: [
-        { label: { en: "Data Views", ar: "واجهات البيانات" }, value: "6 Modules" },
-        { label: { en: "Filtering & Search", ar: "البحث والفرز" }, value: "Instant Multi-field" },
-        { label: { en: "RTL Support", ar: "دعم الواجهة العربية" }, value: "Full 100%" }
+      "githubUrl": "https://github.com/reda1472/fashion-mannequin-stylist",
+      "demoUrl": "https://reda1472.github.io/fashion-mannequin-stylist/",
+      "metrics": [
+            {
+                  "label": {
+                        "en": "Podium Staging",
+                        "ar": "منصات العرض"
+                  },
+                  "value": "5-Mannequins"
+            },
+            {
+                  "label": {
+                        "en": "Color Harmony",
+                        "ar": "تناغم الألوان"
+                  },
+                  "value": "96% Balance"
+            },
+            {
+                  "label": {
+                        "en": "Branch SOP",
+                        "ar": "دليل التشغيل"
+                  },
+                  "value": "Printable PDF"
+            }
       ],
-      highlights: [
-        { en: "Relational database schema designed with foreign keys, index optimization, and audit timestamps.", ar: "مخطط قاعدة بيانات علائقية متين يدعم الفهرسة والترابط وتتبع التعديلات." },
-        { en: "Comprehensive CRUD operations with robust clientside and serverside validation.", ar: "عمليات إضافة وتعديل واسترجاع متكاملة مع التحقق الصارم من صحة المدخلات." },
-        { en: "Exportable operational reports (CSV / Print View) with synthetic commercial data.", ar: "إمكانية تصدير التقارير (CSV والطباعة المباشرة) ببيانات تجارية اصطناعية." }
+      "highlights": [
+            {
+                  "en": "Interactive multi-mannequin staging canvas (Single, Trio, and 5-mannequin group displays).",
+                  "ar": "أستوديو تفاعلي لتنسيق منصات المانيكانات (فردي، ثلاثي، ومجموعات 5 مانيكانات)."
+            },
+            {
+                  "en": "Layered garment outfitting engine across Menswear, Womenswear, and Kidswear.",
+                  "ar": "محرك تركيب طبقات الملابس لأقسام الرجالي، الحريمي، وملابس الأطفال."
+            },
+            {
+                  "en": "Automated branch SOP guideline sheet generation for store execution teams.",
+                  "ar": "توليد آلي لدليل التنسيق القياسي القابل للطباعة لفرق العمل بالفروع."
+            }
       ]
-    },
+},
     {
-      id: "retail-merchandising-platform",
-      category: "systems",
-      badge: { en: "Domain-Inspired", ar: "مستوحى من المجال" },
-      title: {
-        en: "Visual Display & Merchandising Planning Platform",
-        ar: "منصة تخطيط العروض البصرية وتوزيع المنتجات"
+      "id": "store-window-display-planner",
+      "category": "retail",
+      "badge": {
+            "en": "Retail Architecture",
+            "ar": "واجهات المتاجر"
       },
-      tagline: {
-        en: "Generic independent digital tool for retail display planning, product allocation, and campaign tracking.",
-        ar: "أداة رقمية مستقلة لتخطيط وتنسيق واجهات العرض، توزيع المنتجات، ومتابعة الحملات الموسمية."
+      "title": {
+            "en": "Window Planner Pro: Store Facade Staging & Lighting Simulator",
+            "ar": "نظام تخطيط وتصميم واجهات المتاجر ومحاكاة الإضاءة"
       },
-      description: {
-        en: "An independent, SaaS-style demo application inspired by retail visual display planning. Enables store coordinators to build visual display layouts, assign products based on category capacity, track campaign lifecycles (Draft, Planned, Live, Expired), and validate display density using 100% synthetic data.",
-        ar: "تطبيق تجريبي مستقل مستوحى من مجال تنسيق العروض البصرية. يتيح لمديري المعارض ومنسقي العروض بناء خطط العرض، وتوزيع المنتجات حسب المساحات المتاحة، ومتابعة دورة حياة الحملات (مسودة، مجدولة، نشطة، منتهية) مع تدقيق الكثافة التوزيعية ببيانات تجريبية كاملة."
+      "tagline": {
+            "en": "Storefront window staging platform with simulated glass reflections, directional spotlighting, and BOM estimation.",
+            "ar": "منصة هندسية لتخطيط وتصميم فاترينات المتاجر ومحاكاة الإضاءة الموجهة وحساب تكلفة خامات العرض."
       },
-      techStack: ["JavaScript", "Modern CSS", "Calendar & Matrix Grid", "Synthetic Data Engine", "RTL Optimized"],
-      githubUrl: "https://github.com/reda1472/retail-merchandising-platform",
-      demoUrl: "#",
-      metrics: [
-        { label: { en: "Display Statuses", ar: "حالات العرض" }, value: "4 Lifecycle States" },
-        { label: { en: "Campaign Tracking", ar: "متابعة الحملات" }, value: "Calendar Matrix" },
-        { label: { en: "Data Confidentiality", ar: "سرية البيانات" }, value: "100% Synthetic" }
+      "description": {
+            "en": "Architectural visual merchandising tool for designing retail window displays. Features Kelvin color temperature adjustments (2700K-5500K), dynamic spotlight cones, seasonal backdrop arches, live Bill of Materials (BOM) cost ledger, and printable blueprints.",
+            "ar": "أداة هندسية لتصميم فاترينات وواجهات المتاجر الخارجية، تدعم محاكاة درجات حرارة الإضاءة (كلفن)، وتركيب الديكورات الموسمية، وحساب جدول تكاليف المواد (BOM)، وطباعة المخطط الإنشائي."
+      },
+      "techStack": [
+            "JavaScript (ES6+)",
+            "Photometric Lighting Engine",
+            "Storefront Facade Grid",
+            "BOM Cost Calculator",
+            "Bilingual RTL"
       ],
-      highlights: [
-        { en: "Interactive display layout builder with capacity limits and visual density alerts.", ar: "أداة تفاعلية لتنسيق مساحات العرض مع تنبيهات عند تجاوز سعة العرض المناسبة." },
-        { en: "Seasonal campaign calendar linking promotions to display locations.", ar: "تقويم للحملات الموسمية يربط العروض الترويجية بأماكن ونقاط العرض المختلفة." },
-        { en: "Completely generic design containing zero proprietary employer data.", ar: "تصميم تجريبي مستقل وخالٍ تماماً من أي بيانات أو شعارات خاصة بالشركات." }
+      "githubUrl": "https://github.com/reda1472/store-window-display-planner",
+      "demoUrl": "https://reda1472.github.io/store-window-display-planner/",
+      "metrics": [
+            {
+                  "label": {
+                        "en": "Lighting Temp",
+                        "ar": "حرارة الإضاءة"
+                  },
+                  "value": "2700K-5500K"
+            },
+            {
+                  "label": {
+                        "en": "BOM Costing",
+                        "ar": "تكلفة الخامات"
+                  },
+                  "value": "Real-Time Math"
+            },
+            {
+                  "label": {
+                        "en": "Store Blueprint",
+                        "ar": "مخطط إنشائي"
+                  },
+                  "value": "Printable CAD"
+            }
+      ],
+      "highlights": [
+            {
+                  "en": "3D window facade staging box with simulated glass reflections and seasonal backdrops.",
+                  "ar": "منصة هندسية لتصميم فاترينات المتاجر مع انعكاسات الزجاج والديكورات الموسمية."
+            },
+            {
+                  "en": "Photometric lighting simulator for color temperature (Kelvin) and spotlight beam intensity.",
+                  "ar": "محاكي إضاءة متقدم لدرجات حرارة الألوان وتركيز إضاءة السبوت لايت."
+            },
+            {
+                  "en": "Dynamic Bill of Materials (BOM) cost estimator and printable construction blueprints.",
+                  "ar": "حساب فوري لتكلفة خامات ومواد العرض وطباعة المخططات الهندسية للفاترينة."
+            }
       ]
-    }
+},
+    {
+      "id": "branch-vm-audit-system",
+      "category": "retail",
+      "badge": {
+            "en": "Retail Operations",
+            "ar": "إدارة العمليات"
+      },
+      "title": {
+            "en": "Retail VM Auditor: Multi-Branch Compliance Suite",
+            "ar": "نظام تدقيق وتقييم الامتثال البصري لفروع المتاجر"
+      },
+      "tagline": {
+            "en": "Store inspection and audit platform across branch networks with weighted compliance scoring and action ticketing.",
+            "ar": "منصة تدقيق وفحص العرض البصري لفروع المتاجر بحساب أوزان التقييم وإدارة المهام التصحيحية."
+      },
+      "description": {
+            "en": "Multi-branch store inspection platform covering Cairo, Mansoura, Tanta, and Damanhour locations. Evaluates window displays, entrance tables, wall folding standards, and lighting with real-time Pass/Partial/Fail checklist toggles and printable executive audit reports.",
+            "ar": "نظام فحص وتقييم الامتثال البصري لشبكة فروع المتاجر (القاهرة، المنصورة، طنطا، دمنهور)، يحلل معايير الواجهات ومداخل المتاجر وتطبيق الملابس والإضاءة مع تقارير تنفيذية شاملة."
+      },
+      "techStack": [
+            "JavaScript (ES6+)",
+            "Weighted Audit Engine",
+            "Branch Matrix",
+            "Executive Reporting",
+            "Bilingual RTL"
+      ],
+      "githubUrl": "https://github.com/reda1472/branch-vm-audit-system",
+      "demoUrl": "https://reda1472.github.io/branch-vm-audit-system/",
+      "metrics": [
+            {
+                  "label": {
+                        "en": "Branch Network",
+                        "ar": "شبكة الفروع"
+                  },
+                  "value": "5 Key Hubs"
+            },
+            {
+                  "label": {
+                        "en": "Audit Scoring",
+                        "ar": "معايير التقييم"
+                  },
+                  "value": "5 Weighted Areas"
+            },
+            {
+                  "label": {
+                        "en": "Executive Report",
+                        "ar": "تقرير معتمد"
+                  },
+                  "value": "Instant Print"
+            }
+      ],
+      "highlights": [
+            {
+                  "en": "Multi-branch store inspection matrix covering Cairo, Mansoura, Tanta, and Damanhour networks.",
+                  "ar": "مصفوفة فحص وتقييم شاملة لفروع القاهرة، المنصورة (1، 2، 3)، طنطا، ودمنهور."
+            },
+            {
+                  "en": "Weighted scoring algorithm evaluating windows (25%), entrance (20%), and wall fold standards (30%).",
+                  "ar": "معادلة تقييم مرجحة تحلل الواجهات، مداخل المعارض، وتطبيق وترتيب الملابس بالجدران."
+            },
+            {
+                  "en": "Interactive Pass/Partial/Fail checklist toggles and action item ticketing system.",
+                  "ar": "قائمة تدقيق تفاعلية بحالات النجاح والتنبيه مع متابعة المهام التصحيحية."
+            }
+      ]
+},
+    {
+      "id": "retail-merchandising-platform",
+      "category": "retail",
+      "badge": {
+            "en": "Visual Merchandising",
+            "ar": "العرض البصري"
+      },
+      "title": {
+            "en": "Retail Merchandising & Floor Capacity Platform",
+            "ar": "منصة تخطيط العروض البصرية وتوزيع المنتجات"
+      },
+      "tagline": {
+            "en": "Generic independent digital tool for retail display planning, product allocation, and campaign tracking.",
+            "ar": "أداة رقمية مستقلة لتخطيط وتنسيق واجهات العرض، توزيع المنتجات، ومتابعة الحملات الموسمية."
+      },
+      "description": {
+            "en": "An independent, SaaS-style demo application inspired by retail visual display planning. Enables store coordinators to build visual display layouts, assign products based on category capacity, track campaign lifecycles (Draft, Planned, Live, Expired), and validate display density using 100% synthetic data.",
+            "ar": "تطبيق تجريبي مستقل مستوحى من مجال تنسيق العروض البصرية. يتيح لمديري المعارض ومنسقي العروض بناء خطط العرض، وتوزيع المنتجات حسب المساحات المتاحة، ومتابعة دورة حياة الحملات (مسودة، مجدولة، نشطة، منتهية) مع تدقيق الكثافة التوزيعية ببيانات تجريبية كاملة."
+      },
+      "techStack": [
+            "JavaScript",
+            "Modern CSS",
+            "Calendar & Matrix Grid",
+            "Synthetic Data Engine",
+            "RTL Optimized"
+      ],
+      "githubUrl": "https://github.com/reda1472/retail-merchandising-platform",
+      "demoUrl": "https://reda1472.github.io/retail-merchandising-platform/",
+      "metrics": [
+            {
+                  "label": {
+                        "en": "Display Statuses",
+                        "ar": "حالات العرض"
+                  },
+                  "value": "4 Lifecycle States"
+            },
+            {
+                  "label": {
+                        "en": "Campaign Tracking",
+                        "ar": "متابعة الحملات"
+                  },
+                  "value": "Calendar Matrix"
+            },
+            {
+                  "label": {
+                        "en": "Data Confidentiality",
+                        "ar": "سرية البيانات"
+                  },
+                  "value": "100% Synthetic"
+            }
+      ],
+      "highlights": [
+            {
+                  "en": "Interactive display layout builder with capacity limits and visual density alerts.",
+                  "ar": "أداة تفاعلية لتنسيق مساحات العرض مع تنبيهات عند تجاوز سعة العرض المناسبة."
+            },
+            {
+                  "en": "Seasonal campaign calendar linking promotions to display locations.",
+                  "ar": "تقويم للحملات الموسمية يربط العروض الترويجية بأماكن ونقاط العرض المختلفة."
+            },
+            {
+                  "en": "Completely generic design containing zero proprietary employer data.",
+                  "ar": "تصميم تجريبي مستقل وخالٍ تماماً من أي بيانات أو شعارات خاصة بالشركات."
+            }
+      ]
+},
+    {
+      "id": "business-management-dashboard",
+      "category": "systems",
+      "badge": {
+            "en": "Full-Stack / Operations",
+            "ar": "عمليات وتشغيل"
+      },
+      "title": {
+            "en": "Business Management & Operations Hub",
+            "ar": "لوحة تحكم إدارية وتشغيلية متكاملة"
+      },
+      "tagline": {
+            "en": "Multi-role operations dashboard with inventory tracking, relational MySQL schema, POS orders, and CSV export.",
+            "ar": "لوحة تحكم تشغيلية متكاملة لإدارة المخزون، قواعد بيانات MySQL، المبيعات ونقاط البيع مع تصدير التقارير."
+      },
+      "description": {
+            "en": "A business management platform demonstrating relational data modeling (3NF MySQL schema), role-based access control (Admin, Manager, Staff), simulated POS terminal checkout, dynamic inventory replenishment triggers, and analytical CSV exports built entirely with synthetic retail data.",
+            "ar": "نظام تشغيلي متكامل يوضح تصميم قواعد البيانات العلائقية (مخطط MySQL معياري 3NF)، نظام صلاحيات متقدم (مدير، مشرف، موظف)، محطة نقطة بيع (POS) تفاعلية، تنبيهات تلقائية لإعادة ملء المخزون، وتصدير التقارير الإدارية ببيانات تجريبية كاملة."
+      },
+      "techStack": [
+            "JavaScript (ES6+)",
+            "3NF Relational MySQL",
+            "Role-Based Access (RBAC)",
+            "POS Simulation",
+            "CSV Engine",
+            "Arabic RTL"
+      ],
+      "githubUrl": "https://github.com/reda1472/business-management-dashboard",
+      "demoUrl": "https://reda1472.github.io/business-management-dashboard/",
+      "metrics": [
+            {
+                  "label": {
+                        "en": "Relational Tables",
+                        "ar": "جداول علائقية"
+                  },
+                  "value": "6 Core Entities"
+            },
+            {
+                  "label": {
+                        "en": "Access Matrix",
+                        "ar": "مصفوفة الأدوار"
+                  },
+                  "value": "3 RBAC Tiers"
+            },
+            {
+                  "label": {
+                        "en": "Reporting",
+                        "ar": "توليد التقارير"
+                  },
+                  "value": "Live CSV Export"
+            }
+      ],
+      "highlights": [
+            {
+                  "en": "Normalized 3NF relational schema in pure SQL with foreign keys, constraints, and audit log triggers.",
+                  "ar": "مخطط قاعدة بيانات علائقي 3NF بمفاتيح أجنبية وقيود سلامة البيانات وسجلات العمليات."
+            },
+            {
+                  "en": "Role-Based Access Control enforcing dynamic UI views and action guardrails based on user permissions.",
+                  "ar": "نظام صلاحيات متقدم يتحكم ديناميكياً في الواجهات والعمليات المتاحة لكل دور وظيفي."
+            },
+            {
+                  "en": "Interactive POS terminal reducing stock quantities in real-time with instant receipt generation.",
+                  "ar": "نقطة بيع تفاعلية تخصم الكميات تلقائياً وتصدر إيصالات فورية مع تحديث المخزون."
+            }
+      ]
+},
+    {
+      "id": "crm-sales-pipeline",
+      "category": "systems",
+      "badge": {
+            "en": "Enterprise CRM",
+            "ar": "إدارة العملاء"
+      },
+      "title": {
+            "en": "Enterprise Sales Pipeline & CRM System",
+            "ar": "منصة إدارة علاقات العملاء وخط سير المبيعات"
+      },
+      "tagline": {
+            "en": "Interactive visual Kanban board with stage transition tracking, communication feeds, and sales analytics.",
+            "ar": "لوحة كانبان تفاعلية لمتابعة مراحل الصفقات وتتبع التواصل مع العملاء وتحليلات الأداء البيعي."
+      },
+      "description": {
+            "en": "An enterprise CRM solution demonstrating interactive sales stages (New Leads, Qualified, Proposal, Negotiation, Closed Won), automated activity audit logging, deal value summaries per column, and conversion analytics in full English and Arabic RTL.",
+            "ar": "نظام إدارة علاقات عملاء متكامل يوضح مراحل المبيعات التفاعلية عبر لوحة كانبان، التوثيق الآلي لسجلات المتابعة والاتصالات، وحساب القيمة التقديرية ومعدلات الإغلاق باللغتين العربية والإنجليزية."
+      },
+      "techStack": [
+            "JavaScript (ES6+)",
+            "Visual Kanban Board",
+            "Reactive CRM Store",
+            "Activity Audit Log",
+            "Arabic RTL"
+      ],
+      "githubUrl": "https://github.com/reda1472/crm-sales-pipeline",
+      "demoUrl": "https://reda1472.github.io/crm-sales-pipeline/",
+      "metrics": [
+            {
+                  "label": {
+                        "en": "Sales Pipeline",
+                        "ar": "مراحل المبيعات"
+                  },
+                  "value": "5 Kanban Stages"
+            },
+            {
+                  "label": {
+                        "en": "Activity Tracking",
+                        "ar": "سجل الأنشطة"
+                  },
+                  "value": "Real-Time Audit"
+            },
+            {
+                  "label": {
+                        "en": "Win Rate Math",
+                        "ar": "معدل الإغلاق"
+                  },
+                  "value": "Live Analytics"
+            }
+      ],
+      "highlights": [
+            {
+                  "en": "Interactive visual Kanban board with drag-and-drop style deal stage transitions.",
+                  "ar": "لوحة كانبان تفاعلية لنقل الصفقات عبر مراحل البيع المختلفة بسلاسة."
+            },
+            {
+                  "en": "Automated activity audit log recording deal stage shifts, timestamps, and notes.",
+                  "ar": "توثيق آلي لسجل الأنشطة وحركات الصفقات مع توقيتاتها الدقيقة وملاحظاتها."
+            },
+            {
+                  "en": "Real-time deal volume and pipeline conversion metrics in English and Arabic RTL.",
+                  "ar": "حساب فوري لقيمة الصفقات ومعدلات التحويل باللغتين العربية والإنجليزية."
+            }
+      ]
+},
+    {
+      "id": "booking-appointment-system",
+      "category": "systems",
+      "badge": {
+            "en": "Booking Platform",
+            "ar": "نظام الحجوزات"
+      },
+      "title": {
+            "en": "Service Appointment & Scheduling Platform",
+            "ar": "منظومة حجز المواعيد والخدمات وجدولة الاستشارات"
+      },
+      "tagline": {
+            "en": "Multi-step booking wizard with real-time slot conflict prevention, service catalog, and printable digital passes.",
+            "ar": "معالج حجز مواعيد متعدد الخطوات مع منع التضارب الزمني، كتالوج الخدمات، وتذاكر رقمية قابلة للطباعة."
+      },
+      "description": {
+            "en": "A professional service scheduling and appointment management system. Features an interactive 4-step booking wizard, dynamic staff availability matrix, real-time conflict prevention, appointment ledger management, and printable digital confirmation passes in both English and Arabic RTL.",
+            "ar": "منظومة متكاملة لحجز المواعيد والخدمات المهنية، تتميز بمعالج حجز تفاعلي من 4 خطوات، مصفوفة مواعيد ذكية لمنع التعارض الزمني، وإدارة سجل الحجوزات، مع استخراج تذاكر تأكيد الحجز الرقمية الجاهزة للطباعة."
+      },
+      "techStack": [
+            "JavaScript (ES6+)",
+            "Booking Wizard",
+            "Slot Conflict Engine",
+            "Digital Confirmation Pass",
+            "Arabic RTL"
+      ],
+      "githubUrl": "https://github.com/reda1472/booking-appointment-system",
+      "demoUrl": "https://reda1472.github.io/booking-appointment-system/",
+      "metrics": [
+            {
+                  "label": {
+                        "en": "Conflict Guard",
+                        "ar": "منع التضارب"
+                  },
+                  "value": "Zero Overlap"
+            },
+            {
+                  "label": {
+                        "en": "Booking Flow",
+                        "ar": "معالج الحجز"
+                  },
+                  "value": "4 Interactive Steps"
+            },
+            {
+                  "label": {
+                        "en": "Confirmation Pass",
+                        "ar": "تذكرة التأكيد"
+                  },
+                  "value": "Printable Digital"
+            }
+      ],
+      "highlights": [
+            {
+                  "en": "Interactive 4-step booking wizard with service selection and staff allocation.",
+                  "ar": "معالج حجز تفاعلي من 4 خطوات يشمل اختيار الخدمة والأخصائي والموعد."
+            },
+            {
+                  "en": "Real-time calendar matrix with slot conflict prevention and capacity guards.",
+                  "ar": "تقويم تفاعلي ذكي يمنع التعارض المزدوج بين المواعيد ويدير السعة التشغيلية."
+            },
+            {
+                  "en": "Printable digital confirmation pass with verification details and status tracking.",
+                  "ar": "توليد تذاكر تأكيد حجز رقمية جاهزة للطباعة مع سجل إدارة ومتابعة الحجوزات."
+            }
+      ]
+},
+    {
+      "id": "ecommerce-platform",
+      "category": "systems",
+      "badge": {
+            "en": "E-Commerce Storefront",
+            "ar": "متجر إلكتروني"
+      },
+      "title": {
+            "en": "Modern Consumer E-Commerce Storefront",
+            "ar": "منصة تجارة إلكترونية ومتجر متكامل"
+      },
+      "tagline": {
+            "en": "Bilingual commercial storefront with reactive cart drawer, promo code discounts, and simulated multi-step checkout.",
+            "ar": "متجر تجاري متكامل ثنائي اللغة، سلة شراء جانبية تفاعلية، محرك كوبونات خصم، وإتمام طلبات متكامل."
+      },
+      "description": {
+            "en": "A modern consumer e-commerce storefront featuring interactive product browsing, multi-criteria filtering, a reactive sliding cart drawer with live subtotal/tax calculations, a dynamic coupon code discount engine, and simulated checkout flow in full English and Arabic RTL.",
+            "ar": "متجر إلكتروني استهلاكي حديث يتيح تصفح المنتجات وفلترتها المتقدمة، سلة مشتريات جانبية تفاعلية تحسب الضرائب والشحن لحظياً، محرك كوبونات خصم مرن، ونظام متكامل لمحاكاة إتمام الطلب باللغتين العربية والإنجليزية."
+      },
+      "techStack": [
+            "JavaScript (ES6+)",
+            "Modern CSS Tokens",
+            "Reactive Cart Drawer",
+            "Promo Code Engine",
+            "Arabic RTL"
+      ],
+      "githubUrl": "https://github.com/reda1472/ecommerce-platform",
+      "demoUrl": "https://reda1472.github.io/ecommerce-platform/",
+      "metrics": [
+            {
+                  "label": {
+                        "en": "Cart State",
+                        "ar": "إدارة السلة"
+                  },
+                  "value": "Reactive Drawer"
+            },
+            {
+                  "label": {
+                        "en": "Coupon Engine",
+                        "ar": "محرك الخصومات"
+                  },
+                  "value": "Dynamic % & Fixed"
+            },
+            {
+                  "label": {
+                        "en": "Checkout Flow",
+                        "ar": "إتمام الشراء"
+                  },
+                  "value": "3-Step Wizard"
+            }
+      ],
+      "highlights": [
+            {
+                  "en": "Reactive sliding cart drawer with real-time subtotal, shipping, and tax math.",
+                  "ar": "سلة تسوق جانبية تفاعلية تحسب الإجمالي، الشحن، والضريبة لحظياً."
+            },
+            {
+                  "en": "Promotional discount engine supporting percentage coupons and threshold vouchers.",
+                  "ar": "محرك خصومات ترويجي يدعم كوبونات التخفيض المئوية والمبالغ الثابتة."
+            },
+            {
+                  "en": "Comprehensive product filtering by category, price, search, and stock status.",
+                  "ar": "تصفية متقدمة للمنتجات حسب الأقسام، الأسعار، وحالة توفر المخزون."
+            }
+      ]
+},
+    {
+      "id": "warehouse-inventory-system",
+      "category": "logistics",
+      "badge": {
+            "en": "Logistics & Inventory",
+            "ar": "المخازن واللوجستيات"
+      },
+      "title": {
+            "en": "Multi-Hub Inventory & Warehouse System",
+            "ar": "نظام إدارة المخازن المتعددة وحركات البضائع والباركود"
+      },
+      "tagline": {
+            "en": "Logistics stock management platform with inter-hub transfers, barcode scanning simulator, and location bins.",
+            "ar": "نظام لوجستي لإدارة المخازن المتعددة وتنفيذ التحويلات بين الفروع ومحاكي مسح الباركود."
+      },
+      "description": {
+            "en": "An industrial-grade warehouse management system demonstrating stock distribution across 3 physical facilities (Cairo, Alexandria, Giza), real-time inter-hub transfers, inbound/outbound transactions, location bin tracking, and barcode lookup simulations in full English and Arabic RTL.",
+            "ar": "نظام إدارة مستودعات متكامل يوضح توزيع المخزون عبر 3 فروع رئيسية (القاهرة، الإسكندرية، الجيزة)، تنفيذ التحويلات البينية بين المخازن، حركات الوارد والمنصرف، وتتبع ممرات وأرفف البضائع ومحاكي الباركود باللغتين العربية والإنجليزية."
+      },
+      "techStack": [
+            "JavaScript (ES6+)",
+            "Multi-Hub Logistics",
+            "Inter-Hub Transfer Engine",
+            "Barcode Simulator",
+            "Arabic RTL"
+      ],
+      "githubUrl": "https://github.com/reda1472/warehouse-inventory-system",
+      "demoUrl": "https://reda1472.github.io/warehouse-inventory-system/",
+      "metrics": [
+            {
+                  "label": {
+                        "en": "Storage Network",
+                        "ar": "شبكة المخازن"
+                  },
+                  "value": "3 Hub Facilities"
+            },
+            {
+                  "label": {
+                        "en": "Stock Transfers",
+                        "ar": "التحويلات البينية"
+                  },
+                  "value": "Multi-Hub Sync"
+            },
+            {
+                  "label": {
+                        "en": "Barcode Lookup",
+                        "ar": "مسح الباركود"
+                  },
+                  "value": "Code 128 Engine"
+            }
+      ],
+      "highlights": [
+            {
+                  "en": "Multi-facility inventory tracking across Cairo Central, Alexandria Depot, and Giza Facility.",
+                  "ar": "تتبع المخزون اللوجستي عبر 3 مستودعات (القاهرة، الإسكندرية، الجيزة)."
+            },
+            {
+                  "en": "Inter-hub transfer engine with real-time stock balances and transaction ledger.",
+                  "ar": "محرك تحويل بيني للبضائع مع تحديث فوري للأرصدة وسجل الحركات اللوجستية."
+            },
+            {
+                  "en": "Interactive barcode scanner simulator with Code 128 rendering and bin locations.",
+                  "ar": "محاكي مسح الباركود (Code 128) وتحديد مواقع وتوزيع الأرفف والممرات."
+            }
+      ]
+},
+    {
+      "id": "invoice-expense-management",
+      "category": "finance",
+      "badge": {
+            "en": "Finance & Accounting",
+            "ar": "الأنظمة المالية"
+      },
+      "title": {
+            "en": "Financial Invoicing, Expense & P&L System",
+            "ar": "منصة الفواتير التجارية وإدارة المصروفات وتقارير P&L"
+      },
+      "tagline": {
+            "en": "Bilingual financial management suite with dynamic tax invoices, overhead expense tracking, and real-time profit margins.",
+            "ar": "منظومة مالية متكاملة لإنشاء الفواتير الضريبية وتتبع المصروفات التشغيلية وحساب هوامش الأرباح."
+      },
+      "description": {
+            "en": "An enterprise financial ledger showcasing dynamic commercial invoice generation, VAT calculations, printable A4 tax invoice formatting, expense categorisation, and instant Profit & Loss (P&L) statements in full English and Arabic RTL.",
+            "ar": "نظام مالي تجاري متكامل يوضح إصدار الفواتير الضريبية وحساب القيمة المضافة، نموذج الفاتورة القابل للطباعة، تصنيف المصروفات التشغيلية، وحساب قائمة الأرباح والخسائر الفورية باللغتين العربية والإنجليزية."
+      },
+      "techStack": [
+            "JavaScript (ES6+)",
+            "Financial Calculation Engine",
+            "Tax & VAT Logic",
+            "Printable Invoicing",
+            "Arabic RTL"
+      ],
+      "githubUrl": "https://github.com/reda1472/invoice-expense-management",
+      "demoUrl": "https://reda1472.github.io/invoice-expense-management/",
+      "metrics": [
+            {
+                  "label": {
+                        "en": "Tax Format",
+                        "ar": "صيغة الفاتورة"
+                  },
+                  "value": "A4 Official Print"
+            },
+            {
+                  "label": {
+                        "en": "Tax Logic",
+                        "ar": "حساب الضريبة"
+                  },
+                  "value": "Dynamic VAT %"
+            },
+            {
+                  "label": {
+                        "en": "Financial Health",
+                        "ar": "المؤشر المالي"
+                  },
+                  "value": "Real-Time P&L"
+            }
+      ],
+      "highlights": [
+            {
+                  "en": "Commercial tax invoice builder with dynamic line items and customizable VAT rates.",
+                  "ar": "منظومة فواتير تجارية ذكية مع بنود ديناميكية وحساب تلقائي لضريبة القيمة المضافة."
+            },
+            {
+                  "en": "Printable A4 tax invoice formatting with invoice number generator and client records.",
+                  "ar": "نموذج فاتورة ضريبية رسمي متوافق مع مقاس A4 قابل للطباعة والحفظ."
+            },
+            {
+                  "en": "Operating expense classifier and real-time Profit & Loss (P&L) income statement.",
+                  "ar": "تصنيف المصروفات التشغيلية وحساب فوري لقوائم الأرباح والخسائر وهامش الربح."
+            }
+      ]
+},
+    {
+      "id": "arabic-rtl-components",
+      "category": "tools",
+      "badge": {
+            "en": "Open Source UI",
+            "ar": "مفتوح المصدر"
+      },
+      "title": {
+            "en": "Sanad UI: Arabic RTL Component Library",
+            "ar": "مكتبة مكونات سند (Sanad UI) لواجهات الويب العربية RTL"
+      },
+      "tagline": {
+            "en": "Production-ready, zero-dependency Arabic RTL design system engineered with CSS Logical Properties.",
+            "ar": "مكتبة تصميم ومكونات ويب عربية نقية مفتوحة المصدر بدون أي حزم خارجية مبنية بخصائص CSS المنطقية."
+      },
+      "description": {
+            "en": "An open-source Arabic RTL UI component library providing buttons, form controls, modals, badges, data tables, and alerts. Engineered entirely with CSS Logical Properties for zero-glitch bidirectional (RTL & LTR) web applications and instant CDN integration.",
+            "ar": "مكتبة مكونات ويب عربية مفتوحة المصدر توفر أزراراً ونماذج إدخال ونوافذ منبثقة وجداول بيانات وتنبيهات. تم بناؤها بالكامل بخصائص CSS المنطقية لضمان التوافق السلس بين الاتجاهين العربي والإنجليزي والتضمين المباشر عبر الـ CDN."
+      },
+      "techStack": [
+            "CSS Logical Properties",
+            "Vanilla JavaScript",
+            "Design Systems",
+            "Arabic Typography (Cairo)",
+            "Open Source"
+      ],
+      "githubUrl": "https://github.com/reda1472/arabic-rtl-components",
+      "demoUrl": "https://reda1472.github.io/arabic-rtl-components/",
+      "metrics": [
+            {
+                  "label": {
+                        "en": "Runtime Bloat",
+                        "ar": "الاعتماديات"
+                  },
+                  "value": "0 External Pkgs"
+            },
+            {
+                  "label": {
+                        "en": "Components",
+                        "ar": "مكونات معيارية"
+                  },
+                  "value": "8+ Ready Widgets"
+            },
+            {
+                  "label": {
+                        "en": "Architecture",
+                        "ar": "المعمارية"
+                  },
+                  "value": "Pure CSS Logical"
+            }
+      ],
+      "highlights": [
+            {
+                  "en": "Engineered exclusively with CSS Logical Properties for zero-glitch bidirectional apps.",
+                  "ar": "مبنية بالكامل بخصائص CSS المنطقية لضمان عمل الواجهات العربية والإنجليزية بسلاسة."
+            },
+            {
+                  "en": "Interactive documentation playground with live RTL/LTR and dark/light toggles.",
+                  "ar": "بيئة توثيق تفاعلية لمعاينة وتجربة المكونات مع زر لنسخ الأكواد بضغطة واحدة."
+            },
+            {
+                  "en": "Zero external dependencies, accessible keyboard navigation, and Cairo font rhythm.",
+                  "ar": "خفيفة الوزن، متوافقة مع معايير الوصول، ومضبوطة وفق إيقاع خط Cairo العربي الأصيل."
+            }
+      ]
+},
+    {
+      "id": "python-automation-reporter",
+      "category": "tools",
+      "badge": {
+            "en": "Python CLI & Web",
+            "ar": "أداة بايثون وويب"
+      },
+      "title": {
+            "en": "PyReport Auto: Data Analytics & Report Generator",
+            "ar": "أداة بايثون لمعالجة البيانات والإحصاء وتوليد التقارير"
+      },
+      "tagline": {
+            "en": "Production-grade Python automation CLI and web app for processing commercial datasets and generating standalone executive reports.",
+            "ar": "أداة بايثون برمجية متقدمة وواجهة ويب لمعالجة ملفات البيانات الضخمة وحساب الإحصائيات وتوليد التقارير التنفيذية."
+      },
+      "description": {
+            "en": "A robust Python automation utility and interactive web dashboard engineered for parsing CSV/JSON business records, computing core statistical metrics (mean, median, min, max, standard deviation), and generating standalone HTML, JSON, and text analytical reports with 0 external dependencies.",
+            "ar": "أداة برمجية متكاملة بلغة بايثون وواجهة ويب تفاعلية لمعالجة ملفات البيانات التجارية CSV/JSON، وحساب المؤشرات الإحصائية الدقيقة (المتوسط، الوسيط، الانحراف المعياري)، وتوليد تقارير تنفيذية قائمة بذاتها بصيغ HTML وJSON وText بدون أي مكتبات خارجية."
+      },
+      "techStack": [
+            "Python 3 (Standard Library)",
+            "Data Processing & CSV",
+            "Unit Testing (unittest)",
+            "HTML Report Templating",
+            "Web Analytics Hub"
+      ],
+      "githubUrl": "https://github.com/reda1472/python-automation-reporter",
+      "demoUrl": "https://reda1472.github.io/python-automation-reporter/",
+      "metrics": [
+            {
+                  "label": {
+                        "en": "Dependencies",
+                        "ar": "حزم خارجية"
+                  },
+                  "value": "0 Pkg (Stdlib)"
+            },
+            {
+                  "label": {
+                        "en": "Report Formats",
+                        "ar": "صيغ التقارير"
+                  },
+                  "value": "Text, JSON, HTML"
+            },
+            {
+                  "label": {
+                        "en": "Unit Tests",
+                        "ar": "الاختبارات"
+                  },
+                  "value": "unittest Suite"
+            }
+      ],
+      "highlights": [
+            {
+                  "en": "Pure Python CLI core using standard modules (csv, json, math, argparse) with 0 external pip deps.",
+                  "ar": "أداة CLI نقية بلغة بايثون بدون أي مكتبات خارجية اعتماداً على حزم بايثون القياسية."
+            },
+            {
+                  "en": "Statistical calculations: mean, median, min, max, variance, and standard deviation.",
+                  "ar": "حساب المؤشرات الإحصائية المتقدمة: المتوسط، الوسيط، الانحراف المعياري، والتجميعات."
+            },
+            {
+                  "en": "Interactive web analytics hub providing CSV inspection, terminal preview, and HTML reports.",
+                  "ar": "واجهة ويب تفاعلية لمعاينة البيانات وتشغيل محاكي الأوامر وتوليد التقارير التنفيذية."
+            }
+      ]
+},
+    {
+      "id": "portfolio-website",
+      "category": "frontend",
+      "badge": {
+            "en": "Developer Portfolio",
+            "ar": "المعرض الشخصي"
+      },
+      "title": {
+            "en": "Personal Developer Portfolio & Engineering Hub",
+            "ar": "المعرض البرمجي الشخصي والسيرة الذاتية التفاعلية"
+      },
+      "tagline": {
+            "en": "Fast, accessible, and bilingual developer portfolio with interactive CV, technical publications, and zero runtime bloat.",
+            "ar": "موقع شخصي ومعرض أعمال متكامل ثنائي اللغة، سيرة ذاتية تفاعلية، ومدونة تقنية بدون أي بطء أو حزم زائدة."
+      },
+      "description": {
+            "en": "The central developer portfolio and professional engineering ecosystem for Reda Mohamed Salah. Features full bi-directional (English LTR and Arabic RTL) localization, dark and light theme tokens, an interactive project showcase, a printable curriculum vitae view, and practical engineering guides.",
+            "ar": "المعرض البرمجي والواجهة الرئيسية لمنظومة المطور رضا محمد صلاح. يدعم اللغتين العربية والإنجليزية بشكل أصيل (RTL/LTR)، ومزود بوضع ليلي وفاتح، عرض تفاعلي لـ 13 مشروعاً برمجياً، وسيرة ذاتية قابلة للطباعة والحفظ كملف PDF ومقالات برمجية متخصصة."
+      },
+      "techStack": [
+            "Semantic HTML5",
+            "Modern CSS Tokens",
+            "Vanilla JavaScript (ES6+)",
+            "Arabic RTL Design",
+            "Web Components"
+      ],
+      "githubUrl": "https://github.com/reda1472/portfolio-website",
+      "demoUrl": "https://reda1472.github.io/portfolio-website/",
+      "metrics": [
+            {
+                  "label": {
+                        "en": "Localization",
+                        "ar": "الترجمة"
+                  },
+                  "value": "100% RTL & LTR"
+            },
+            {
+                  "label": {
+                        "en": "Runtime Bloat",
+                        "ar": "أداء الموقع"
+                  },
+                  "value": "0ms Framework Lag"
+            },
+            {
+                  "label": {
+                        "en": "Live Projects",
+                        "ar": "مشاريع حية"
+                  },
+                  "value": "13 Repositories"
+            }
+      ],
+      "highlights": [
+            {
+                  "en": "Complete bilingual design with English and native Arabic RTL typography (Cairo & Inter).",
+                  "ar": "تصميم متكامل ثنائي اللغة يدعم العربية والإنجليزية بخطي Cairo وInter."
+            },
+            {
+                  "en": "Interactive CV view, filterable projects showcase, and technical blog reader.",
+                  "ar": "سيرة ذاتية تفاعلية، معرض مشاريع مفلتر، ومدونة تقنية للمقالات الهندسية."
+            },
+            {
+                  "en": "Custom theme switcher (Dark / Light) and contact modal with clipboard integration.",
+                  "ar": "محول ثيمات تفاعلي (داكن وفاتح) ونموذج تواصل ذكي مع نسخ البريد بضغطة واحدة."
+            }
+      ]
+}
   ],
 
   services: [
