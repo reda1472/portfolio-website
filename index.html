@@ -5,20 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Primary Meta Tags -->
-  <title>Reda Mohamed Salah | Web Developer</title>
-  <meta name="title" content="Reda Mohamed Salah | Web Developer">
-  <meta name="description" content="Web developer with 7 years of hands-on experience in programming and web development, building practical websites, business dashboards, and Arabic-ready RTL interfaces.">
+  <title>Reda Mohamed Salah | Web Developer & Systems Builder</title>
+  <meta name="title" content="Reda Mohamed Salah | Web Developer & Systems Builder">
+  <meta name="description" content="Verified professional portfolio of Reda Mohamed Salah. 7 years of hands-on programming experience building commercial web applications, business operations dashboards, 3NF relational databases, and high-precision Arabic RTL interfaces.">
   <meta name="author" content="Reda Mohamed Salah">
-  <meta name="keywords" content="Reda Mohamed Salah, Web Developer, Egypt, Python, PHP, JavaScript, MySQL, RTL, Arabic Web Development, Frontend Developer, Full Stack Developer, Dashboards">
+  <meta name="keywords" content="Reda Mohamed Salah, Web Developer, Systems Builder, Egypt, Cairo, Python, PHP, JavaScript, MySQL, 3NF, Arabic RTL, Visual Merchandising, Retail Tech, Dashboards, CRM, Logistics, Portfolio">
   <meta name="robots" content="index, follow">
 
-  <!-- Open Graph / Facebook / LinkedIn -->
+  <!-- Open Graph / LinkedIn / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://reda1472.github.io/portfolio-website/">
-  <meta property="og:title" content="Reda Mohamed Salah | Web Developer">
-  <meta property="og:description" content="Web developer with 7 years of hands-on experience in programming and web development, building practical websites, business dashboards, and Arabic-ready RTL interfaces.">
+  <meta property="og:title" content="Reda Mohamed Salah | Web Developer & Systems Builder">
+  <meta property="og:description" content="Verified professional portfolio of Reda Mohamed Salah. 7 years hands-on practice, 13 deployed production systems, 3NF MySQL, and Arabic RTL engineering.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/reda1472/reda1472/main/assets/avatar.jpg">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="ar_EG">
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Reda Mohamed Salah",
+    "jobTitle": "Web Developer & Systems Builder",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cairo",
+      "addressCountry": "Egypt"
+    },
+    "url": "https://reda1472.github.io/portfolio-website/",
+    "sameAs": [
+      "https://github.com/reda1472",
+      "https://www.linkedin.com/in/reda-mohamed-a88b96257/"
+    ]
+  }
+  </script>
 
   <!-- Fonts & Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,24 +57,29 @@
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- Ambient Glow Background Orbs -->
-  <div class="bg-glow-orb glow-primary" style="top: -100px; inset-inline-start: 10%; width: 450px; height: 450px;"></div>
-  <div class="bg-glow-orb glow-secondary" style="top: 40%; inset-inline-end: 5%; width: 400px; height: 400px;"></div>
+  <div class="bg-glow-orb glow-primary" style="top: -100px; inset-inline-start: 10%; width: 500px; height: 500px;"></div>
+  <div class="bg-glow-orb glow-secondary" style="top: 45%; inset-inline-end: 5%; width: 450px; height: 450px;"></div>
 
   <!-- Header / Navigation Bar -->
   <header class="site-header">
     <div class="container nav-container">
       <a href="#home" class="brand-logo" aria-label="Reda Mohamed Salah Home">
         <span class="brand-monogram">RMS</span>
-        <span>Reda M. Salah</span>
+        <div style="display: flex; flex-direction: column;">
+          <span style="font-weight: 800; line-height: 1.1;">Reda M. Salah</span>
+          <span style="font-size: 0.68rem; color: #10b981; font-family: var(--font-mono); display: flex; align-items: center; gap: 0.3rem;">
+            <span class="pulse-dot" style="width: 5px; height: 5px;"></span> Verified Engineer
+          </span>
+        </div>
       </a>
 
       <nav class="nav-links" aria-label="Main Navigation">
         <a href="#home" class="nav-link active" data-i18n="nav.home">Home</a>
-        <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
-        <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
-        <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
-        <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
-        <a href="#blog" class="nav-link" data-i18n="nav.blog">Technical Blog</a>
+        <a href="#featured" class="nav-link" data-i18n="nav.featured">Featured Systems</a>
+        <a href="#projects" class="nav-link" data-i18n="nav.projects">All 13 Projects</a>
+        <a href="#background" class="nav-link" data-i18n="nav.dualtrack">Background</a>
+        <a href="#skills" class="nav-link" data-i18n="nav.skills">Competencies</a>
+        <a href="#verification" class="nav-link" data-i18n="nav.verify">Verification</a>
         <a href="#cv" class="nav-link" data-i18n="nav.cv">CV</a>
         <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
       </nav>
@@ -80,17 +106,17 @@
     <!-- Mobile Drawer Menu -->
     <div class="mobile-drawer" id="mobile-drawer">
       <a href="#home" class="nav-link" data-i18n="nav.home">Home</a>
-      <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
-      <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
-      <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
-      <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
-      <a href="#blog" class="nav-link" data-i18n="nav.blog">Technical Blog</a>
+      <a href="#featured" class="nav-link" data-i18n="nav.featured">Featured Systems</a>
+      <a href="#projects" class="nav-link" data-i18n="nav.projects">All 13 Projects</a>
+      <a href="#background" class="nav-link" data-i18n="nav.dualtrack">Background</a>
+      <a href="#skills" class="nav-link" data-i18n="nav.skills">Competencies</a>
+      <a href="#verification" class="nav-link" data-i18n="nav.verify">Verification</a>
       <a href="#cv" class="nav-link" data-i18n="nav.cv">CV</a>
       <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
     </div>
   </header>
 
-  <!-- Main Content Landmark -->
+  <!-- Main Landmark -->
   <main id="main-content">
     
     <!-- 1. HERO SECTION -->
@@ -102,41 +128,49 @@
             <div>
               <span class="badge badge-emerald">
                 <span class="pulse-dot"></span>
-                <span data-i18n="hero.badge">Available for Select Web Projects</span>
+                <span data-i18n="hero.verifiedBadge">Verified Software Portfolio • Cairo, Egypt</span>
               </span>
             </div>
 
             <div>
-              <p class="hero-greeting" data-i18n="hero.greeting">Hello, I'm</p>
+              <p class="hero-greeting" data-i18n="hero.greeting">Hello, I am</p>
               <h1 class="hero-title" data-i18n="hero.name">Reda Mohamed Salah</h1>
-              <p class="text-primary-accent" style="font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 600; margin-top: 0.25rem;" data-i18n="hero.title">
+              <p class="text-primary-accent" style="font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 700; margin-top: 0.25rem;" data-i18n="hero.title">
                 Web Developer & Systems Builder
               </p>
             </div>
 
             <p class="lead-text" data-i18n="hero.lead">
-              7 years of hands-on experience in programming and web development, building practical websites, business dashboards, and Arabic-ready RTL interfaces.
+              7 years of hands-on programming practice engineering practical commercial web applications, business operations dashboards, relational database architectures (3NF MySQL), and high-precision Arabic RTL interfaces.
             </p>
 
             <div class="hero-actions">
-              <a href="#projects" class="btn btn-primary">
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                <span data-i18n="hero.cta.projects">Explore Projects</span>
+              <a href="#featured" class="btn btn-primary">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                <span data-i18n="hero.cta.featured">Explore Flagship Systems</span>
               </a>
-              <a href="#contact" class="btn btn-secondary">
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                <span data-i18n="hero.cta.contact">Get in Touch</span>
+              <a href="https://github.com/reda1472" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span data-i18n="hero.cta.github">GitHub Profile</span>
+              </a>
+              <a href="https://www.linkedin.com/in/reda-mohamed-a88b96257/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <span data-i18n="hero.cta.linkedin">LinkedIn</span>
               </a>
               <a href="#cv" class="btn btn-outline">
                 <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                <span data-i18n="hero.cta.cv">View Full CV</span>
+                <span data-i18n="hero.cta.cv">View Verified CV</span>
               </a>
             </div>
 
             <div class="hero-stats">
               <div class="stat-item">
                 <span class="stat-value">7+</span>
-                <span class="stat-label" data-i18n="hero.stat.exp">Years Hands-on Coding</span>
+                <span class="stat-label" data-i18n="hero.stat.exp">Years Hands-on Practice</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">13</span>
+                <span class="stat-label" data-i18n="hero.stat.systems">Public Deployed Systems</span>
               </div>
               <div class="stat-item">
                 <span class="stat-value">100%</span>
@@ -157,32 +191,30 @@
                 <div class="dot dot-yellow"></div>
                 <div class="dot dot-green"></div>
               </div>
-              <span class="card-title-tab">developer_profile.json</span>
+              <span class="card-title-tab">verified_engineer.json</span>
             </div>
-            
-            <div style="padding: 1.25rem 1.5rem 0 1.5rem; display: flex; align-items: center; gap: 1rem;">
-              <img src="assets/images/avatar.jpg" alt="Reda Mohamed Salah" style="width: 68px; height: 68px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary); box-shadow: 0 0 12px rgba(56, 189, 248, 0.35);">
+
+            <div style="padding: 1.25rem 1.5rem 0.5rem 1.5rem; display: flex; align-items: center; gap: 1rem;">
+              <img src="assets/images/avatar.jpg" alt="Reda Mohamed Salah" style="width: 76px; height: 76px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary); box-shadow: 0 0 16px rgba(56, 189, 248, 0.4);">
               <div>
-                <strong style="font-size: 1.05rem; display: block; color: var(--text-primary);">Reda Mohamed Salah</strong>
-                <span class="text-primary font-mono" style="font-size: 0.8rem;">@reda1472 • Verified Engineer</span>
+                <strong style="font-size: 1.15rem; display: block; color: var(--text-primary);">Reda Mohamed Salah</strong>
+                <span class="text-primary font-mono" style="font-size: 0.82rem;">@reda1472 • Verified Engineer</span>
+                <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem;">Visual Merchandiser at AL NASSER</div>
               </div>
             </div>
+
             <pre class="card-code-body"><code>{
   <span class="code-property">"engineer"</span>: <span class="code-string">"Reda Mohamed Salah"</span>,
-  <span class="code-property">"role"</span>: <span class="code-string">"Web Developer"</span>,
+  <span class="code-property">"role"</span>: <span class="code-string">"Web Developer & Systems Builder"</span>,
   <span class="code-property">"experience_years"</span>: <span class="code-keyword">7</span>,
-  <span class="code-property">"location"</span>: <span class="code-string">"Egypt"</span>,
-  <span class="code-property">"core_stack"</span>: [
+  <span class="code-property">"location"</span>: <span class="code-string">"Cairo, Egypt"</span>,
+  <span class="code-property">"core_technologies"</span>: [
     <span class="code-string">"Python"</span>, <span class="code-string">"PHP"</span>, <span class="code-string">"JavaScript"</span>,
     <span class="code-string">"HTML5"</span>, <span class="code-string">"CSS3"</span>, <span class="code-string">"MySQL"</span>
   ],
-  <span class="code-property">"specializations"</span>: [
-    <span class="code-string">"Business Dashboards"</span>,
-    <span class="code-string">"Bi-Directional RTL/LTR Systems"</span>,
-    <span class="code-string">"Relational Database Design"</span>
-  ],
-  <span class="code-property">"official_employment"</span>: <span class="code-string">"Visual Merchandiser at AL NASSER"</span>,
-  <span class="code-property">"verified_status"</span>: <span class="code-keyword">true</span>
+  <span class="code-property">"official_employment"</span>: <span class="code-string">"AL NASSER (Faisal Al Rasheed Group)"</span>,
+  <span class="code-property">"deployed_systems"</span>: <span class="code-keyword">13</span>,
+  <span class="code-property">"public_verification"</span>: <span class="code-string">"github.com/reda1472"</span>
 }</code></pre>
           </div>
 
@@ -190,57 +222,134 @@
       </div>
     </section>
 
-    <!-- 2. ABOUT SECTION -->
-    <section id="about" class="section" style="background-color: var(--bg-surface-elevated);">
+    <!-- 2. ENGINEERING PRINCIPLES / STRENGTHS -->
+    <section id="strengths" class="section" style="background-color: var(--bg-surface-elevated);">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-i18n="about.tag">Profile & Background</span>
-          <h2 class="section-title" data-i18n="about.title">Engineering Practical Web Solutions with Precision</h2>
-          <p class="section-subtitle" data-i18n="about.lead">Bridging structured programming with a strong sense of visual hierarchy and order.</p>
+          <span class="section-tag" data-i18n="strengths.tag">Engineering Principles</span>
+          <h2 class="section-title" data-i18n="strengths.title">How I Build Systems</h2>
+          <p class="section-subtitle" data-i18n="strengths.subtitle">A pragmatic software engineering approach focused on business utility, performance, and long-term maintainability.</p>
         </div>
 
-        <div class="about-grid">
-          <div class="about-text">
-            <p data-i18n="about.p1">
-              I am a web developer with 7 years of hands-on programming practice based in Egypt. Over the years, I have built web applications, administrative dashboards, and database-driven business tools utilizing Python, PHP, JavaScript, HTML, CSS, and MySQL.
-            </p>
-            <p data-i18n="about.p2">
-              In addition to independent software development, I currently work officially as a <strong>Visual Merchandiser / Display Coordinator at AL NASSER</strong>. This background provides me with an exceptional understanding of spatial arrangement, visual flow, attention to detail, and presentation consistency — principles that directly translate into clean user interfaces, intuitive navigation structures, and high-performance digital tools.
-            </p>
-            <p data-i18n="about.p3">
-              I place immense value on authentic, verifiable craftsmanship: zero bloated dependencies, zero fake claims, and clean, maintainable code that solves real business problems.
-            </p>
+        <div class="strengths-grid">
+          <div class="strength-card">
+            <div class="strength-num">01 / ARCHITECTURE</div>
+            <h3 class="strength-title" data-i18n="strengths.s1.title">Business-First Architecture</h3>
+            <p class="strength-desc" data-i18n="strengths.s1.desc">Designing software to solve tangible operational bottlenecks: inventory drift, sales pipeline visibility, and billing overhead.</p>
           </div>
 
-          <div class="about-info-box">
-            <div class="info-item">
-              <span class="info-label" data-i18n="about.info.location">Location</span>
-              <span class="info-value" data-i18n="about.info.location.val">Egypt</span>
+          <div class="strength-card">
+            <div class="strength-num">02 / DATA MODELING</div>
+            <h3 class="strength-title" data-i18n="strengths.s2.title">Relational Data Integrity</h3>
+            <p class="strength-desc" data-i18n="strengths.s2.desc">Strict Third Normal Form (3NF) relational database modeling in MySQL with foreign key constraints, indexes, and audit logs.</p>
+          </div>
+
+          <div class="strength-card">
+            <div class="strength-num">03 / LOCALIZATION</div>
+            <h3 class="strength-title" data-i18n="strengths.s3.title">Native Arabic RTL Engineering</h3>
+            <p class="strength-desc" data-i18n="strengths.s3.desc">Zero-glitch bidirectional layouts built purely with CSS Logical Properties and optical typography balance for Cairo and Inter.</p>
+          </div>
+
+          <div class="strength-card">
+            <div class="strength-num">04 / PERFORMANCE</div>
+            <h3 class="strength-title" data-i18n="strengths.s4.title">Zero Runtime Overhead</h3>
+            <p class="strength-desc" data-i18n="strengths.s4.desc">Avoiding fragile third-party framework dependencies in favor of clean semantic HTML5, modern CSS tokens, and vanilla JavaScript.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. FEATURED WORK (FLAGSHIP CASE STUDIES) -->
+    <section id="featured" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="featured.tag">Flagship Case Studies</span>
+          <h2 class="section-title" data-i18n="featured.title">Featured Engineering Systems</h2>
+          <p class="section-subtitle" data-i18n="featured.subtitle">In-depth case studies into complex business management, CRM pipelines, logistics hubs, and open-source tooling.</p>
+        </div>
+
+        <div id="featured-projects-container" class="flagship-list">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ALL 13 PROJECTS WITH CATEGORY FILTERS -->
+    <section id="projects" class="section" style="background-color: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="projects.tag">Complete Portfolio</span>
+          <h2 class="section-title" data-i18n="projects.title">All 13 Deployed Systems</h2>
+          <p class="section-subtitle" data-i18n="projects.subtitle">Explore the complete verified ecosystem with category filters and live demonstrations.</p>
+        </div>
+
+        <!-- Project Category Filters -->
+        <div class="project-filters" id="category-filters-container" role="tablist" aria-label="Filter Projects">
+          <!-- Populated dynamically by app.js -->
+        </div>
+
+        <div id="all-projects-container">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. DUAL-TRACK PROFESSIONAL BACKGROUND -->
+    <section id="background" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="dualtrack.tag">Professional Career</span>
+          <h2 class="section-title" data-i18n="dualtrack.title">Authentic Career & Engineering Practice</h2>
+          <p class="section-subtitle" data-i18n="dualtrack.subtitle">A transparent distinction between official enterprise employment and independent software engineering practice.</p>
+        </div>
+
+        <div class="dualtrack-grid">
+          <!-- Track 1: Official Enterprise Employment -->
+          <div class="dualtrack-card">
+            <div class="dualtrack-badge" data-i18n="dualtrack.emp.title">Official Employment</div>
+            <h3 class="dualtrack-role" data-i18n="dualtrack.emp.role">Visual Merchandiser / Display Coordinator</h3>
+            <div class="dualtrack-org" data-i18n="dualtrack.emp.company">AL NASSER (Faisal Al Rasheed Group)</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;" data-i18n="dualtrack.emp.location">
+              Egypt • Major Branch Network (Cairo Tagamo, Mansoura, Tanta, Damanhour)
             </div>
-            <div class="info-item">
-              <span class="info-label" data-i18n="about.info.languages">Languages</span>
-              <span class="info-value" data-i18n="about.info.languages.val">Arabic (Native), English (Professional)</span>
+            <div class="dualtrack-body">
+              <p style="margin-bottom: 1rem;" data-i18n="dualtrack.emp.p1">
+                Coordinating physical store presentations, architectural storefront window displays (#WindowDisplay), and seasonal campaigns across high-volume retail branches.
+              </p>
+              <p data-i18n="dualtrack.emp.p2">
+                Synergy with Software: Bringing physical spatial discipline, eye-flow direction, optical balance, and category density management directly into digital UI layouts and dashboard architectures.
+              </p>
             </div>
-            <div class="info-item">
-              <span class="info-label" data-i18n="about.info.codeExp">Programming Experience</span>
-              <span class="info-value" data-i18n="about.info.codeExp.val">7 Years Hands-on Practice</span>
+          </div>
+
+          <!-- Track 2: Independent Software Engineering Practice -->
+          <div class="dualtrack-card">
+            <div class="dualtrack-badge" data-i18n="dualtrack.dev.title">Independent Software Practice</div>
+            <h3 class="dualtrack-role" data-i18n="dualtrack.dev.role">Web Developer & Systems Builder</h3>
+            <div class="dualtrack-org" data-i18n="dualtrack.dev.company">7 Years Hands-on Programming Experience</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;" data-i18n="dualtrack.dev.location">
+              Cairo, Egypt • Independent Software & Systems Engineering
             </div>
-            <div class="info-item">
-              <span class="info-label" data-i18n="about.info.employment">Official Employment</span>
-              <span class="info-value" data-i18n="about.info.employment.val">Visual Merchandiser / Display Coordinator at AL NASSER</span>
+            <div class="dualtrack-body">
+              <p style="margin-bottom: 1rem;" data-i18n="dualtrack.dev.p1">
+                Seven continuous years of practical software engineering using Python, PHP, JavaScript, HTML5, CSS3, and MySQL.
+              </p>
+              <p data-i18n="dualtrack.dev.p2">
+                Independently designed, architected, and deployed 13 complete web systems including 3NF relational database models, enterprise CRM Kanban pipelines, and open-source Arabic RTL components.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 3. SKILLS SECTION -->
-    <section id="skills" class="section">
+    <!-- 6. TECHNICAL COMPETENCIES / SKILLS -->
+    <section id="skills" class="section" style="background-color: var(--bg-surface-elevated);">
       <div class="container">
         <div class="section-header">
           <span class="section-tag" data-i18n="skills.tag">Core Competencies</span>
           <h2 class="section-title" data-i18n="skills.title">Confirmed Technical Stack</h2>
-          <p class="section-subtitle" data-i18n="skills.subtitle">Technologies and engineering disciplines verified and utilized across my projects.</p>
+          <p class="section-subtitle" data-i18n="skills.subtitle">Technologies and engineering disciplines verified and utilized across my projects (categorized without fake percentage bars).</p>
         </div>
 
         <div class="grid grid-2 gap-3" id="skills-container">
@@ -249,39 +358,74 @@
       </div>
     </section>
 
-    <!-- 4. FEATURED PROJECTS SECTION -->
-    <section id="projects" class="section" style="background-color: var(--bg-surface-elevated);">
+    <!-- 7. PUBLIC VERIFICATION & TRANSPARENCY -->
+    <section id="verification" class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-i18n="projects.tag">Portfolio Repositories</span>
-          <h2 class="section-title" data-i18n="projects.title">Featured Engineering Projects</h2>
-          <p class="section-subtitle" data-i18n="projects.subtitle">Independent web systems built to demonstrate architectural discipline, code quality, and domain thinking.</p>
+          <span class="section-tag" data-i18n="verify.tag">Public Transparency</span>
+          <h2 class="section-title" data-i18n="verify.title">Verification for Recruiters & Institutions</h2>
+          <p class="section-subtitle" data-i18n="verify.subtitle">Every claim, project, and architecture is backed by public source code on GitHub and live deployments.</p>
         </div>
 
-        <!-- Project Category Filters -->
-        <div class="project-filters" id="project-filters" role="tablist" aria-label="Filter Projects">
-          <button type="button" class="filter-btn active" data-filter="all" data-i18n="filter.all">All Projects (13)</button>
-          <button type="button" class="filter-btn" data-filter="retail" data-i18n="filter.retail">Retail Tech & VM (4)</button>
-          <button type="button" class="filter-btn" data-filter="systems" data-i18n="filter.systems">Operations & CRM (4)</button>
-          <button type="button" class="filter-btn" data-filter="logistics" data-i18n="filter.logistics">Logistics & Warehouse (1)</button>
-          <button type="button" class="filter-btn" data-filter="finance" data-i18n="filter.finance">Finance & Billing (1)</button>
-          <button type="button" class="filter-btn" data-filter="tools" data-i18n="filter.tools">Tools & Open Source (2)</button>
-          <button type="button" class="filter-btn" data-filter="frontend" data-i18n="filter.frontend">Portfolio (1)</button>
+        <div class="verify-grid">
+          <div class="verify-card">
+            <div class="verify-card-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <h3 class="verify-card-title" data-i18n="verify.card1.title">1. Source Code Inspection</h3>
+            <p class="verify-card-desc" data-i18n="verify.card1.desc">Every project is hosted in a public GitHub repository. Reviewers can inspect commit histories, code conventions, and project structures.</p>
+            <a href="https://github.com/reda1472" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="verify.card1.btn">View GitHub Profile (reda1472)</a>
+          </div>
+
+          <div class="verify-card">
+            <div class="verify-card-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3 class="verify-card-title" data-i18n="verify.card2.title">2. Live Functional Testing</h3>
+            <p class="verify-card-desc" data-i18n="verify.card2.desc">All 13 projects are deployed and accessible on GitHub Pages. Test POS checkouts, conflict engines, Kanban pipelines, and barcode simulators directly.</p>
+            <a href="#projects" class="btn btn-primary" data-i18n="verify.card2.btn">Browse Deployed Systems</a>
+          </div>
+
+          <div class="verify-card">
+            <div class="verify-card-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </div>
+            <h3 class="verify-card-title" data-i18n="verify.card3.title">3. Professional Identity</h3>
+            <p class="verify-card-desc" data-i18n="verify.card3.desc">Connect and cross-verify employment and professional background through my official LinkedIn profile with 4,200+ followers.</p>
+            <a href="https://www.linkedin.com/in/reda-mohamed-a88b96257/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-i18n="verify.card3.btn">Connect on LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. VERIFIED CV SECTION -->
+    <section id="cv" class="section" style="background-color: var(--bg-surface-elevated);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="cv.tag">Curriculum Vitae</span>
+          <h2 class="section-title" data-i18n="cv.title">Verified Professional Record</h2>
+          <p class="section-subtitle" data-i18n="cv.subtitle">A transparent record of official employment, technical competencies, and software projects ready for review and printing.</p>
+          <div style="margin-top: 1.5rem;">
+            <button onclick="window.print()" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+              <span data-i18n="cv.btn.print">Print Official CV / Save as PDF</span>
+            </button>
+          </div>
         </div>
 
-        <div id="projects-container">
+        <div id="cv-content" class="cv-card">
           <!-- Populated dynamically by app.js -->
         </div>
       </div>
     </section>
 
-    <!-- 5. SERVICES SECTION -->
+    <!-- 9. SERVICES SECTION -->
     <section id="services" class="section">
       <div class="container">
         <div class="section-header">
           <span class="section-tag" data-i18n="services.tag">What I Build</span>
-          <h2 class="section-title" data-i18n="services.title">Professional Services</h2>
-          <p class="section-subtitle" data-i18n="services.subtitle">Practical digital services and development capabilities I provide to businesses and individuals.</p>
+          <h2 class="section-title" data-i18n="services.title">Professional Services & Capabilities</h2>
+          <p class="section-subtitle" data-i18n="services.subtitle">Practical digital services and development capabilities I provide to businesses and technical teams.</p>
         </div>
 
         <div class="grid grid-3 gap-3" id="services-container">
@@ -290,7 +434,7 @@
       </div>
     </section>
 
-    <!-- 6. TECHNICAL BLOG SECTION -->
+    <!-- 10. TECHNICAL BLOG / NOTES -->
     <section id="blog" class="section" style="background-color: var(--bg-surface-elevated);">
       <div class="container">
         <div class="section-header">
@@ -305,142 +449,125 @@
       </div>
     </section>
 
-    <!-- 7. CV SECTION -->
-    <section id="cv" class="section">
+    <!-- 11. CONTACT SECTION -->
+    <section id="contact" class="section">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-i18n="cv.tag">Professional Profile</span>
-          <h2 class="section-title" data-i18n="cv.title">Curriculum Vitae</h2>
-          <p class="section-subtitle" data-i18n="cv.subtitle">Transparent, verifiable record of employment history, technical skills, and software development practice.</p>
-        </div>
-
-        <div id="cv-content-container">
-          <!-- Populated dynamically by app.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- 8. CONTACT SECTION -->
-    <section id="contact" class="section" style="background-color: var(--bg-surface-elevated);">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="contact.tag">Let's Connect</span>
+          <span class="section-tag" data-i18n="contact.tag">Let's Build Something Useful</span>
           <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
-          <p class="section-subtitle" data-i18n="contact.subtitle">Have a project in mind, an inquiry, or want to discuss technical collaboration? Reach out directly.</p>
+          <p class="section-subtitle" data-i18n="contact.subtitle">Have an engineering inquiry, business system requirement, or professional collaboration opportunity? Reach out directly.</p>
         </div>
 
         <div class="contact-grid">
-          <div class="contact-card">
-            <h3 style="font-size: 1.35rem;">Contact Information</h3>
-            <p class="text-secondary" style="font-size: 0.95rem;">
-              Feel free to reach out via direct email, LinkedIn, or GitHub. I am open to discussing web projects, dashboards, and RTL implementations.
-            </p>
-
-            <div class="contact-info-list">
-              <div class="contact-info-item">
-                <div class="contact-icon">
-                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                </div>
-                <div>
-                  <span class="text-muted" style="font-size: 0.8rem;" data-i18n="contact.emailLabel">Email Address</span>
-                  <p class="font-mono" style="font-weight: 600; font-size: 0.95rem;">redamohamed1477@gmail.com</p>
-                </div>
-              </div>
-
-              <div>
-                <button class="btn btn-secondary btn-sm" id="copy-email-btn">
-                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-                  <span data-i18n="contact.copyEmail">Copy Email</span>
-                </button>
-                <span id="copy-feedback" class="badge badge-emerald" style="display: none; margin-inline-start: 0.5rem;" data-i18n="contact.copied">
-                  Copied to clipboard!
-                </span>
-              </div>
-            </div>
-
-            <div style="padding-top: 1rem; border-top: 1px solid var(--border-subtle);">
-              <span class="text-muted" style="font-size: 0.85rem;">Profiles & Ecosystem:</span>
-              <div class="flex gap-2" style="margin-top: 0.75rem;">
-                <a href="https://www.linkedin.com/in/reda-mohamed-a88b96257/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile" aria-label="LinkedIn">
-                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                </a>
-                <a href="https://github.com/reda1472" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile" aria-label="GitHub">
-                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Quick Message Form -->
-          <div class="contact-card">
-            <h3 style="font-size: 1.35rem;">Send a Message</h3>
-            <form id="contact-form" class="contact-form">
-              <div class="form-group">
-                <label for="contact-name" class="form-label" data-i18n="contact.form.name">Your Name</label>
-                <input type="text" id="contact-name" class="form-input" required data-i18n-placeholder="contact.form.namePlaceholder" placeholder="e.g. John Doe">
-              </div>
-              <div class="form-group">
-                <label for="contact-subject" class="form-label" data-i18n="contact.form.subject">Subject</label>
-                <input type="text" id="contact-subject" class="form-input" required data-i18n-placeholder="contact.form.subjectPlaceholder" placeholder="e.g. Project Inquiry / Business Website">
-              </div>
-              <div class="form-group">
-                <label for="contact-message" class="form-label" data-i18n="contact.form.message">Message</label>
-                <textarea id="contact-message" class="form-textarea" required data-i18n-placeholder="contact.form.messagePlaceholder" placeholder="Tell me about your project or requirements..."></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem;">
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                <span data-i18n="contact.form.send">Send Message via Email Client</span>
+          <div class="contact-info">
+            <div class="contact-card">
+              <h3 class="contact-card-title" data-i18n="contact.emailLabel">Verified Email Address</h3>
+              <p class="font-mono" style="font-size: 1.1rem; color: var(--primary); margin: 0.5rem 0 1rem 0;">redamohamed1477@gmail.com</p>
+              <button class="btn btn-secondary btn-sm" id="copy-email-btn">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                <span data-i18n="contact.copyEmail">Copy Email Address</span>
               </button>
-            </form>
+              <span id="copy-feedback" class="copy-feedback" data-i18n="contact.copied">Copied to clipboard!</span>
+            </div>
+
+            <div class="contact-card">
+              <h3 class="contact-card-title" data-i18n="contact.locationLabel">Location</h3>
+              <p style="color: var(--text-secondary); margin-top: 0.5rem;" data-i18n="contact.locationVal">
+                Cairo, Egypt (Open to Global Remote / Relocation Opportunities)
+              </p>
+            </div>
+
+            <div class="contact-card">
+              <h3 class="contact-card-title">Verified Profiles</h3>
+              <div style="display: flex; gap: 0.75rem; margin-top: 1rem; flex-wrap: wrap;">
+                <a href="https://github.com/reda1472" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  GitHub (reda1472)
+                </a>
+                <a href="https://www.linkedin.com/in/reda-mohamed-a88b96257/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  LinkedIn
+                </a>
+              </div>
+            </div>
           </div>
+
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label" data-i18n="contact.form.name">Your Name</label>
+              <input type="text" id="contact-name" class="form-control" data-i18n-placeholder="contact.form.namePlaceholder" placeholder="e.g. John Doe / Technical Recruiter" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label" data-i18n="contact.form.email">Your Email</label>
+              <input type="email" id="contact-email" class="form-control" data-i18n-placeholder="contact.form.emailPlaceholder" placeholder="e.g. john@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label" data-i18n="contact.form.subject">Subject</label>
+              <input type="text" id="contact-subject" class="form-control" data-i18n-placeholder="contact.form.subjectPlaceholder" placeholder="e.g. System Development Inquiry / Employment Opportunity" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label" data-i18n="contact.form.message">Message</label>
+              <textarea id="contact-message" class="form-control" rows="5" data-i18n-placeholder="contact.form.messagePlaceholder" placeholder="Describe your system requirements or inquiry..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              <span data-i18n="contact.form.send">Send Message via Email Client</span>
+            </button>
+          </form>
         </div>
       </div>
     </section>
-
   </main>
 
-  <!-- Article Reader Modal -->
-  <div class="modal-backdrop" id="article-modal" role="dialog" aria-modal="true" aria-labelledby="article-modal-title">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <span class="badge badge-primary">Technical Article</span>
-        <button class="modal-close-btn" id="article-modal-close" aria-label="Close Article">&times;</button>
-      </div>
-      <div class="modal-body" id="article-modal-body">
-        <!-- Injected dynamically -->
+  <!-- CASE STUDY MODAL -->
+  <div id="case-study-modal" class="casestudy-modal" role="dialog" aria-modal="true" aria-labelledby="case-study-modal-title">
+    <div class="casestudy-modal-dialog">
+      <button type="button" id="case-study-modal-close" class="casestudy-close-btn" aria-label="Close Case Study">&times;</button>
+      <div id="case-study-modal-body">
+        <!-- Populated dynamically by app.js -->
       </div>
     </div>
   </div>
 
-  <!-- Footer -->
+  <!-- ARTICLE MODAL -->
+  <div id="article-modal" class="article-modal" role="dialog" aria-modal="true" aria-labelledby="article-modal-title">
+    <div class="article-modal-dialog">
+      <button type="button" id="article-modal-close" class="article-close-btn" aria-label="Close Article">&times;</button>
+      <div class="article-modal-header">
+        <h2 id="article-modal-title" class="article-modal-headline"></h2>
+        <div id="article-modal-meta" class="article-modal-subline"></div>
+      </div>
+      <div id="article-modal-body" class="article-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container footer-container">
-      <div class="brand-logo">
-        <span class="brand-monogram">RMS</span>
-        <span>Reda Mohamed Salah</span>
-      </div>
       <div class="footer-social-links">
-        <a href="https://www.linkedin.com/in/reda-mohamed-a88b96257/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        <a href="https://github.com/reda1472" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
         </a>
-        <a href="https://github.com/reda1472" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
-          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        <a href="https://www.linkedin.com/in/reda-mohamed-a88b96257/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
         </a>
       </div>
+
       <p class="footer-text">
-        &copy; 2026 Reda Mohamed Salah. <span data-i18n="footer.rights">All rights reserved.</span>
-      </p>
-      <p class="footer-text" style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="footer.tagline">
-        Built with pure HTML, modern CSS, and JavaScript. 100% authentic engineering.
+        &copy; 2026 Reda Mohamed Salah. <span data-i18n="footer.rights">All rights reserved.</span><br>
+        <span data-i18n="footer.tagline">Crafted with pure HTML5, modern CSS tokens, and JavaScript. 100% verified engineering practice.</span>
       </p>
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- Core Application Scripts -->
   <script src="js/data.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/theme.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
-

@@ -1,6 +1,7 @@
 /**
  * Bilingual (EN/AR) Translation & Direction Engine
  * Reda Mohamed Salah Portfolio
+ * Truthful, verifiable, and strictly aligned with confirmed experience.
  */
 
 const I18N = (function () {
@@ -14,68 +15,126 @@ const I18N = (function () {
     en: {
       // Navigation
       "nav.home": "Home",
-      "nav.about": "About",
-      "nav.skills": "Skills",
-      "nav.projects": "Projects",
+      "nav.featured": "Featured Systems",
+      "nav.projects": "All 13 Projects",
+      "nav.dualtrack": "Background",
+      "nav.skills": "Competencies",
+      "nav.verify": "Verification",
       "nav.services": "Services",
-      "nav.blog": "Technical Blog",
+      "nav.blog": "Engineering Notes",
       "nav.cv": "Curriculum Vitae",
       "nav.contact": "Contact",
 
       // Hero Section
-      "hero.badge": "Available for Select Web Projects",
-      "hero.greeting": "Hello, I'm",
+      "hero.verifiedBadge": "Verified Software Portfolio • Cairo, Egypt",
+      "hero.greeting": "Hello, I am",
       "hero.name": "Reda Mohamed Salah",
       "hero.title": "Web Developer & Systems Builder",
-      "hero.lead": "7 years of hands-on experience in programming and web development, building practical websites, business dashboards, and Arabic-ready RTL interfaces.",
-      "hero.cta.projects": "Explore Projects",
-      "hero.cta.contact": "Get in Touch",
-      "hero.cta.cv": "View Full CV",
-      "hero.stat.exp": "Years Hands-on Coding",
+      "hero.lead": "7 years of hands-on programming practice engineering practical commercial web applications, business operations dashboards, relational database architectures (3NF MySQL), and high-precision Arabic RTL interfaces.",
+      "hero.cta.featured": "Explore Flagship Systems",
+      "hero.cta.projects": "Browse All 13 Projects",
+      "hero.cta.github": "GitHub Profile",
+      "hero.cta.linkedin": "LinkedIn",
+      "hero.cta.cv": "View Verified CV",
+      "hero.stat.exp": "Years Hands-on Practice",
+      "hero.stat.systems": "Public Deployed Systems",
       "hero.stat.focus": "Arabic RTL Specialist",
-      "hero.stat.quality": "Production-Grade Quality",
+      "hero.stat.quality": "100% Truthful Credentials",
 
-      // About Section
-      "about.tag": "Profile & Background",
-      "about.title": "Engineering Practical Web Solutions with Precision",
-      "about.lead": "Bridging structured programming with a strong sense of visual hierarchy and order.",
-      "about.p1": "I am a web developer with 7 years of hands-on programming practice based in Egypt. Over the years, I have built web applications, administrative dashboards, and database-driven business tools utilizing Python, PHP, JavaScript, HTML, CSS, and MySQL.",
-      "about.p2": "In addition to independent software development, I currently work officially as a Visual Merchandiser / Display Coordinator at AL NASSER. This background provides me with an exceptional understanding of spatial arrangement, visual flow, attention to detail, and presentation consistency — principles that directly translate into clean user interfaces, intuitive navigation structures, and high-performance digital tools.",
-      "about.p3": "I place immense value on authentic, verifiable craftsmanship: zero bloated dependencies, zero fake claims, and clean, maintainable code that solves real business problems.",
-      "about.info.location": "Location",
-      "about.info.location.val": "Egypt",
-      "about.info.languages": "Languages",
-      "about.info.languages.val": "Arabic (Native), English (Professional)",
-      "about.info.employment": "Official Employment",
-      "about.info.employment.val": "Visual Merchandiser / Display Coordinator at AL NASSER",
-      "about.info.codeExp": "Programming Experience",
-      "about.info.codeExp.val": "7 Years Hands-on Practice",
+      // Value Proposition / Strengths
+      "strengths.tag": "Engineering Principles",
+      "strengths.title": "How I Build Systems",
+      "strengths.subtitle": "A pragmatic software engineering approach focused on business utility, performance, and long-term maintainability.",
+      "strengths.s1.title": "Business-First Architecture",
+      "strengths.s1.desc": "Designing software to solve tangible operational bottlenecks: inventory drift, sales pipeline visibility, and billing overhead.",
+      "strengths.s2.title": "Relational Data Integrity",
+      "strengths.s2.desc": "Strict Third Normal Form (3NF) relational database modeling in MySQL with foreign key constraints, indexes, and audit logs.",
+      "strengths.s3.title": "Native Arabic RTL Engineering",
+      "strengths.s3.desc": "Zero-glitch bidirectional layouts built purely with CSS Logical Properties and optical typography balance for Cairo and Inter.",
+      "strengths.s4.title": "Zero Runtime Overhead",
+      "strengths.s4.desc": "Avoiding fragile third-party framework dependencies in favor of clean semantic HTML5, modern CSS tokens, and vanilla JavaScript.",
+
+      // Featured Work (Flagship Case Studies)
+      "featured.tag": "Flagship Case Studies",
+      "featured.title": "Featured Engineering Systems",
+      "featured.subtitle": "In-depth case studies into complex business management, CRM pipelines, logistics hubs, and open-source tooling.",
+      "featured.openCaseStudy": "View Case Study & Architecture",
+      "featured.viewLive": "Live Demonstration",
+      "featured.viewCode": "Source Code on GitHub",
+
+      // Case Study Modal
+      "casestudy.badge": "System Case Study",
+      "casestudy.problem": "The Operational Problem",
+      "casestudy.solution": "Technical Solution & Architecture",
+      "casestudy.architecture": "Data Model & System Design",
+      "casestudy.features": "Key Operational Capabilities",
+      "casestudy.techStack": "Confirmed Technologies Used",
+      "casestudy.metricsTitle": "System Performance & Metrics",
+      "casestudy.openDemo": "Open Live Demonstration ↗",
+      "casestudy.viewGithub": "Inspect Source Code on GitHub ↗",
+      "casestudy.close": "Close Case Study (Esc)",
+
+      // All Projects Section
+      "projects.tag": "Complete Portfolio",
+      "projects.title": "All 13 Deployed Systems",
+      "projects.subtitle": "Explore the complete verified ecosystem with category filters and live demonstrations.",
+      "projects.viewCode": "Source Code",
+      "projects.viewLive": "Live Demo",
+      "projects.viewDetails": "Case Study Details",
+      "projects.highlightsTitle": "Key Technical Highlights:",
+      "projects.syntheticNotice": "Notice: All retail and business demonstration applications operate on 100% fictional/synthetic data models.",
+
+      // Category Filters
+      "filter.all": "All Projects (13)",
+      "filter.retail": "Retail Tech & VM (4)",
+      "filter.business": "Operations & Dashboards (2)",
+      "filter.crm": "CRM & Sales (1)",
+      "filter.logistics": "Logistics & Warehouse (1)",
+      "filter.finance": "Finance & Billing (1)",
+      "filter.tools": "Tools & Open Source (2)",
+      "filter.ecommerce": "E-Commerce (1)",
+      "filter.frontend": "Portfolio & Web (1)",
+
+      // Professional Dual-Track Background
+      "dualtrack.tag": "Professional Career",
+      "dualtrack.title": "Authentic Career & Engineering Practice",
+      "dualtrack.subtitle": "A transparent distinction between official enterprise employment and independent software engineering practice.",
+      "dualtrack.emp.title": "Official Employment",
+      "dualtrack.emp.role": "Visual Merchandiser / Display Coordinator",
+      "dualtrack.emp.company": "AL NASSER (Faisal Al Rasheed Group)",
+      "dualtrack.emp.location": "Egypt • Major Branch Network (Cairo, Mansoura, Tanta, Damanhour)",
+      "dualtrack.emp.p1": "Coordinating physical store presentations, architectural storefront window displays (#WindowDisplay), and seasonal campaigns (Winter Collections, Back to School) across high-volume retail branches.",
+      "dualtrack.emp.p2": "Synergy with Software: Bringing physical spatial discipline, eye-flow direction, optical balance, and category density management directly into digital UI layouts and dashboard architectures.",
+      "dualtrack.dev.title": "Independent Software Engineering Practice",
+      "dualtrack.dev.role": "Web Developer & Systems Builder",
+      "dualtrack.dev.company": "7 Years Hands-on Programming Experience",
+      "dualtrack.dev.location": "Cairo, Egypt",
+      "dualtrack.dev.p1": "Seven continuous years of practical software engineering using Python, PHP, JavaScript, HTML5, CSS3, and MySQL.",
+      "dualtrack.dev.p2": "Independently designed, architected, and deployed 13 complete web systems including 3NF relational database models, enterprise CRM Kanban pipelines, and open-source Arabic RTL components.",
 
       // Skills Section
       "skills.tag": "Core Competencies",
       "skills.title": "Confirmed Technical Stack",
-      "skills.subtitle": "Technologies and engineering disciplines verified and utilized across my projects.",
+      "skills.subtitle": "Technologies and engineering disciplines verified and utilized across my projects (categorized without fake percentage bars).",
 
-      // Projects Section
-      "projects.tag": "Portfolio Repositories",
-      "projects.title": "Featured Engineering Projects",
-      "projects.subtitle": "Independent web systems built to demonstrate architectural discipline, code quality, and domain thinking.",
-      "projects.viewCode": "Source Code",
-      "projects.viewLive": "Live Demo",
-      "projects.highlightsTitle": "Key Technical Highlights:",
-      "projects.syntheticNotice": "Note: Retail & business demo applications use 100% fictional/synthetic data.",
-      "filter.all": "All Projects (13)",
-      "filter.retail": "Retail Tech & VM (4)",
-      "filter.systems": "Operations & CRM (4)",
-      "filter.logistics": "Logistics & Warehouse (1)",
-      "filter.finance": "Finance & Billing (1)",
-      "filter.tools": "Tools & Open Source (2)",
-      "filter.frontend": "Portfolio (1)",
+      // Verification Section
+      "verify.tag": "Public Transparency",
+      "verify.title": "Verification for Recruiters & Institutions",
+      "verify.subtitle": "Every claim, project, and architecture is backed by public source code on GitHub and live deployments.",
+      "verify.card1.title": "1. Source Code Inspection",
+      "verify.card1.desc": "Every project is hosted in a public GitHub repository. Reviewers can inspect commit histories, code conventions, and project structures.",
+      "verify.card1.btn": "View GitHub Profile (reda1472)",
+      "verify.card2.title": "2. Live Functional Testing",
+      "verify.card2.desc": "All 13 projects are deployed and accessible on GitHub Pages. Test POS checkouts, conflict engines, Kanban pipelines, and barcode simulators directly.",
+      "verify.card2.btn": "Browse Deployed Systems",
+      "verify.card3.title": "3. Professional Identity",
+      "verify.card3.desc": "Connect and cross-verify employment and professional background through my official LinkedIn profile with 4,200+ followers.",
+      "verify.card3.btn": "Connect on LinkedIn",
 
       // Services Section
       "services.tag": "What I Build",
-      "services.title": "Professional Services",
-      "services.subtitle": "Practical digital services and development capabilities I provide to businesses and individuals.",
+      "services.title": "Professional Services & Capabilities",
+      "services.subtitle": "Practical digital services and development capabilities I provide to businesses and technical teams.",
 
       // Blog Section
       "blog.tag": "Engineering Notes",
@@ -85,10 +144,10 @@ const I18N = (function () {
       "blog.backToList": "Back to all articles",
 
       // CV Section
-      "cv.tag": "Professional Profile",
-      "cv.title": "Curriculum Vitae",
-      "cv.subtitle": "Transparent, verifiable record of employment history, technical skills, and software development practice.",
-      "cv.btn.print": "Print / Save as PDF",
+      "cv.tag": "Curriculum Vitae",
+      "cv.title": "Verified Professional Record",
+      "cv.subtitle": "A transparent record of official employment, technical competencies, and software projects ready for review and printing.",
+      "cv.btn.print": "Print Official CV / Save as PDF",
       "cv.sec.summary": "Professional Summary",
       "cv.sec.experience": "Work & Technical Experience",
       "cv.sec.skills": "Verified Technical Skills",
@@ -96,92 +155,152 @@ const I18N = (function () {
       "cv.sec.education": "Background & Information",
 
       // Contact Section
-      "contact.tag": "Let's Connect",
+      "contact.tag": "Let's Build Something Useful",
       "contact.title": "Get in Touch",
-      "contact.subtitle": "Have a project in mind, an inquiry, or want to discuss technical collaboration? Reach out directly.",
-      "contact.emailLabel": "Email Address",
-      "contact.copyEmail": "Copy Email",
+      "contact.subtitle": "Have an engineering inquiry, business system requirement, or professional collaboration opportunity? Reach out directly.",
+      "contact.emailLabel": "Verified Email Address",
+      "contact.copyEmail": "Copy Email Address",
       "contact.copied": "Copied to clipboard!",
+      "contact.locationLabel": "Location",
+      "contact.locationVal": "Cairo, Egypt (Open to Global Remote / Relocation Opportunities)",
       "contact.form.name": "Your Name",
-      "contact.form.namePlaceholder": "e.g. John Doe",
+      "contact.form.namePlaceholder": "e.g. John Doe / Technical Recruiter",
       "contact.form.email": "Your Email",
-      "contact.form.emailPlaceholder": "e.g. john@example.com",
+      "contact.form.emailPlaceholder": "e.g. john@company.com",
       "contact.form.subject": "Subject",
-      "contact.form.subjectPlaceholder": "e.g. Project Inquiry / Business Website",
+      "contact.form.subjectPlaceholder": "e.g. System Development Inquiry / Employment Opportunity",
       "contact.form.message": "Message",
-      "contact.form.messagePlaceholder": "Tell me about your project or requirements...",
+      "contact.form.messagePlaceholder": "Describe your system requirements or inquiry...",
       "contact.form.send": "Send Message via Email Client",
 
       // Footer
       "footer.rights": "All rights reserved.",
-      "footer.tagline": "Built with pure HTML, modern CSS, and JavaScript. 100% authentic engineering."
+      "footer.tagline": "Crafted with pure HTML5, modern CSS tokens, and JavaScript. 100% verified engineering practice."
     },
 
     ar: {
       // Navigation
       "nav.home": "الرئيسية",
-      "nav.about": "عن المطور",
+      "nav.featured": "الأنظمة الكبرى",
+      "nav.projects": "المشاريع الـ 13",
+      "nav.dualtrack": "المسار المهني",
       "nav.skills": "المهارات والتقنيات",
-      "nav.projects": "المشاريع البرمجية",
+      "nav.verify": "التوثيق والتحقق",
       "nav.services": "الخدمات",
       "nav.blog": "المدونة التقنية",
       "nav.cv": "السيرة الذاتية",
       "nav.contact": "تواصل معي",
 
       // Hero Section
-      "hero.badge": "متاح للمشاريع البرمجية المختارة",
+      "hero.verifiedBadge": "معرض برمجي موثق رسمياً • القاهرة، مصر",
       "hero.greeting": "مرحباً، أنا",
       "hero.name": "رضا محمد صلاح",
-      "hero.title": "مطور ويب وبناء أنظمة رقمية",
-      "hero.lead": "خبرة برمجية تطبيقية تمتد لـ 7 سنوات في برمجة وتطوير الويب، وبناء المواقع العملية، لوحات التحكم الإدارية، والواجهات العربية (RTL) المتكاملة.",
-      "hero.cta.projects": "استعرض المشاريع",
-      "hero.cta.contact": "تواصل معي",
-      "hero.cta.cv": "السيرة الذاتية الكاملة",
+      "hero.title": "مطور ويب ومهندس أنظمة رقمية",
+      "hero.lead": "7 سنوات من الممارسة البرمجية التطبيقية في هندسة وتطوير أنظمة الويب التجارية، لوحات التحكم التشغيلية، تصميم قواعد البيانات العلائقية (3NF MySQL)، وبناء الواجهات العربية ثنائية الاتجاه (RTL/LTR) بأعلى درجات الدقة.",
+      "hero.cta.featured": "استعراض الأنظمة الكبرى",
+      "hero.cta.projects": "تصفح المشاريع الـ 13",
+      "hero.cta.github": "بروفايل GitHub",
+      "hero.cta.linkedin": "لينكد إن",
+      "hero.cta.cv": "السيرة الذاتية الموثقة",
       "hero.stat.exp": "سنوات خبرة برمجية تطبيقية",
-      "hero.stat.focus": "متخصص في واجهات الـ RTL العربية",
-      "hero.stat.quality": "معايير برمجية وإنتاجية عالية",
+      "hero.stat.systems": "أنظمة برمجية حية منشورة",
+      "hero.stat.focus": "متخصص في الواجهات العربية RTL",
+      "hero.stat.quality": "بيانات ومشاريع موثقة 100%",
 
-      // About Section
-      "about.tag": "الملف والنبذة المهنية",
-      "about.title": "هندسة حلول الويب العملية بأعلى درجات الدقة والترتيب",
-      "about.lead": "الجمع بين البناء البرمجي المنضبط والحس البصري العالي في التنسيق والهيكلة.",
-      "about.p1": "أنا مطور ويب مقيم في مصر، أمتلك خبرة برمجية عملية وتطبيقية تمتد لـ 7 سنوات. قمت خلالها ببناء وتطوير تطبيقات الويب، لوحات التحكم الإدارية، وأنظمة قواعد البيانات بالاعتماد على تقنيات Python, PHP, JavaScript, HTML, CSS, و MySQL.",
-      "about.p2": "إلى جانب عملي البرمجي المستقل، أعمل حالياً بوظيفتي الرسمية كمنسق عروض بصرية وتنسيق معارض (Visual Merchandiser / Display Coordinator) في شركة النصر (AL NASSER). تمنحني هذه الخلفية المهنية فهماً استثنائياً للتوزيع المكاني، التناسق البصري، والانتباه الشديد للتفاصيل — وهي مبادئ أنقلها مباشرة إلى تصميم واجهات المستخدم وسلاسة التنقل وسرعة الاستجابة.",
-      "about.p3": "أؤمن التزاماً كاملاً بالحرفية الصادقة والشفافة: لا أعتمد على أطر عمل متضخمة بلا داعٍ، ولا أستخدم إحصاءات أو ادعاءات غير حقيقية، بل أركز على كتابة كود نظيف وقابل للصيانة يحل مشاكل واقعية.",
-      "about.info.location": "الموقع الجغرافي",
-      "about.info.location.val": "مصر",
-      "about.info.languages": "اللغات",
-      "about.info.languages.val": "العربية (اللغة الأم)، الإنجليزية (مهنية)",
-      "about.info.employment": "الوظيفة الرسمية الحالية",
-      "about.info.employment.val": "منسق عروض بصرية (Visual Merchandiser) في شركة النصر",
-      "about.info.codeExp": "الخبرة البرمجية",
-      "about.info.codeExp.val": "7 سنوات من الممارسة البرمجية التطبيقية",
+      // Value Proposition / Strengths
+      "strengths.tag": "المبادئ الهندسية",
+      "strengths.title": "منهجيتي في بناء البرمجيات",
+      "strengths.subtitle": "نهج هندسي عملي يركز على خدمة أهداف الأعمال، سرعة الأداء، وسهولة الصيانة طويلة المدى.",
+      "strengths.s1.title": "معمارية موجهة للأعمال (Business-First)",
+      "strengths.s1.desc": "بناء برمجيات تحل اختناقات تشغيلية حقيقية: ضبط عجز المخزون، وضوح مراحل المبيعات، وأتمتة الفواتير اليومية.",
+      "strengths.s2.title": "سلامة قواعد البيانات العلائقية",
+      "strengths.s2.desc": "تطبيق معيار التطبيع الثالث (3NF) لقواعد بيانات MySQL مع المفاتيح الأجنبية والفهارس وسجلات تدقيق العمليات.",
+      "strengths.s3.title": "هندسة الواجهات العربية (RTL الأصيل)",
+      "strengths.s3.desc": "واجهات ثنائية الاتجاه مبنية كلياً بخصائص CSS المنطقية مع مراعاة الإيقاع الطباعي لخط Cairo العربي المتزن.",
+      "strengths.s4.title": "أداء نقي بدون بطء أو حزم زائدة",
+      "strengths.s4.desc": "الابتعاد عن الاعتماديات الزائدة والتركيز على كود نقي (HTML5 / Modern CSS / Vanilla JS) يعمل في أجزاء من الثانية.",
 
-      // Skills Section
-      "skills.tag": "المهارات والقدرات",
-      "skills.title": "التقنيات المؤكدة والمعتمدة",
-      "skills.subtitle": "التقنيات والممارسات الهندسية المؤكدة والمستخدمة فعلياً في المشاريع.",
+      // Featured Work (Flagship Case Studies)
+      "featured.tag": "دراسات الحالة الكبرى",
+      "featured.title": "الأنظمة البرمجية الرئيسية المميزة",
+      "featured.subtitle": "استعراض هندسي متعمق للمعمارية البرمجية ومسارات العمل لأبرز الأنظمة التشغيلية والمخزنية ومكتبات الأكواد.",
+      "featured.openCaseStudy": "دراسة الحالة والمعمارية الهندسية",
+      "featured.viewLive": "المعاينة الحية المباشرة",
+      "featured.viewCode": "الكود على GitHub",
 
-      // Projects Section
-      "projects.tag": "مستودعات المشاريع",
-      "projects.title": "المشاريع البرمجية المميزة",
-      "projects.subtitle": "أنظمة ويب مستقلة مبنية لإثبات الانضباط المعماري، جودة الكود، والتفكير البرمجي المتزن.",
+      // Case Study Modal
+      "casestudy.badge": "دراسة حالة النظام",
+      "casestudy.problem": "المشكلة والهدف التشغيلي",
+      "casestudy.solution": "الحل الهندسي والتنفيذ البرمجي",
+      "casestudy.architecture": "المعمارية وهيكلة البيانات",
+      "casestudy.features": "أبرز الخصائص والقدرات التشغيلية",
+      "casestudy.techStack": "التقنيات المؤكدة المستخدمة",
+      "casestudy.metricsTitle": "مؤشرات الأداء والمعايير الهندسية",
+      "casestudy.openDemo": "فتح المعاينة الحية المباشرة ↗",
+      "casestudy.viewGithub": "فحص الكود المصدري على GitHub ↗",
+      "casestudy.close": "إغلاق النافذة (Esc)",
+
+      // All Projects Section
+      "projects.tag": "المنظومة الكاملة",
+      "projects.title": "كافة المشاريع والأنظمة (13 مشروعاً)",
+      "projects.subtitle": "تصفح كافة مشاريع المنظومة مع الفلاتر التفاعلية المباشرة وروابط التحقق الحية.",
       "projects.viewCode": "الكود المصدري",
       "projects.viewLive": "المعاينة المباشرة",
+      "projects.viewDetails": "تفاصيل دراسة الحالة",
       "projects.highlightsTitle": "أبرز الخصائص التقنية:",
-      "projects.syntheticNotice": "ملاحظة: المشاريع التجريبية والتجارية تستخدم بيانات اصطناعية وتجريبية بنسبة 100%.",
+      "projects.syntheticNotice": "ملاحظة: كافة التطبيقات التجارية والتجريبية تستخدم بيانات اصطناعية وافتراضية بنسبة 100%.",
+
+      // Category Filters
       "filter.all": "عرض الكل (13)",
       "filter.retail": "تكنولوجيا المتاجر والعرض البصري (4)",
-      "filter.systems": "إدارة الأعمال والعملاء (4)",
+      "filter.business": "إدارة الأعمال والتشغيل (2)",
+      "filter.crm": "إدارة العملاء والمبيعات (1)",
       "filter.logistics": "المخازن واللوجستيات (1)",
       "filter.finance": "الأنظمة المالية والفواتير (1)",
       "filter.tools": "أدوات برمجية ومفتوحة المصدر (2)",
-      "filter.frontend": "المعرض البرمجي (1)",
+      "filter.ecommerce": "المتاجر الإلكترونية (1)",
+      "filter.frontend": "المعرض البرمجي والتوثيق (1)",
+
+      // Professional Dual-Track Background
+      "dualtrack.tag": "المسار المهني والتطبيقي",
+      "dualtrack.title": "المسار المهني الشفاف والممارسة البرمجية",
+      "dualtrack.subtitle": "فصل شفاف وصادق بين الوظيفة الرسمية الحالية والممارسة البرمجية المستقلة الممتدة لـ 7 سنوات.",
+      "dualtrack.emp.title": "الوظيفة الرسمية الحالية",
+      "dualtrack.emp.role": "منسق عروض بصرية وفاترينات (Visual Merchandiser)",
+      "dualtrack.emp.company": "شركة النصر — AL NASSER (مجموعة فيصل الرشيد)",
+      "dualtrack.emp.location": "مصر • كبرى الفروع (القاهرة التجمع، المنصورة، طنطا، دمنهور)",
+      "dualtrack.emp.p1": "تنسيق عروض المتاجر، هندسة واجهات وفاترينات العرض الخارجية (#WindowDisplay)، والحملات الموسمية (تشكيلات الشتاء، العودة للمدارس) في شبكة المعارض الكبرى.",
+      "dualtrack.emp.p2": "التكامل مع البرمجة: نقل الانضباط المكاني البصري، توجيه حركة العين، التوازن البصري، وكثافة عرض الأصناف مباشرة إلى تصميم وتخطيط واجهات الأنظمة واللوحات الرقمية.",
+      "dualtrack.dev.title": "الممارسة البرمجية المستقلة",
+      "dualtrack.dev.role": "مطور ويب ومهندس أنظمة رقمية",
+      "dualtrack.dev.company": "خبرة برمجية تطبيقية تمتد لـ 7 سنوات",
+      "dualtrack.dev.location": "القاهرة، مصر",
+      "dualtrack.dev.p1": "سبع سنوات متواصلة من الممارسة البرمجية الذاتية وكتابة الأكواد باستخدام Python وPHP وJavaScript وHTML5 وCSS3 وMySQL.",
+      "dualtrack.dev.p2": "تصميم وتطوير ونشر 13 نظاماً برمجياً متكاملاً بشكل مستقل يشمل قواعد بيانات MySQL 3NF، لوحات تحكم، أنظمة كانبان للمبيعات، ومكتبة مكونات عربية مفتوحة المصدر.",
+
+      // Skills Section
+      "skills.tag": "الكفاءات البرمجية",
+      "skills.title": "التقنيات المؤكدة والمعتمدة",
+      "skills.subtitle": "التقنيات والممارسات الهندسية المؤكدة والمستخدمة فعلياً في بناء الأنظمة (مصنفة بدون أشرطة نسب مئوية وهمية).",
+
+      // Verification Section
+      "verify.tag": "الشفافية الكاملة",
+      "verify.title": "دليل التحقق للشركات وجهات التوظيف والسفارات",
+      "verify.subtitle": "كل نظام، مؤشر رقمي، أو مخطط قاعدة بيانات معروض هنا مدعوم بأكواد مصدرية مفتوحة ومعاينات حية ومباشرة.",
+      "verify.card1.title": "1. فحص الكود المصدري",
+      "verify.card1.desc": "كل مشروع يمتلك مستودعاً مفتوحاً على GitHub. يمكن فحص سجل التعديلات (Commit history)، وتناسق الأكواد، والبنية المعمارية.",
+      "verify.card1.btn": "زيارة بروفايل GitHub (reda1472)",
+      "verify.card2.title": "2. التجربة الحية المباشرة",
+      "verify.card2.desc": "جميع المشاريع الـ 13 منشورة وتعمل مباشرة عبر GitHub Pages. اختبر نقطة البيع، محاكي الباركود، لوحة كانبان، ونظام حجز المواعيد بنفسك.",
+      "verify.card2.btn": "استكشاف الأنظمة المنشورة",
+      "verify.card3.title": "3. الهوية والتوثيق المهني",
+      "verify.card3.desc": "تواصل وتأكد من السيرة والخبرات المهنية عبر حسابي الرسمي على LinkedIn الذي يضم أكثر من 4,200 متابع.",
+      "verify.card3.btn": "التواصل عبر LinkedIn",
 
       // Services Section
       "services.tag": "ما أقدمه",
       "services.title": "الخدمات المهنية والتقنية",
-      "services.subtitle": "حلول رقمية عملية وخدمات برمجية دقيقة أقدمها للأنشطة التجارية والمشاريع المهنية.",
+      "services.subtitle": "حلول رقمية عملية وخدمات برمجية دقيقة أقدمها للأنشطة التجارية والشركات التقنية.",
 
       // Blog Section
       "blog.tag": "أوراق وملاحظات هندسية",
@@ -192,9 +311,9 @@ const I18N = (function () {
 
       // CV Section
       "cv.tag": "الملف المهني الموثق",
-      "cv.title": "السيرة الذاتية (CV)",
-      "cv.subtitle": "سجل مهني شفاف وموثوق للخبرات العملية والوظيفية والمهارات البرمجية المعتمدة.",
-      "cv.btn.print": "طباعة / حفظ كملف PDF",
+      "cv.title": "السيرة الذاتية الرسمية (CV)",
+      "cv.subtitle": "سجل مهني شفاف وموثوق للخبرات العملية والوظيفية والمهارات البرمجية المعتمدة، جاهز للطباعة والحفظ.",
+      "cv.btn.print": "طباعة السيرة الذاتية / حفظ كملف PDF",
       "cv.sec.summary": "الملخص المهني",
       "cv.sec.experience": "الخبرات العملية والتطوير البرمجي",
       "cv.sec.skills": "المهارات التقنية المؤكدة",
@@ -202,137 +321,119 @@ const I18N = (function () {
       "cv.sec.education": "البيانات والمعلومات الأساسية",
 
       // Contact Section
-      "contact.tag": "تواصل معي",
+      "contact.tag": "تواصل مهني موثق",
       "contact.title": "بدء التواصل والتعاون",
-      "contact.subtitle": "هل لديك استفسار، مشروع ترغب في تنفيذه، أو فرصة تعاون تقني؟ يسعدني تواصلك المباشر.",
-      "contact.emailLabel": "البريد الإلكتروني",
-      "contact.copyEmail": "نسخ البريد",
+      "contact.subtitle": "هل لديك استفسار تقني، مشروع ترغب في تنفيذه، أو فرصة عمل وتعاون مؤسسي؟ يسعدني تواصلك المباشر.",
+      "contact.emailLabel": "البريد الإلكتروني المعتمد",
+      "contact.copyEmail": "نسخ البريد الإلكتروني",
       "contact.copied": "تم نسخ البريد بنجاح!",
+      "contact.locationLabel": "الموقع الجغرافي",
+      "contact.locationVal": "القاهرة، مصر (متاح للعمل عن بُعد ولفرص الانتقال الدولية)",
       "contact.form.name": "الاسم الكامل",
-      "contact.form.namePlaceholder": "مثال: أحمد محمد",
+      "contact.form.namePlaceholder": "مثال: أحمد محمد / مسؤول التوظيف",
       "contact.form.email": "البريد الإلكتروني",
-      "contact.form.emailPlaceholder": "مثال: ahmed@example.com",
-      "contact.form.subject": "موضوع الرسالة",
-      "contact.form.subjectPlaceholder": "مثال: استفسار عن موقع تجاري",
-      "contact.form.message": "نص الرسالة",
-      "contact.form.messagePlaceholder": "اكتب تفاصيل مشروعك أو متطلباتك...",
-      "contact.form.send": "إرسال عبر تطبيق البريد",
+      "contact.form.emailPlaceholder": "مثال: ahmed@company.com",
+      "contact.form.subject": "الموضوع",
+      "contact.form.subjectPlaceholder": "مثال: استفسار عن مشروع برمجي / فرصة عمل",
+      "contact.form.message": "تفاصيل الرسالة",
+      "contact.form.messagePlaceholder": "اكتب متطلبات النظام أو الاستفسار...",
+      "contact.form.send": "إرسال الرسالة عبر البريد",
 
       // Footer
       "footer.rights": "جميع الحقوق محفوظة.",
-      "footer.tagline": "مبني بأكواد HTML و CSS و JavaScript نقية، وبأعلى درجات الأصالة الهندسية."
+      "footer.tagline": "تم البناء باستخدام HTML5 ومعايير CSS الحديثة وجافاسكريبت نقية. ممارسة برمجية حقيقية وموثقة 100%."
     }
   };
 
-  let currentLang = LANG_EN;
-
-  function getPreferredLanguage() {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored === LANG_EN || stored === LANG_AR) {
-      return stored;
-    }
-    // Default to English as per Master Directive
-    return LANG_EN;
-  }
+  let currentLang = localStorage.getItem(STORAGE_KEY) || LANG_EN;
 
   function setLanguage(lang) {
     if (lang !== LANG_EN && lang !== LANG_AR) lang = LANG_EN;
     currentLang = lang;
     localStorage.setItem(STORAGE_KEY, lang);
 
-    document.documentElement.setAttribute('lang', lang);
-    document.documentElement.setAttribute('dir', lang === LANG_AR ? 'rtl' : 'ltr');
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === LANG_AR ? 'rtl' : 'ltr';
 
-    updateStaticTranslations();
-    updateLanguageButtons();
+    if (lang === LANG_AR) {
+      document.body.classList.add('rtl');
+      document.body.classList.remove('ltr');
+    } else {
+      document.body.classList.add('ltr');
+      document.body.classList.remove('rtl');
+    }
 
-    // Trigger re-render of dynamic components (projects, skills, articles, cv, services)
+    applyTranslations();
+
+    // Notify app if initialized
     if (window.App && typeof window.App.renderDynamicContent === 'function') {
       window.App.renderDynamicContent();
+    }
+
+    // Dispatch event
+    window.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang: lang } }));
+  }
+
+  function applyTranslations() {
+    const dict = translations[currentLang] || translations[LANG_EN];
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key]) {
+        el.textContent = dict[key];
+      }
+    });
+
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      if (dict[key]) {
+        el.setAttribute('placeholder', dict[key]);
+      }
+    });
+
+    document.querySelectorAll('[data-i18n-title]').forEach(el => {
+      const key = el.getAttribute('data-i18n-title');
+      if (dict[key]) {
+        el.setAttribute('title', dict[key]);
+      }
+    });
+
+    const langToggleBtn = document.querySelector('[data-lang-toggle]');
+    if (langToggleBtn) {
+      langToggleBtn.textContent = currentLang === LANG_EN ? 'عربي' : 'English';
+      langToggleBtn.setAttribute('aria-label', currentLang === LANG_EN ? 'Switch to Arabic' : 'التحويل للإنجليزية');
     }
   }
 
   function t(key) {
-    if (translations[currentLang] && translations[currentLang][key]) {
-      return translations[currentLang][key];
-    }
-    if (translations[LANG_EN] && translations[LANG_EN][key]) {
-      return translations[LANG_EN][key];
-    }
-    return key;
+    const dict = translations[currentLang] || translations[LANG_EN];
+    return dict[key] || key;
   }
 
-  function updateStaticTranslations() {
-    const elements = document.querySelectorAll('[data-i18n]');
-    elements.forEach((el) => {
-      const key = el.getAttribute('data-i18n');
-      const translation = t(key);
-      if (translation) {
-        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-          if (el.hasAttribute('placeholder')) {
-            el.setAttribute('placeholder', translation);
-          }
-        } else {
-          el.textContent = translation;
-        }
-      }
-    });
-
-    const placeholders = document.querySelectorAll('[data-i18n-placeholder]');
-    placeholders.forEach((el) => {
-      const key = el.getAttribute('data-i18n-placeholder');
-      const translation = t(key);
-      if (translation) {
-        el.setAttribute('placeholder', translation);
-      }
-    });
-
-    const titles = document.querySelectorAll('[data-i18n-title]');
-    titles.forEach((el) => {
-      const key = el.getAttribute('data-i18n-title');
-      const translation = t(key);
-      if (translation) {
-        el.setAttribute('title', translation);
-        el.setAttribute('aria-label', translation);
-      }
-    });
+  function getLang() {
+    return currentLang;
   }
 
-  function updateLanguageButtons() {
-    const buttons = document.querySelectorAll('[data-lang-toggle]');
-    buttons.forEach((btn) => {
-      const targetLang = currentLang === LANG_EN ? LANG_AR : LANG_EN;
-      const label = currentLang === LANG_EN ? 'عربي' : 'English';
-      btn.textContent = label;
-      btn.setAttribute('aria-label', currentLang === LANG_EN ? 'تغيير اللغة إلى العربية' : 'Switch language to English');
-    });
+  function toggleLanguage() {
+    setLanguage(currentLang === LANG_EN ? LANG_AR : LANG_EN);
   }
 
   function init() {
-    currentLang = getPreferredLanguage();
-    document.documentElement.setAttribute('lang', currentLang);
-    document.documentElement.setAttribute('dir', currentLang === LANG_AR ? 'rtl' : 'ltr');
-
-    document.addEventListener('DOMContentLoaded', () => {
-      updateStaticTranslations();
-      updateLanguageButtons();
-
-      const buttons = document.querySelectorAll('[data-lang-toggle]');
-      buttons.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          const nextLang = currentLang === LANG_EN ? LANG_AR : LANG_EN;
-          setLanguage(nextLang);
-        });
-      });
-    });
+    setLanguage(currentLang);
+    const toggleBtn = document.querySelector('[data-lang-toggle]');
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', toggleLanguage);
+    }
   }
 
-  init();
-
   return {
+    init: init,
     t: t,
-    getLang: () => currentLang,
-    setLang: setLanguage,
-    refresh: updateStaticTranslations
+    getLang: getLang,
+    setLanguage: setLanguage,
+    toggleLanguage: toggleLanguage
   };
 })();
+
+if (typeof window !== 'undefined') {
+  window.I18N = I18N;
+}
