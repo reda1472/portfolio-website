@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechCraft Hub | منصة الشروحات والمعماريات الهندسية الحديثة</title>
-  <meta name="description" content="منصة ومعرض الشروحات والمشاريع الهندسية التفاعلية. أدلة معمارية تطبيقية، كتل أكواد جاهزة للبناء، ومحاكاة حية لمكونات الويب والذكاء الاصطناعي والسحابة.">
-  
-  <!-- Preconnect to Google Fonts -->
+  <title>TechCraft Hub | منصة المعماريات والشروحات الهندسية 2026</title>
+  <meta name="description" content="منصة الشروحات والمعماريات الهندسية المتقدمة. أدلة إنتاجية خطوة بخطوة، مخططات تفاعلية، ساندبوكس مباشر، وأكواد جاهزة للبناء.">
+
+  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Futuristic Styles -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
 
-  <!-- Site Header -->
+  <!-- Site Navigation Header -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="#" class="brand-logo" aria-label="TechCraft Hub Home">
         <div class="brand-icon-box">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
             <polyline points="2 17 12 22 22 17"></polyline>
             <polyline points="2 12 12 17 22 12"></polyline>
@@ -30,13 +30,13 @@
         </div>
         <div class="brand-meta">
           <span class="brand-title" data-i18n="brand.name">تيك كرافت هاب</span>
-          <span class="brand-subtitle" data-i18n="brand.tagline">منصة الشروحات والمعماريات</span>
+          <span class="brand-tagline" data-i18n="brand.tagline">منصة الشروحات والمعماريات</span>
         </div>
       </a>
 
-      <!-- Desktop Nav -->
+      <!-- Navigation Menu -->
       <nav aria-label="Main Navigation">
-        <ul class="nav-links">
+        <ul class="nav-menu">
           <li><a href="#blueprints-section" class="nav-link active" data-i18n="nav.blueprints">الشروحات والمعماريات</a></li>
           <li><a href="#sandbox-section" class="nav-link" data-i18n="nav.sandbox">الساندبوكس التفاعلي</a></li>
           <li><a href="#roadmaps-section" class="nav-link" data-i18n="nav.roadmaps">مسارات التعلم</a></li>
@@ -46,10 +46,10 @@
 
       <!-- Action Buttons -->
       <div class="header-actions">
-        <button id="lang-toggle-btn" class="action-btn lang-btn" aria-label="Toggle Language">
+        <button id="lang-toggle-btn" class="icon-btn lang-switch-btn" aria-label="Toggle Language">
           English
         </button>
-        <button id="theme-toggle-btn" class="action-btn" aria-label="Toggle Theme">
+        <button id="theme-toggle-btn" class="icon-btn" aria-label="Toggle Theme">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -66,210 +66,283 @@
     </div>
   </header>
 
-  <main id="main-content">
-    <!-- Hero Section -->
+  <main>
+    <!-- Futuristic Hero Section -->
     <section class="hero-section">
       <div class="container">
-        <div class="hero-badge-container">
-          <span class="pulse-dot"></span>
+        <!-- Live Badge -->
+        <div class="hero-pill-badge">
+          <span class="live-pulse-dot"></span>
           <span data-i18n="hero.badge">منصة المعرفة والمشاريع الهندسية 2026</span>
         </div>
 
-        <h1 class="hero-title">
+        <!-- Headline -->
+        <h1 class="hero-heading">
           <span data-i18n="hero.title_start">احترف الهندسة البرمجية مع</span><br>
-          <span class="gradient-text" data-i18n="hero.title_highlight">شروحات معمارية ومشاريع متقدمة</span>
+          <span class="grad-text" data-i18n="hero.title_highlight">شروحات معمارية ومشاريع متقدمة</span>
         </h1>
 
-        <p class="hero-subtitle" data-i18n="hero.subtitle">
+        <!-- Subtitle -->
+        <p class="hero-lead" data-i18n="hero.subtitle">
           استكشف أدلة هندسية إنتاجية، مخططات معمارية تفاعلية، وأكواد جاهزة للبناء المباشر في الذكاء الاصطناعي والويب والسحابة. شروحات حقيقية تخاطب عقل المهندس.
         </p>
 
-        <div class="hero-cta-group">
-          <a href="#blueprints-section" class="btn btn-primary" data-i18n="hero.cta_explore">
-            ⚡ استكشف كافة الشروحات
+        <!-- CTAs -->
+        <div class="hero-cta-bar">
+          <a href="#blueprints-section" class="btn-futuristic btn-primary-grad" data-i18n="hero.cta_explore">
+            <span>⚡ استكشف كافة الشروحات</span>
           </a>
-          <a href="#sandbox-section" class="btn btn-secondary" data-i18n="hero.cta_sandbox">
-            🧪 جرب الساندبوكس التفاعلي
+          <a href="#sandbox-section" class="btn-futuristic btn-glass-subtle" data-i18n="hero.cta_sandbox">
+            <span>🧪 جرب الساندبوكس التفاعلي</span>
           </a>
+        </div>
+
+        <!-- Futuristic Interactive System Visualizer Terminal -->
+        <div class="hero-visualizer-container">
+          <div class="terminal-top-bar">
+            <div class="terminal-dots">
+              <span class="t-dot t-dot-red"></span>
+              <span class="t-dot t-dot-yellow"></span>
+              <span class="t-dot t-dot-green"></span>
+            </div>
+            <span class="terminal-title">live-telemetry://techcraft-mesh.cluster/v3.4</span>
+            <span class="terminal-badge">ONLINE • 99.98%</span>
+          </div>
+
+          <div class="terminal-body">
+            <div class="terminal-flow-side">
+              <div class="node-box">
+                <div class="node-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                    <rect x="9" y="9" width="6" height="6"></rect>
+                  </svg>
+                </div>
+                <div class="node-info">
+                  <h4>Autonomous Agent Cluster</h4>
+                  <p>Orchestrator routing tasks to specialized LLM workers</p>
+                </div>
+              </div>
+
+              <div class="node-box">
+                <div class="node-icon" style="background: rgba(6, 182, 212, 0.15); color: var(--neon-cyan);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                  </svg>
+                </div>
+                <div class="node-info">
+                  <h4>Vector Memory & ChromaDB</h4>
+                  <p>Dense embeddings retention & hybrid semantic retrieval</p>
+                </div>
+              </div>
+
+              <div class="node-box">
+                <div class="node-icon" style="background: rgba(16, 185, 129, 0.15); color: var(--neon-emerald);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  </svg>
+                </div>
+                <div class="node-info">
+                  <h4>Zero-Dependency RTL Core</h4>
+                  <p>CSS Logical properties with bidirectional typography</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="terminal-metrics-side">
+              <div class="log-stream">
+                <div class="log-line"><span class="log-ok">[INIT]</span> <span class="log-dim">Cluster connected at 2026-09-05</span></div>
+                <div class="log-line"><span class="log-ok">[AUTH]</span> <span class="log-cyan">JWT Token Verified in 0.8ms</span></div>
+                <div class="log-line"><span class="log-ok">[FLOW]</span> <span class="log-dim">Event streaming via Kafka orders.bus</span></div>
+                <div class="log-line"><span class="log-ok">[PERF]</span> <span class="log-cyan">LCP: 0.72s | CLS: 0.000 | 60 FPS</span></div>
+                <div class="log-line"><span class="log-ok">[DONE]</span> <span class="log-dim">24 Architecture Blueprints Verified</span></div>
+              </div>
+
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border-subtle); padding-top: 1rem; margin-top: 1.5rem;">
+                <span style="font-size: 0.75rem; color: var(--text-faint);">THROUGHPUT: 52,400 msg/s</span>
+                <span style="font-size: 0.75rem; color: var(--neon-emerald); font-weight: 700;">ALL SYSTEMS GO</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Hero Stats Ribbon -->
-        <div class="hero-stats-grid">
-          <div class="stat-item">
-            <div class="stat-val">24+</div>
-            <div class="stat-lbl" data-i18n="stat.blueprints">شرح معماري وتطبيقي</div>
+        <div class="hero-stats-band">
+          <div class="hero-stat-cell">
+            <div class="h-stat-num">24+</div>
+            <div class="h-stat-txt" data-i18n="stat.blueprints">شرح معماري وتطبيقي</div>
           </div>
-          <div class="stat-item">
-            <div class="stat-val">100%</div>
-            <div class="stat-lbl" data-i18n="stat.code">أكواد برمجية جاهزة</div>
+          <div class="hero-stat-cell">
+            <div class="h-stat-num">100%</div>
+            <div class="h-stat-txt" data-i18n="stat.code">أكواد برمجية جاهزة</div>
           </div>
-          <div class="stat-item">
-            <div class="stat-val">0ms</div>
-            <div class="stat-lbl" data-i18n="stat.bilingual">تبديل فوري عربي/إنجليزي</div>
+          <div class="hero-stat-cell">
+            <div class="h-stat-num">0ms</div>
+            <div class="h-stat-txt" data-i18n="stat.bilingual">تبديل فوري عربي/إنجليزي</div>
           </div>
-          <div class="stat-item">
-            <div class="stat-val">SaaS</div>
-            <div class="stat-lbl" data-i18n="stat.design">تصميم عالمي بمعايير SaaS</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Filter & Search Bar -->
-    <section class="filter-section" id="blueprints-section">
-      <div class="container filter-bar">
-        <!-- Search Input -->
-        <div class="search-input-wrapper">
-          <span class="search-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </span>
-          <input type="text" id="search-input" class="search-input" 
-                 placeholder="ابحث في الشروحات، التقنيات، المعماريات (مثلاً: ذكاء اصطناعي، كافكا، بينتو جريد)..."
-                 data-i18n-placeholder="hero.search_placeholder" 
-                 aria-label="Search Blueprints">
-          <span class="search-kbd">Ctrl + K</span>
-        </div>
-
-        <!-- Chips & Secondary Selectors -->
-        <div class="filter-chips-row">
-          <div id="category-chips" class="category-chips">
-            <!-- Dynamic category buttons rendered via app.js -->
-          </div>
-
-          <div class="secondary-filters">
-            <select id="difficulty-filter" class="filter-select" aria-label="Filter by Difficulty">
-              <option value="all" data-i18n="filter.level_all">كافة المستويات</option>
-              <option value="beginner" data-i18n="filter.level_beginner">مبتدئ</option>
-              <option value="intermediate" data-i18n="filter.level_intermediate">متوسط</option>
-              <option value="advanced" data-i18n="filter.level_advanced">متقدم</option>
-            </select>
-
-            <button id="fav-toggle-btn" class="btn-favorites-toggle" aria-label="Toggle Saved Blueprints">
-              <span>⭐</span> <span data-i18n="filter.favorites">المفضلة</span>
-            </button>
+          <div class="hero-stat-cell">
+            <div class="h-stat-num">SaaS</div>
+            <div class="h-stat-txt" data-i18n="stat.design">تصميم عالمي بمعايير SaaS</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Blueprints Grid Showcase -->
-    <section class="showcase-section">
+    <!-- Filter & Search Section (Spacious, Non-Sticky) -->
+    <section id="blueprints-section" class="filter-section">
       <div class="container">
-        <div class="results-meta-bar">
+        <div class="filter-card-wrapper">
+          <!-- Search Row -->
+          <div class="search-box-row">
+            <span class="search-icon-svg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input type="text" id="search-input" class="search-input-field" 
+                   placeholder="ابحث في الشروحات، التقنيات، المعماريات (مثلاً: ذكاء اصطناعي، كافكا، بينتو جريد)..."
+                   data-i18n-placeholder="hero.search_placeholder" 
+                   aria-label="Search Blueprints">
+            <span class="search-hint-badge">Ctrl + K</span>
+          </div>
+
+          <!-- Category Chips & Controls -->
+          <div class="filter-chips-bar">
+            <div id="category-chips" class="chips-group">
+              <!-- Dynamically populated via app.js with SVG icons -->
+            </div>
+
+            <div class="controls-right">
+              <select id="difficulty-filter" class="select-dropdown" aria-label="Difficulty">
+                <option value="all" data-i18n="filter.level_all">كافة المستويات</option>
+                <option value="beginner" data-i18n="filter.level_beginner">مبتدئ</option>
+                <option value="intermediate" data-i18n="filter.level_intermediate">متوسط</option>
+                <option value="advanced" data-i18n="filter.level_advanced">متقدم</option>
+              </select>
+
+              <button id="fav-toggle-btn" class="bookmark-toggle-btn" aria-label="Toggle Bookmarks">
+                <span>⭐</span> <span data-i18n="filter.favorites">المفضلة</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blueprints Cards Showcase Section -->
+    <section class="blueprints-section">
+      <div class="container">
+        <div class="blueprints-meta-header">
           <span id="results-count" data-i18n="filter.results_count">عرض الشروحات الهندسية</span>
         </div>
 
-        <div id="blueprints-grid" class="blueprints-grid">
-          <!-- Dynamic Blueprint Cards rendered via app.js -->
+        <div id="blueprints-grid" class="cards-showcase-grid">
+          <!-- Injected via app.js with visual canvas headers and SVG icons -->
         </div>
       </div>
     </section>
 
-    <!-- Interactive Sandbox Section -->
+    <!-- Live Interactive Sandbox Studio -->
     <section id="sandbox-section" class="sandbox-section">
       <div class="container">
-        <div class="section-header">
-          <span class="section-badge" data-i18n="sandbox.badge">مختبر البرمجة المباشر</span>
-          <h2 class="section-title" data-i18n="sandbox.title">الساندبوكس البرمجي التفاعلي المباشر</h2>
-          <p class="section-desc" data-i18n="sandbox.subtitle">
+        <div class="section-title-wrap">
+          <span class="sec-pill" data-i18n="sandbox.badge">مختبر البرمجة المباشر</span>
+          <h2 class="sec-title" data-i18n="sandbox.title">الساندبوكس البرمجي التفاعلي المباشر</h2>
+          <p class="sec-desc" data-i18n="sandbox.subtitle">
             عدل خصائص CSS وجرب مكونات الواجهة الحديثة وتأثيرات الزجاج البلوري والتدرجات وشاهد النتيجة لحظياً في المتصفح.
           </p>
         </div>
 
-        <div class="sandbox-workspace">
-          <!-- Editor Panel -->
-          <div class="sandbox-editor-panel">
-            <div class="sandbox-controls-row">
-              <div class="template-pills">
-                <button class="template-pill-btn active" data-template="bento" data-i18n="sandbox.template_bento">بطاقة Bento زجاجية</button>
-                <button class="template-pill-btn" data-template="glow" data-i18n="sandbox.template_glow">زر نيون متوهج</button>
-                <button class="template-pill-btn" data-template="modal" data-i18n="sandbox.template_modal">نافذة زجاجية</button>
+        <div class="studio-grid">
+          <!-- Editor Column -->
+          <div class="studio-editor-box">
+            <div class="studio-bar">
+              <div class="template-selectors">
+                <button class="tpl-btn active" data-template="bento" data-i18n="sandbox.template_bento">بطاقة Bento زجاجية</button>
+                <button class="tpl-btn" data-template="glow" data-i18n="sandbox.template_glow">زر نيون متوهج</button>
+                <button class="tpl-btn" data-template="modal" data-i18n="sandbox.template_modal">نافذة زجاجية</button>
               </div>
+
               <div style="display: flex; gap: 0.5rem;">
-                <button id="sandbox-run-btn" class="btn btn-primary" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" data-i18n="sandbox.run">
+                <button id="sandbox-run-btn" class="btn-futuristic btn-primary-grad" style="padding: 0.45rem 1rem; font-size: 0.85rem;" data-i18n="sandbox.run">
                   ▶ تشغيل
                 </button>
-                <button id="sandbox-reset-btn" class="btn btn-secondary" style="padding: 0.35rem 0.85rem; font-size: 0.8rem;" data-i18n="sandbox.reset">
+                <button id="sandbox-reset-btn" class="btn-futuristic btn-glass-subtle" style="padding: 0.45rem 1rem; font-size: 0.85rem;" data-i18n="sandbox.reset">
                   ↺ استعادة
                 </button>
               </div>
             </div>
-            <textarea id="sandbox-code-input" class="sandbox-textarea" spellcheck="false" aria-label="Sandbox Code Input"></textarea>
+
+            <textarea id="sandbox-code-input" class="code-editor-area" spellcheck="false" aria-label="Live Code Editor"></textarea>
           </div>
 
-          <!-- Live Preview Panel -->
-          <div class="sandbox-preview-panel">
-            <div class="sandbox-preview-bar">
-              <span class="browser-dot dot-red"></span>
-              <span class="browser-dot dot-yellow"></span>
-              <span class="browser-dot dot-green"></span>
-              <span style="font-size: 0.75rem; color: var(--text-muted); margin-inline-start: 0.5rem; font-family: var(--font-mono);">
-                live-renderer://sandbox.local
+          <!-- Preview Column -->
+          <div class="studio-preview-box">
+            <div class="preview-top-dots">
+              <span class="t-dot t-dot-red"></span>
+              <span class="t-dot t-dot-yellow"></span>
+              <span class="t-dot t-dot-green"></span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-faint); margin-inline-start: 0.5rem;">
+                sandbox-viewport://live.render
               </span>
             </div>
-            <iframe id="sandbox-preview-frame" class="sandbox-preview-frame" title="Live Preview"></iframe>
+            <iframe id="sandbox-preview-frame" class="preview-iframe" title="Interactive Preview Frame"></iframe>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Engineering Roadmaps Section -->
-    <section id="roadmaps-section" class="roadmaps-section">
+    <!-- Engineering Tracks & Roadmaps -->
+    <section id="roadmaps-section" class="blueprints-section" style="padding-top: 6rem;">
       <div class="container">
-        <div class="section-header">
-          <span class="section-badge" data-i18n="roadmaps.badge">مسارات التعلم والتخصص</span>
-          <h2 class="section-title" data-i18n="roadmaps.title">مسارات الاحتراف الهندسي 2026</h2>
-          <p class="section-desc" data-i18n="roadmaps.subtitle">
+        <div class="section-title-wrap">
+          <span class="sec-pill" data-i18n="roadmaps.badge">مسارات التعلم والتخصص</span>
+          <h2 class="sec-title" data-i18n="roadmaps.title">مسارات الاحتراف الهندسي 2026</h2>
+          <p class="sec-desc" data-i18n="roadmaps.subtitle">
             مسارات معمارية منظمة تأخذ بيدك من المفاهيم التأسيسية إلى بناء الأنظمة الموزعة والذكية المعقدة.
           </p>
         </div>
 
-        <div class="tracks-grid">
-          <div class="track-card">
-            <div class="track-icon track-icon-ai">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2rem;">
+          <div style="padding: 2.5rem 2rem; border-radius: var(--rad-xl); background: var(--bg-card); border: 1px solid var(--border-subtle); backdrop-filter: blur(16px);">
+            <div style="width: 3.25rem; height: 3.25rem; border-radius: var(--rad-md); background: rgba(6, 182, 212, 0.15); color: var(--neon-cyan); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="4" y="4" width="16" height="16" rx="2"></rect>
                 <rect x="9" y="9" width="6" height="6"></rect>
-                <line x1="9" y1="1" x2="9" y2="4"></line>
-                <line x1="15" y1="1" x2="15" y2="4"></line>
-                <line x1="9" y1="20" x2="9" y2="23"></line>
-                <line x1="15" y1="20" x2="15" y2="23"></line>
               </svg>
             </div>
-            <h3 class="track-title" data-i18n="track.ai_title">مهندس أنظمة ووكلاء الذكاء الاصطناعي</h3>
-            <p class="track-desc" data-i18n="track.ai_desc">
+            <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--text-pure); margin-bottom: 0.75rem;" data-i18n="track.ai_title">مهندس أنظمة ووكلاء الذكاء الاصطناعي</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;" data-i18n="track.ai_desc">
               من تضمين المتجهات وتوجيه الأوامر إلى وكلاء الذكاء الاصطناعي متعددي المهام واستدعاء الأدوات والتصحيح الذاتي.
             </p>
           </div>
 
-          <div class="track-card">
-            <div class="track-icon track-icon-web">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                <polyline points="2 17 12 22 22 17"></polyline>
-                <polyline points="2 12 12 17 22 12"></polyline>
+          <div style="padding: 2.5rem 2rem; border-radius: var(--rad-xl); background: var(--bg-card); border: 1px solid var(--border-subtle); backdrop-filter: blur(16px);">
+            <div style="width: 3.25rem; height: 3.25rem; border-radius: var(--rad-md); background: rgba(99, 102, 241, 0.15); color: var(--neon-indigo); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
               </svg>
             </div>
-            <h3 class="track-title" data-i18n="track.web_title">معماري واجهات الويب فائقة الأداء</h3>
-            <p class="track-desc" data-i18n="track.web_desc">
+            <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--text-pure); margin-bottom: 0.75rem;" data-i18n="track.web_title">معماري واجهات الويب فائقة الأداء</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;" data-i18n="track.web_desc">
               إتقان مؤشرات Core Web Vitals، خصائص CSS المنطقية، الحركات الدقيقة، والتعريب الخالي من العيوب.
             </p>
           </div>
 
-          <div class="track-card">
-            <div class="track-icon track-icon-cloud">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+          <div style="padding: 2.5rem 2rem; border-radius: var(--rad-xl); background: var(--bg-card); border: 1px solid var(--border-subtle); backdrop-filter: blur(16px);">
+            <div style="width: 3.25rem; height: 3.25rem; border-radius: var(--rad-md); background: rgba(168, 85, 247, 0.15); color: var(--neon-violet); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
               </svg>
             </div>
-            <h3 class="track-title" data-i18n="track.cloud_title">معماري الأنظمة السحابية والموزعة</h3>
-            <p class="track-desc" data-i18n="track.cloud_desc">
+            <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--text-pure); margin-bottom: 0.75rem;" data-i18n="track.cloud_title">معماري الأنظمة السحابية والموزعة</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;" data-i18n="track.cloud_desc">
               إدارة تدفق الأحداث مع Kafka، معاملات الـ Saga الموزعة، التخزين المؤقت عبر Redis، وبوابات المايكروسيرفيس.
             </p>
           </div>
@@ -277,16 +350,16 @@
       </div>
     </section>
 
-    <!-- Platform Mission / About -->
-    <section id="about-section" class="roadmaps-section" style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle);">
+    <!-- Platform Concept Section -->
+    <section id="about-section" style="padding-block: 6rem; background: var(--bg-surface); border-top: 1px solid var(--border-subtle);">
       <div class="container">
-        <div class="section-header">
-          <span class="section-badge" data-i18n="about.badge">لماذا تيك كرافت هاب؟</span>
-          <h2 class="section-title" data-i18n="about.title">صُممت من أجل العمق المعماري والاستقلالية</h2>
-          <p class="section-desc" style="margin-bottom: 1.5rem;" data-i18n="about.p1">
+        <div class="section-title-wrap">
+          <span class="sec-pill" data-i18n="about.badge">لماذا تيك كرافت هاب؟</span>
+          <h2 class="sec-title" data-i18n="about.title">صُممت من أجل العمق المعماري والاستقلالية</h2>
+          <p class="sec-desc" style="margin-bottom: 1.5rem;" data-i18n="about.p1">
             تم إنشاء تيك كرافت هاب كمعرض معرفي وهندسي لحل مشكلة متكررة: الشروحات البرمجية السطحية التي تتجاهل واقع الأنظمة الحقيقية والإنتاج الفعلي.
           </p>
-          <p class="section-desc" data-i18n="about.p2">
+          <p class="sec-desc" data-i18n="about.p2">
             كل شرح هنا مكتوب كمخطط معماري حقيقي — يشرح التحديات الفعلية، تصميم قواعد البيانات، تدفق البيانات، وطرق التنفيذ بدون مكتبات ثقيلة غير ضرورية.
           </p>
         </div>
@@ -296,44 +369,40 @@
 
   <!-- Site Footer -->
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="container footer-flex">
       <div>
-        <div style="font-weight: 800; font-size: 1.15rem; color: var(--text-primary); margin-bottom: 0.25rem;" data-i18n="footer.title">
+        <div style="font-weight: 800; font-size: 1.25rem; color: var(--text-pure); margin-bottom: 0.35rem;" data-i18n="footer.title">
           تيك كرافت هاب
         </div>
-        <div style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="footer.desc">
+        <div style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="footer.desc">
           منصة هندسية ومعرفية مستقلة ومفتوحة للشروحات والمشاريع التقنية.
         </div>
       </div>
 
-      <div class="footer-rights">
-        <div data-i18n="footer.rights">© 2026 تيك كرافت هاب. مبنية بأحدث معايير الويب العالمية.</div>
-        <div style="color: var(--accent-cyan); margin-top: 0.25rem;" data-i18n="footer.deploy_hint">مهيأة بالكامل للنشر الفوري على Netlify.</div>
+      <div style="text-align: end;">
+        <div style="font-size: 0.9rem; color: var(--text-muted);" data-i18n="footer.rights">© 2026 تيك كرافت هاب. مبنية بأحدث معايير الويب العالمية.</div>
+        <div style="color: var(--neon-cyan); font-size: 0.85rem; margin-top: 0.35rem; font-weight: 700;" data-i18n="footer.deploy_hint">مهيأة بالكامل للنشر الفوري على Netlify.</div>
       </div>
     </div>
   </footer>
 
-  <!-- Tutorial Deep-Dive Modal Viewer -->
-  <div id="tutorial-modal" class="modal-backdrop" role="dialog" aria-modal="true">
-    <div class="modal-dialog">
-      <div class="modal-header">
-        <div class="modal-title-box">
-          <h2 id="modal-title">Tutorial Title</h2>
-        </div>
-        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Modal">✕</button>
+  <!-- Tutorial Deep Dive Modal -->
+  <div id="tutorial-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <div class="modal-header-band">
+        <h2 id="modal-title">Tutorial Title</h2>
+        <button id="modal-close-btn" class="modal-x-btn" aria-label="Close">✕</button>
       </div>
 
-      <!-- Modal Tabs -->
-      <div class="modal-tabs-bar">
-        <button class="modal-tab-btn active" data-tab="overview" data-i18n="modal.tab_overview">المعمارية ونظرة عامة</button>
-        <button class="modal-tab-btn" data-tab="steps" data-i18n="modal.tab_steps">خطوات البناء والتنفيذ</button>
-        <button class="modal-tab-btn" data-tab="code" data-i18n="modal.tab_code">الأكواد البرمجية</button>
-        <button class="modal-tab-btn" data-tab="sandbox" data-i18n="modal.tab_sandbox">تجربة تفاعلية مباشرة</button>
+      <div class="modal-nav-tabs">
+        <button class="m-tab-btn active" data-tab="overview" data-i18n="modal.tab_overview">المعمارية ونظرة عامة</button>
+        <button class="m-tab-btn" data-tab="steps" data-i18n="modal.tab_steps">خطوات البناء والتنفيذ</button>
+        <button class="m-tab-btn" data-tab="code" data-i18n="modal.tab_code">الأكواد البرمجية</button>
+        <button class="m-tab-btn" data-tab="sandbox" data-i18n="modal.tab_sandbox">تجربة تفاعلية مباشرة</button>
       </div>
 
-      <!-- Modal Body Content -->
-      <div id="modal-body-content" class="modal-body">
-        <!-- Injected via app.js -->
+      <div id="modal-body-content" class="modal-scroll-body">
+        <!-- Injected dynamically via app.js -->
       </div>
     </div>
   </div>
