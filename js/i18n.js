@@ -28,6 +28,7 @@ const TRANSLATIONS = {
 
     // Filters & Controls
     "filter.category_all": "All Blueprints",
+    "filter.category_vm": "Visual Merchandising & Retail",
     "filter.category_ai": "AI & Smart Agents",
     "filter.category_web": "Modern Web & UI",
     "filter.category_cloud": "Cloud & Systems",
@@ -121,7 +122,8 @@ const TRANSLATIONS = {
     "stat.design": "تصميم عالمي بمعايير SaaS",
 
     // Filters & Controls
-    "filter.category_all": "كافة الشروحات والمشاريع",
+    "filter.category_all": "كافة المشاريع والشروحات",
+    "filter.category_vm": "تنسيق العرض وهندسة المتاجر",
     "filter.category_ai": "الذكاء الاصطناعي والوكلاء",
     "filter.category_web": "الويب وتجربة المستخدم",
     "filter.category_cloud": "السحابة والأنظمة الموزعة",

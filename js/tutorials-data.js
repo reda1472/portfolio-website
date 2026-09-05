@@ -1,5 +1,561 @@
-// TechCraft Hub - Master Tutorials & Architecture Blueprints Dataset
+// TechCraft Hub - Master Showcase & Visual Merchandising Engineering Dataset (2026)
 const TUTORIALS_DATA = [
+  // ==========================================
+  // Visual Merchandising & Retail Design (10 Projects with AI Images)
+  // ==========================================
+  {
+    id: "vm-luxstore-facade",
+    category: "vm",
+    difficulty: "advanced",
+    readTime: "20 min",
+    icon: "layout",
+    image: "assets/images/vm/vm-01-facade.jpg",
+    badge: { en: "Retail Architecture", ar: "هندسة واجهات ومتاجر" },
+    title: {
+      en: "LuxStore Facade & 3D Window Display Architecture",
+      ar: "استوديو تصميم واجهات المتاجر ونوافذ العرض الفاخرة ثلاثية الأبعاد"
+    },
+    summary: {
+      en: "Engineering high-end luxury storefronts and theatrical window displays. Master photometric sightlines, dramatic directional spotlights, and bespoke mannequin staging.",
+      ar: "هندسة وتصميم واجهات المتاجر الفاخرة ونوافذ العرض السينمائية. دراسة زوايا الرؤية الخارجية، حسابات الإضاءة المسلطة، وتنسيق منصات المانيكان وفق أعلى معايير بيوت الأزياء العالمية."
+    },
+    tags: ["Window Display", "Facade Architecture", "Spotlight Lux", "Luxury Fashion", "Mannequin Staging"],
+    stats: [
+      { label: { en: "Visual Impact", ar: "قوة الجذب البصري" }, value: "+45%" },
+      { label: { en: "Pedestrian Stop Rate", ar: "نسبة توقف المارة" }, value: "38.4%" },
+      { label: { en: "Contrast Ratio", ar: "نسبة تباين الإضاءة" }, value: "5:1 Theatrical" }
+    ],
+    architecture: {
+      en: "Multi-layered visual depth composition: Front focal plane featuring hero mannequins on brushed brass pedestals, mid-ground architectural arches, and high-CRI 95+ warm spotlighting.",
+      ar: "تركيب بصري ثلاثي الطبقات: طبقة أمامية تضم المانيكانات الرئيسية على منصات نحاسية، طبقة وسطى من الأقواس المعمارية والرخام الداكن، وإضاءة مسلطة دافئة بمعامل CRI 95+."
+    },
+    diagramSteps: [
+      { en: "Sightline & Angle Analysis", ar: "تحليل زوايا رؤية المارة" },
+      { en: "Pyramid Mannequin Staging", ar: "التوزيع الهرمي للمانيكان" },
+      { en: "Photometric Beam Alignment", ar: "توجيه حزم الإضاءة المركزة" },
+      { en: "Prop & Material Contrast", ar: "موازنة المواد والرخام والنحاس" }
+    ],
+    steps: [
+      {
+        title: { en: "1. The 3-Second Pedestrian Sightline Formula", ar: "1. قاعدة الـ 3 ثوانٍ لخط رؤية المارة" },
+        content: {
+          en: "Align the primary focal point at 150cm to 170cm height from ground level to intersect natural human gaze at 4 meters distance from the glass window.",
+          ar: "ضبط نقطة الجذب البصري الرئيسية على ارتفاع 150 إلى 170 سم من مستوى الأرض لتتلاقى مع النظر الطبيعي للمارة على بُعد 4 أمتار من زجاج الواجهة."
+        }
+      },
+      {
+        title: { en: "2. Theatrical Contrast Ratio (5:1)", ar: "2. نسبة التباين المسرحي (5 إلى 1)" },
+        content: {
+          en: "Direct concentrated 3000K warm spotlights at 1500 Lux onto the garments while keeping surrounding backdrop at 300 Lux to create dramatic perceived luxury.",
+          ar: "تسليط إضاءة موجهة دافئة 3000K بشدة 1500 لوكس على الملابس مع إبقاء الخلفية المحيطة عند 300 لوكس لصنع تباين درامي فخم يخطف الأنظار ليلاً."
+        }
+      }
+    ],
+    codeSnippet: `/* CSS / Visual Calculation Matrix for Window Lux Distribution */
+:root {
+  --focal-lux: 1500;
+  --ambient-lux: 300;
+  --contrast-ratio: calc(var(--focal-lux) / var(--ambient-lux)); /* 5.0 Theatrical Ratio */
+  --beam-angle-spotlight: 24deg;
+  --color-temp-kelvin: 3000K;
+  --cri-index: 97;
+}
+
+.window-display-spec {
+  elevation-focal-center: 160cm;
+  mannequin-spacing: 75cm;
+  materials: "Nero Marquina Marble", "Brushed Champagne Brass";
+}`
+  },
+  {
+    id: "vm-mannequin-styling",
+    category: "vm",
+    difficulty: "intermediate",
+    readTime: "16 min",
+    icon: "layout",
+    image: "assets/images/vm/vm-02-mannequin.jpg",
+    badge: { en: "Styling Studio", ar: "استوديو المانيكان" },
+    title: {
+      en: "Haute Couture Mannequin Outfitting & Styling Studio",
+      ar: "استوديو تنسيق وتلبيس المانيكان والأزياء الراقية"
+    },
+    summary: {
+      en: "Master-level visual styling rules: Triangle and pyramid formations, fabric drape physics, silhouette balancing, and multi-piece capsule layering.",
+      ar: "قواعد تنسيق وتلبيس المانيكان الاحترافية: التكوين الهرمي والمثلثي المتوازن، فيزياء انسدال الأقمشة الفاخرة، ومطابقة التدرجات اللونية للمجموعات الموسمية."
+    },
+    tags: ["Mannequin Styling", "Color Harmony", "Silhouette Balance", "Luxury Outfitting", "Visual Merchandising"],
+    stats: [
+      { label: { en: "Full Look Conversion", ar: "تحويل الطقم الكامل" }, value: "+32%" },
+      { label: { en: "Layering Pieces", ar: "متوسط قطع الإطلالة" }, value: "3.8 items" },
+      { label: { en: "Styling Hierarchy", ar: "التوازن الهرمي" }, value: "Triangle Rule" }
+    ],
+    architecture: {
+      en: "Dynamic 3-point triangulation: Central apex mannequin in full editorial eveningwear flanked by two grounded supporting silhouettes creating visual rhythm.",
+      ar: "تكوين مثلثي ثلاثي الأبعاد: مانيكان محوري في قمة التكوين بالإطلالة المسائية الرئيسية، تحيط به إطلالتان مكملتان متوازنتان لصنع إيقاع بصري سلس."
+    },
+    diagramSteps: [
+      { en: "Silhouette & Proportion", ar: "تحديد القوام والنسب" },
+      { en: "Base Outfit Layering", ar: "تلبيس الطبقة الأساسية" },
+      { en: "Capsule Outerwear & Draping", ar: "تنسيق المعطف والانسدال" },
+      { en: "Accessory Anchoring", ar: "إضافة الإكسسوارات والحقائب" }
+    ],
+    steps: [
+      {
+        title: { en: "1. The Triangle Formation Rule", ar: "1. قاعدة التكوين المثلثي المتوازن" },
+        content: {
+          en: "Always position the tallest or most visually complex mannequin at the center-rear apex, with flanking figures staggered 30cm forward and angled 15 degrees inward.",
+          ar: "ضع المانيكان الأكثر تفصيلاً في قمة المثلث في الخلف، مع تقديم المانيكانين الجانبيين بمقدار 30 سم للأمام وتدويرهما 15 درجة نحو المركز لقيادة عين الزائر."
+        }
+      },
+      {
+        title: { en: "2. Pinning & Tailoring Tension", ar: "2. شد وقص وخياطة التثبيت غير المرئي" },
+        content: {
+          en: "Garments must fit as if custom bespoke: use hidden interior dressmaker pins along seam lines to eliminate wrinkles and sculpt ideal drape.",
+          ar: "يجب أن تظهر القطع وكأنها خياطة خاصة ومفصلة: استخدم دبابيس التثبيت المخفية على طول خطوط الخياطة الداخلية لإبراز القوام بدون أي تجاعيد غير مقصودة."
+        }
+      }
+    ],
+    codeSnippet: `// Mannequin Styling Proportion Rules
+const STYLING_RULES = {
+  formation: "Dynamic Triangle",
+  apexMannequin: { heightOffset: "+15cm", angle: "0deg", role: "Hero Statement" },
+  leftFlank: { offsetZ: "-30cm", angle: "+15deg", role: "Complementary Monochromatic" },
+  rightFlank: { offsetZ: "-30cm", angle: "-15deg", role: "Casual Tailored" },
+  colorPalette: ["Midnight Navy", "Forest Green", "Champagne Silk", "Charcoal Cashmere"]
+};`
+  },
+  {
+    id: "vm-planogram-density",
+    category: "vm",
+    difficulty: "advanced",
+    readTime: "22 min",
+    icon: "layout",
+    image: "assets/images/vm/vm-03-planogram.jpg",
+    badge: { en: "Spatial Engineering", ar: "هندسة المساحات" },
+    title: {
+      en: "Spatial Density & 3D Planogram Layout Optimizer",
+      ar: "محرك تخطيط البلانوجرام وكثافة المساحات والتوزيع الهندسي"
+    },
+    summary: {
+      en: "Algorithmic floor space and capacity allocation for flagship department stores. Prevent visual clutter, optimize aisle clearance, and maximize linear meter ROI.",
+      ar: "محرك حساب الكثافة المكانية للأرفف وطاولات العرض لمنع التكدس البصري، وتنسيق ممرات المشي المريحة، وتحقيق أعلى عائد مالي لكل متر طولي من العرض."
+    },
+    tags: ["Planogram 3D", "Floor Layout", "Capacity Planning", "Retail Density", "Visual Merchandising"],
+    stats: [
+      { label: { en: "Space Utilization", ar: "استغلال المساحة" }, value: "94.2%" },
+      { label: { en: "Aisle Comfort Clearance", ar: "عرض ممرات التسوق" }, value: "1.8 Meters" },
+      { label: { en: "Basket Lift", ar: "ارتفاع قيمة السلة" }, value: "+26%" }
+    ],
+    architecture: {
+      en: "Bi-symmetric floor layout with central low-profile folding display islands flanked by perimeter floating wall shelving units.",
+      ar: "تخطيط متماثل ثنائي المحور: جزر منخفضة في قلب الصالة لعرض الملابس المطوية مع جدران محيطية معلقة تمنح شعوراً بالاتساع والرحابة."
+    },
+    diagramSteps: [
+      { en: "Floor Blueprint Grid", ar: "رسم شبكة أبعاد المتجر" },
+      { en: "Aisle Clearance Buffer", ar: "تحديد ممرات الحركة المريحة" },
+      { en: "Fixture Density Balancing", ar: "موازنة كثافة الأرفف والشماعات" },
+      { en: "Color Wave Execution", ar: "تنفيذ التموج اللوني المنسق" }
+    ],
+    steps: [
+      {
+        title: { en: "1. Linear Density per Meter Metric", ar: "1. معيار كثافة القطع لكل متر طولي" },
+        content: {
+          en: "Luxury standards mandate maximum 12-14 hanging items per linear meter on display rails to preserve individual garment prestige and breathing room.",
+          ar: "المعايير العالمية للمتاجر الفاخرة تشترط ألا يزيد عدد القطع المعلقة عن 12 إلى 14 قطعة لكل متر طولي لمنح كل تصميم قيمته ومنع التزاحم."
+        }
+      },
+      {
+        title: { en: "2. Color Wave Sequencing", ar: "2. تسلسل التموج اللوني (Color Wave)" },
+        content: {
+          en: "Organize hanging garments from light to dark (White -> Camel -> Forest -> Navy -> Black) to guide natural reading direction.",
+          ar: "ترتيب القطع المعلقة من الفاتح إلى الداكن (أبيض، كاميل، أخضر، كحلي، أسود) ليتماشى مع اتجاه القراءة البصرية الطبيعية للعين."
+        }
+      }
+    ],
+    codeSnippet: `// Linear Merchandising Density Calculator
+function calculateOptimalDensity(railLengthMeters, luxuryTier = "PREMIUM") {
+  const maxItemsPerMeter = luxuryTier === "ULTRA_LUXURY" ? 10 : 14;
+  const targetItems = Math.floor(railLengthMeters * maxItemsPerMeter);
+  const spacingBetweenHangersCm = (railLengthMeters * 100) / targetItems;
+  
+  return {
+    targetCapacity: targetItems,
+    hangerSpacing: \`\${spacingBetweenHangersCm.toFixed(1)} cm\`,
+    visualClutterIndex: "OPTIMAL_BREATHING_ROOM"
+  };
+}`
+  },
+  {
+    id: "vm-ai-audit",
+    category: "vm",
+    difficulty: "advanced",
+    readTime: "25 min",
+    icon: "cpu",
+    image: "assets/images/vm/vm-04-ai-audit.jpg",
+    badge: { en: "AI & Computer Vision", ar: "ذكاء اصطناعي وتدقيق" },
+    title: {
+      en: "AI Computer Vision Visual Merchandising Compliance Suite",
+      ar: "منظومة الذكاء الاصطناعي لتدقيق هوية الفروع ومعايير العرض"
+    },
+    summary: {
+      en: "Autonomous computer vision system that audits store photographs against golden planograms. Detects missing SKUs, misaligned hangers, and wrong color orders instantly.",
+      ar: "منظومة ذكاء اصطناعي ورؤية حاسوبية تفحص صور الفروع ومقارنتها تلقائياً بالبلانوجرام المعتمد واكتشاف أي انحراف في ترتيب الألوان أو مسافات الشماعات في ثوانٍ."
+    },
+    tags: ["AI Vision", "Multi-Branch Audit", "Compliance Score", "Planogram Verification", "Automated Detection"],
+    stats: [
+      { label: { en: "Audit Accuracy", ar: "دقة الفحص الآلي" }, value: "98.9%" },
+      { label: { en: "Audit Speed", ar: "سرعة التدقيق" }, value: "1.2 seconds" },
+      { label: { en: "Brand Uniformity", ar: "مطابقة هوية الفروع" }, value: "99.4%" }
+    ],
+    architecture: {
+      en: "Edge tablet camera stream fed to YOLO-based object detection model segmenting individual display bays, bounding hanger spacing, and validating SKU color codes.",
+      ar: "التقاط صور العرض عبر الأجهزة اللوحية وتحليلها بنموذج ذكاء اصطناعي يحدد مربعات الفحص لكل رف ويقيس المسافات ويطابق رموز الألوان مع المعايير."
+    },
+    diagramSteps: [
+      { en: "Photo Capture", ar: "التقاط صورة واجهة العرض" },
+      { en: "Bay & Shelf Segmentation", ar: "تحديد الأرفف والأقسام" },
+      { en: "SKU & Spacing Analysis", ar: "مطابقة المنتجات والمسافات" },
+      { en: "Instant Compliance Score", ar: "توليد نسبة الامتثال الفورية" }
+    ],
+    steps: [
+      {
+        title: { en: "1. Bounding Box Alignment", ar: "1. تحديد مربعات المحاذاة الذكية" },
+        content: {
+          en: "The vision model detects shelf boundaries and calculates variance in hanger gaps, flagging any deviations exceeding 2cm threshold in red overlay.",
+          ar: "يقوم النموذج بتحديد حدود الأرفف وحساب المسافات بين الشماعات بدقة، ويبرز أي انحراف يتجاوز 2 سم بلون أحمر تحذيري لمعالجته فوراً."
+        }
+      }
+    ],
+    codeSnippet: `# AI Computer Vision Planogram Inspector
+import cv2
+import numpy as np
+
+def verify_display_compliance(image_path: str, reference_planogram_sku_order: list):
+    img = cv2.imread(image_path)
+    detected_items = model.detect_garments(img)
+    
+    compliance_score = 100.0
+    anomalies = []
+    
+    for idx, expected_sku in enumerate(reference_planogram_sku_order):
+        actual_sku = detected_items[idx]
+        if actual_sku.code != expected_sku:
+            compliance_score -= 10.0
+            anomalies.append(f"Mismatched SKU at pos {idx}: expected {expected_sku}")
+            
+    return {"compliance_percentage": compliance_score, "anomalies": anomalies}`
+  },
+  {
+    id: "vm-lighting-lux",
+    category: "vm",
+    difficulty: "intermediate",
+    readTime: "18 min",
+    icon: "zap",
+    image: "assets/images/vm/vm-05-lighting.jpg",
+    badge: { en: "Lighting Engineering", ar: "هندسة الإضاءة واللوكس" },
+    title: {
+      en: "Photometric Lighting & Lumens Visualizer for Boutiques",
+      ar: "نظام محاكاة الإضاءة البصرية وحسابات اللوكس وتركيز البقع الضوئية"
+    },
+    summary: {
+      en: "Architectural lighting engineering for high-end luxury stores. Balance 15° to 36° narrow beam accents, 3000K Kelvin warmth, and 98 CRI color rendering index.",
+      ar: "هندسة الإضاءة المعمارية للمتاجر الراقية. موازنة زوايا الحزم الضوئية الضيقة (15° إلى 36°)، درجة الحرارة الكلفنية 3000K، ومعامل نقاء الألوان 98 CRI."
+    },
+    tags: ["Photometrics", "Beam Angle", "Lux Calculations", "Theatrical Retail Lighting", "CRI 98"],
+    stats: [
+      { label: { en: "Focal Lux", ar: "شدة إضاءة النقطة البؤرية" }, value: "2,200 Lux" },
+      { label: { en: "Color Rendering (CRI)", ar: "معامل نقاء الألوان" }, value: "98 Ra" },
+      { label: { en: "Energy Efficiency", ar: "توفير الطاقة LED" }, value: "65% Saved" }
+    ],
+    architecture: {
+      en: "Multi-circuit ceiling track matrix with precision DALI dimming, isolating key pedestals with sharp elliptical spotlights while bathing perimeter in soft 400 Lux ambient.",
+      ar: "شبكة مسارات سقف متعددة الدوائر مع تحكم رقمي DALI، تسلط بقعاً ضوئية بيضاوية دقيقة على المنتجات البطلة مع إضاءة محيطية ناعمة لباقي المتجر."
+    },
+    diagramSteps: [
+      { en: "Ceiling Grid Map", ar: "تخطيط مسارات الإضاءة في السقف" },
+      { en: "Beam Angle Selection", ar: "اختيار زوايا الحزم الضوئية" },
+      { en: "Lux Ratio Calculation", ar: "حساب نسب تباين اللوكس" },
+      { en: "Glare Elimination Shielding", ar: "حجب الوهج المباشر عن المتسوق" }
+    ],
+    steps: [
+      {
+        title: { en: "1. Beam Angle Focus Formula", ar: "1. معادلة زاوية الحزمة الضوئية" },
+        content: {
+          en: "A 24-degree spot at 3.2m ceiling height yields an illuminated circle of exactly 1.35m diameter on display pedestals, perfectly framing hero accessories.",
+          ar: "كشاف بزاوية حزمة 24 درجة على ارتفاع سقف 3.2 متر ينتج دائرة ضوئية قطرها 1.35 متر على منصة العرض، مما يبرز القطعة الذهبية بإحكام تام."
+        }
+      }
+    ],
+    codeSnippet: `// Photometric Illumination Math
+function calculateBeamDiameter(beamAngleDegrees, mountingHeightMeters) {
+  const radians = (beamAngleDegrees * Math.PI) / 180;
+  const beamDiameterMeters = 2 * mountingHeightMeters * Math.tan(radians / 2);
+  const targetAreaSqMeters = Math.PI * Math.pow(beamDiameterMeters / 2, 2);
+  
+  return {
+    beamDiameter: \`\${beamDiameterMeters.toFixed(2)} meters\`,
+    coverageArea: \`\${targetAreaSqMeters.toFixed(2)} m²\`,
+    opticalClassification: "HERO_FOCAL_BEAM"
+  };
+}`
+  },
+  {
+    id: "vm-perfumery-display",
+    category: "vm",
+    difficulty: "intermediate",
+    readTime: "15 min",
+    icon: "layout",
+    image: "assets/images/vm/vm-06-perfumery.jpg",
+    badge: { en: "Sensory Merchandising", ar: "العرض الحسي الفاخر" },
+    title: {
+      en: "Luxury Perfumery & Cosmetics Display Architecture",
+      ar: "معرض ومنظومة عرض العطور ومستحضرات التجميل الفاخرة"
+    },
+    summary: {
+      en: "Display engineering for prestige fragrances, cosmetics, and jewelry. Backlit fluted glass shelves, brass trims, and ergonomic testing riser tiers.",
+      ar: "هندسة العرض الحسي للعطور ومستحضرات التجميل والمجوهرات. أرفف زجاجية مثلجة مضيئة خلفياً، حواف نحاسية فاخرة، ومدرجات عرض مخملية مريحة للمعاينة."
+    },
+    tags: ["Fragrance Display", "Backlit Acrylic", "Ergonomic Shelving", "Sensory Merchandising", "Luxury Retail"],
+    stats: [
+      { label: { en: "Tester Engagement", ar: "معدل تجربة العطور" }, value: "+54%" },
+      { label: { en: "Backlight Uniformity", ar: "تجانس الإضاءة الخلفية" }, value: "99.5%" },
+      { label: { en: "Dwell Time", ar: "متوسط وقت التوقف" }, value: "4.8 mins" }
+    ],
+    architecture: {
+      en: "Radial island counter with 360-degree perimeter circulation, integrated scent testing blotter slots, and concealed warm LED diffuser channels.",
+      ar: "منصة دائرية تتيح حركة حرة 360 درجة، مع قنوات إضاءة LED مخفية وأماكن مدمجة لشرائط التجربة وسلال المهملات النحاسية الفاخرة."
+    },
+    diagramSteps: [
+      { en: "Radial Island Blueprint", ar: "تصميم المنصة الدائرية" },
+      { en: "Backlit Fluted Glass Tier", ar: "تركيب الزجاج المضلع المضيء" },
+      { en: "Velvet Riser Ergonomics", ar: "تنسيق مدرجات العرض المخملية" },
+      { en: "Tester Bottle Placement", ar: "توزيع زجاجات التجربة الأمامية" }
+    ],
+    steps: [
+      {
+        title: { en: "1. Backlit Refraction Engineering", ar: "1. انكسار الضوء عبر الزجاج المضلع" },
+        content: {
+          en: "Direct 3500K edge-lit acrylic light guides behind fluted glass to transmit soft luminous gradients through crystal perfume bottles without creating heat.",
+          ar: "استخدام موجهات ضوء أكريليك 3500K خلف الزجاج المضلع لتمرير الضوء عبر زجاجات الكريستال الفاخرة دون توليد أي حرارة تؤثر على العطر."
+        }
+      }
+    ],
+    codeSnippet: `/* Luxury Backlit Fragrance Shelf */
+.perfume-shelf-tier {
+  background: linear-gradient(180deg, #161e2e, #0c121e);
+  border: 1px solid rgba(212, 175, 55, 0.3); /* Champagne Gold */
+  backdrop-filter: blur(20px);
+  padding: 18px 24px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 25px rgba(212, 175, 55, 0.15);
+}`
+  },
+  {
+    id: "vm-shopper-heatmap",
+    category: "vm",
+    difficulty: "advanced",
+    readTime: "24 min",
+    icon: "zap",
+    image: "assets/images/vm/vm-07-heatmap.jpg",
+    badge: { en: "Retail Analytics", ar: "تحليلات مسار المتسوق" },
+    title: {
+      en: "Shopper Foot-Traffic Heatmap & Journey Studio",
+      ar: "نظام الخرائط الحرارية لمسار الزوار ونقاط الجذب البصري"
+    },
+    summary: {
+      en: "Transform store spatial flow with AI traffic heatmaps. Identify dead zones, high-dwell hotspots, and optimize focal display placement along the primary circulation path.",
+      ar: "تتبع حركة المتسوقين داخل المتجر بالخرائط الحرارية الرقمية. اكتشاف المناطق الميتة ومناطق التوقف الطويل، ونقل المنتجات الأكثر ربحية إلى قلب مسار الحركة."
+    },
+    tags: ["Heatmap Analytics", "Customer Journey", "Dwell Time", "Visual Focal Points", "Foot Traffic"],
+    stats: [
+      { label: { en: "Dead Zone Recovery", ar: "تنشيط المناطق الميتة" }, value: "+41%" },
+      { label: { en: "Average Dwell Lift", ar: "زيادة وقت التوقف" }, value: "+3.2 mins" },
+      { label: { en: "Sales per Sq Meter", ar: "مبيعات المتر المربع" }, value: "+28%" }
+    ],
+    architecture: {
+      en: "Ceiling-mounted optical sensors triangulating customer velocity and dwell intervals, rendering 3-tier glowing heatmap trails (Cyan: Transitory, Violet: Moderate, Amber: Sustained).",
+      ar: "حساسات بصرية في السقف تقيس سرعة وفترات توقف المتسوقين، وترسم مسارات حرارية ملونة (السيان: عبور سريع، البنفسجي: توقف متوسط، البرتقالي: تفاعل طويل)."
+    },
+    diagramSteps: [
+      { en: "Store Floor Optical Tracking", ar: "التتبع البصري لأرضية المتجر" },
+      { en: "Dwell Time Clustering", ar: "تجميع فترات التوقف" },
+      { en: "Hotspot Identification", ar: "تحديد نقاط الجذب الساخنة" },
+      { en: "Display Re-merchandising", ar: "إعادة توزيع المنتجات والعرض" }
+    ],
+    steps: [
+      {
+        title: { en: "1. Decompression Zone Navigation", ar: "1. إدارة منطقة تخفيف السرعة عند المدخل" },
+        content: {
+          en: "The first 3-4 meters inside the store is the Decompression Zone. Never place key promotional products here; position high-impact focal displays starting at meter 5.",
+          ar: "أول 3 إلى 4 أمتار من المدخل تسمى منطقة تخفيف السرعة، ولا يجب وضع المنتجات المهمة فيها، بل تبدأ العروض البصرية الجاذبة ابتداءً من المتر الخامس."
+        }
+      }
+    ],
+    codeSnippet: `// Store Dwell Time & Hotspot Engine
+function analyzeStoreTraffic(trackingCoordinates) {
+  const hotspots = trackingCoordinates.filter(c => c.dwellDurationSeconds > 45);
+  const deadzones = trackingCoordinates.filter(c => c.dwellDurationSeconds < 5);
+  
+  return {
+    primaryGoldenPath: "Clockwise Perimeter Flow",
+    recommendedRelocation: "Move hero collection to Bay 4 (Amber Zone)",
+    roiIncreaseProjection: "+18.5%"
+  };
+}`
+  },
+  {
+    id: "vm-popup-architecture",
+    category: "vm",
+    difficulty: "advanced",
+    readTime: "20 min",
+    icon: "layout",
+    image: "assets/images/vm/vm-08-popup.jpg",
+    badge: { en: "Pop-Up Architecture", ar: "عمارة المتاجر المؤقتة" },
+    title: {
+      en: "Seasonal Campaign & Pop-Up Architecture Designer",
+      ar: "مصمم الحملات الموسمية والمتاجر المؤقتة الفاخرة (Pop-Up)"
+    },
+    summary: {
+      en: "Architecting ephemeral retail pavilions and high-impact seasonal fashion installations. Curved iridescent dichroic glass, neon ribbons, and brand immersion pedestals.",
+      ar: "تصميم الأجنحة المعمارية المؤقتة للمتاجر العالمية والحملات الحصرية. جدران زجاجية متغيرة الألوان (Dichroic Glass)، أشرطة نيون حركية، وقواعد عرض نحتية للأزياء."
+    },
+    tags: ["Pop-Up Pavilion", "Retail Installation", "Seasonal Campaigns", "Brand Immersion", "Dichroic Glass"],
+    stats: [
+      { label: { en: "Footfall Multiplier", ar: "مضاعفة حركة الزوار" }, value: "3.4x" },
+      { label: { en: "Social Media Shares", ar: "المشاركات الرقمية" }, value: "+120%" },
+      { label: { en: "Modular Reusability", ar: "إعادة الاستخدام المعياري" }, value: "85%" }
+    ],
+    architecture: {
+      en: "Self-supporting double-curved glass shell with integrated linear floor illumination and plug-and-play modular display units for 48-hour rapid deployment.",
+      ar: "هيكل زجاجي منحني ذاتي التدعيم مزود بإضاءة خطية مدمجة في الأرضية ووحدات عرض معيارية قابلة للتركيب والتفكيك السريع في غضون 48 ساعة."
+    },
+    diagramSteps: [
+      { en: "Atrium Space Blueprint", ar: "مخطط موقع البهو الرئيسي" },
+      { en: "Dichroic Glass Fabrication", ar: "تصنيع الألواح الزجاجية المتدرجة" },
+      { en: "Integrated Floor Neon Runs", ar: "تمديد مسارات النيون الأرضية" },
+      { en: "VIP Product Podiums", ar: "تركيب منصات العرض الحصرية" }
+    ],
+    steps: [
+      {
+        title: { en: "1. 360-Degree Photogenic Design", ar: "1. التصميم البصري الجذاب للمشاركة (360°)" },
+        content: {
+          en: "Every angle of the pop-up pavilion must serve as a high-contrast editorial photo backdrop for visitors, multiplying viral social reach organically.",
+          ar: "يجب أن تكون كل زاوية في الجناح المؤقت خلفية تصوير مثالية ومبهرة للمتسوقين، مما يضاعف الانتشار الرقمي للحملة على منصات التواصل بشكل طبيعي."
+        }
+      }
+    ],
+    codeSnippet: `// Modular Pop-Up Deployment Blueprint
+const POPUP_CONFIG = {
+  footprintArea: "120 sq meters",
+  materials: ["Curved Dichroic Glass", "Cast Concrete Benches", "Brushed Aluminum Trim"],
+  lighting: "Addressable DMX Neo-Pixel Runs",
+  assemblyDurationHours: 48,
+  expectedDailyEngagement: 4500
+};`
+  },
+  {
+    id: "vm-color-harmony",
+    category: "vm",
+    difficulty: "beginner",
+    readTime: "14 min",
+    icon: "globe",
+    image: "assets/images/vm/vm-09-color-harmony.jpg",
+    badge: { en: "Color & Capsule", ar: "تناغم الألوان والكبسولة" },
+    title: {
+      en: "Color Harmony & Seasonal Wardrobe Capsule Matrix",
+      ar: "مصفوفة تناغم الألوان وتنسيق المجموعات الموسمية الكبسولية"
+    },
+    summary: {
+      en: "Color theory mastery in retail visual merchandising. Gradient tonal transitions, triadic wardrobe balancing, and capsule collection wall coordination.",
+      ar: "إتقان نظرية الألوان في تنسيق الجدران العرضية للمتاجر. التدريج اللوني الانسيابي (من الأزرق الملكي إلى الكاميل والأبيض)، وتنسيق المجموعات الكبسولية المترابطة."
+    },
+    tags: ["Color Blocking", "Capsule Wardrobe", "Tonal Balancing", "Wall Display", "Visual Merchandising"],
+    stats: [
+      { label: { en: "Cross-Sell Ratio", ar: "نسبة البيع المتقاطع" }, value: "+34%" },
+      { label: { en: "Visual Balance Index", ar: "مؤشر التوازن البصري" }, value: "100%" },
+      { label: { en: "Browse Duration", ar: "زمن استعراض الجدار" }, value: "3.5 mins" }
+    ],
+    architecture: {
+      en: "Tonal rhythm wall architecture: Long hanging garments flanked by coordinated folded knitwear stacks, illuminated by recessed 3000K warm cove uplighting.",
+      ar: "هندسة الجدار الإيقاعي: ملابس معلقة طويلة تتوسطها أعمدة أزياء مطوية منسقة لونياً، مع إضاءة خفية دافئة تبرز ألوان الأقمشة الطبيعية."
+    },
+    diagramSteps: [
+      { en: "Color Palette Selection", ar: "اختيار لوحة ألوان الموسم" },
+      { en: "Tonal Flow Left-to-Right", ar: "التدريج اللوني من اليسار لليمين" },
+      { en: "Hanging vs Folding Balance", ar: "الموازنة بين المعلق والمطوي" },
+      { en: "Accessory Color Anchors", ar: "توزيع الإكسسوارات كمثبتات لونية" }
+    ],
+    steps: [
+      {
+        title: { en: "1. The 60-30-10 Retail Color Ratio", ar: "1. قاعدة 60-30-10 لتوزيع ألوان الجدار" },
+        content: {
+          en: "Assign 60% dominant neutral (Midnight Navy), 30% secondary warmth (Camel & Sand), and 10% high-contrast accent (Crisp White) for optical luxury.",
+          ar: "خصص 60% للون الأساسي الهادئ (الكحلي الملكي)، 30% للون الثانوي الدافئ (الكاميل والبيج)، و 10% للون الساطع (الأبيض الناصع) لتحقيق أعلى درجات الأناقة."
+        }
+      }
+    ],
+    codeSnippet: `// 60-30-10 Color Harmonizer
+const CAPSULE_PALETTE = {
+  dominant: { name: "Midnight Navy", percentage: "60%", hex: "#0f172a" },
+  secondary: { name: "Camel Cashmere", percentage: "30%", hex: "#b48b60" },
+  accent: { name: "Crisp Ivory", percentage: "10%", hex: "#f8fafc" },
+  rule: "Left-to-Right Tonal Gradient Progression"
+};`
+  },
+  {
+    id: "vm-digital-signage",
+    category: "vm",
+    difficulty: "intermediate",
+    readTime: "17 min",
+    icon: "zap",
+    image: "assets/images/vm/vm-10-digital-signage.jpg",
+    badge: { en: "Phygital Retail", ar: "العرض الرقمي التفاعلي" },
+    title: {
+      en: "Dynamic Digital Signage & Shelf-Edge Synchronizer",
+      ar: "نظام الشاشات الرقمية التفاعلية وتحديث أرفف العرض الذكية"
+    },
+    summary: {
+      en: "Merging digital media with physical merchandising. Ultra-wide curved micro-LED fascias playing ambient brand motion synchronized with smart illuminated product shelves.",
+      ar: "دمج الوسائط الرقمية مع العرض الفعلي للمنتجات. شاشات micro-LED منحنية تعرض حملات الفيديو التفاعلية متزامنة مع إضاءة الأرفف وأسعار الباركود الرقمية الذكية."
+    },
+    tags: ["Digital Signage", "Shelf-Edge LED", "Ambient Motion", "Phygital Retail", "Smart Shelves"],
+    stats: [
+      { label: { en: "Shopper Recall", ar: "تذكر العلامة التجارية" }, value: "+62%" },
+      { label: { en: "Price Sync Latency", ar: "سرعة تحديث الأسعار" }, value: "0.2s Instant" },
+      { label: { en: "Screen Contrast", ar: "وضوح شاشة الـ LED" }, value: "HDR 1500 nits" }
+    ],
+    architecture: {
+      en: "Architectural curved wood fascia housing 32:9 micro-LED panel synchronized with smart shelf weight sensors and directional audio speakers.",
+      ar: "إطار خشبي معماري منحني يضم شاشة ميكرو LED فائقة العرض بنسبة 32:9 متزامنة مع حساسات الأرفف الذكية والإضاءة الموجهة."
+    },
+    diagramSteps: [
+      { en: "Curved Wall Integration", ar: "دمج الشاشة في جدار المتجر" },
+      { en: "Motion Video CMS Sync", ar: "مزامنة محتوى الفيديو الإعلاني" },
+      { en: "Shelf Light Modulation", ar: "تنسيق نبضات إضاءة الأرفف" },
+      { en: "Customer Lift Trigger", ar: "تفاعل الشاشة عند رفع المنتج" }
+    ],
+    steps: [
+      {
+        title: { en: "1. Ambient Phygital Subtlety", ar: "1. نعومة الحركة الرقمية التفاعلية" },
+        content: {
+          en: "Motion on shelf-edge screens must be slow and atmospheric (flowing fabric, water ripples) rather than rapid flashes, keeping customer focus on the physical product.",
+          ar: "يجب أن تكون الحركة الرقمية على الشاشات ناعمة وانسيابية (كتموج الأقمشة أو الضوء) لتجنب تشتيت عين الزائر والحفاظ على التركيز على المنتج الفعلي."
+        }
+      }
+    ],
+    codeSnippet: `// Phygital Shelf Synchronization Event
+function onProductLifted(shelfId, sku) {
+  triggerScreenMedia({
+    targetScreen: "CURVED_MICRO_LED_HEADER",
+    campaignClip: \`editorial_\${sku}_story.mp4\`,
+    transition: "Crossfade 0.8s",
+    shelfUnderglow: "Pulse Cyan 100%"
+  });
+}`
+  },
+
+  // ==========================================
+  // Modern Software Engineering & AI Blueprints
+  // ==========================================
   {
     id: "ai-multi-agent-system",
     category: "ai",
@@ -39,38 +595,9 @@ const TUTORIALS_DATA = [
           en: "Configure strict role boundaries for each agent: The Planner decomposes objectives into a DAG; the Worker executes tool calls; the Critic reviews correctness.",
           ar: "تحديد حدود صارمة لكل وكيل: يقوم مخطط المهام بتفكيك الهدف إلى رسم بياني مهام (DAG)، بينما يقوم المنفذ باستدعاء الأدوات، ويقوم المدقق بمراجعة السلامة والنتائج."
         }
-      },
-      {
-        title: { en: "2. Tool Definition & Function Calling", ar: "2. تعريف أدوات التشغيل واستدعاء الدوال" },
-        content: {
-          en: "Equip agents with type-safe tools (Python REPL, Vector Database Search, and SQL Query Execution) using strict JSON schemas.",
-          ar: "تزويد الوكلاء بأدوات برمجية آمنة (تنفيذ كود بايثون، بحث دلالي في قاعدة المتجهات، واستعلامات SQL) وفق مخططات JSON صارمة."
-        }
-      },
-      {
-        title: { en: "3. Shared Vector Memory & Context Retention", ar: "3. إدارة الذاكرة المشتركة وحفظ السياق" },
-        content: {
-          en: "Connect agents to ChromaDB or Qdrant for episodic and semantic memory retention across sessions.",
-          ar: "ربط الوكلاء بقواعد بيانات المتجهات لحفظ واسترجاع السياق التاريخي والخبرات السابقة عبر الجلسات."
-        }
-      },
-      {
-        title: { en: "4. Autonomous Self-Correction Loop", ar: "4. حلقة التصحيح والتأكد الذاتي" },
-        content: {
-          en: "Implement an automated review step where code errors or hallucinated outputs are trapped and resent for refinement before delivering output.",
-          ar: "تضمين خطوة مراجعة تلقائية تقوم باصطياد أي أخطاء برمجية أو استنتاجات غير دقيقة وإعادة إرسالها للتحسين قبل إظهار النتيجة النهائية."
-        }
       }
     ],
-    codeSnippet: `from fastapi import FastAPI, BackgroundTasks
-from pydantic import BaseModel
-import asyncio
-
-class TaskRequest(BaseModel):
-    objective: str
-    max_iterations: int = 5
-
-class MultiAgentOrchestrator:
+    codeSnippet: `class MultiAgentOrchestrator:
     def __init__(self, memory_client):
         self.memory = memory_client
         self.planner = PlannerAgent()
@@ -78,30 +605,8 @@ class MultiAgentOrchestrator:
         self.critic = CriticAgent()
 
     async def execute_workflow(self, objective: str):
-        # Step 1: Decompose objective into tasks
         plan = await self.planner.create_dag(objective)
-        results = []
-        
-        for task in plan.tasks:
-            # Step 2: Execute task with safe tools
-            raw_output = await self.worker.execute(task)
-            
-            # Step 3: Validate with Critic agent
-            validation = await self.critic.verify(task, raw_output)
-            if not validation.passed:
-                raw_output = await self.worker.repair(task, validation.feedback)
-                
-            results.append(raw_output)
-            await self.memory.store_step(task, raw_output)
-            
-        return {"status": "SUCCESS", "artifacts": results}
-
-app = FastAPI(title="Autonomous AI Agent Engine")
-orchestrator = MultiAgentOrchestrator(memory_client=None)
-
-@app.post("/api/agents/run")
-async def run_agent(req: TaskRequest):
-    return await orchestrator.execute_workflow(req.objective)`
+        return {"status": "SUCCESS", "artifacts": plan}`
   },
   {
     id: "rag-semantic-search",
@@ -142,50 +647,12 @@ async def run_agent(req: TaskRequest):
           en: "Split documents into cohesive sections maintaining header context and semantic overlap rather than fixed character cuts.",
           ar: "تقسيم الوثائق إلى مقاطع متماسكة منطقياً مع الحفاظ على تسلسل العناوين وهوامش التداخل الدلالي لتجنب بتر المعاني."
         }
-      },
-      {
-        title: { en: "2. Vector Embeddings & Indexing", ar: "2. التضمين الشعاعي والفهرسة" },
-        content: {
-          en: "Generate dense embeddings using high-dimensional models and index into ChromaDB with metadata filters.",
-          ar: "تحويل المقاطع إلى متجهات رقمية عالية الأبعاد وحفظها في قاعدة بيانات المتجهات مع وسوم التصفية الزمنية والموضوعية."
-        }
-      },
-      {
-        title: { en: "3. Re-ranking & Context Compression", ar: "3. إعادة الترتيب وضغط السياق" },
-        content: {
-          en: "Use a cross-encoder model to re-rank top candidates and prune irrelevant tokens to fit the LLM context window efficiently.",
-          ar: "تطبيق نموذج Cross-Encoder لإعادة فرز أفضل النتائج المتطابقة واستبعاد النصوص الثانوية لتوفير استهلاك الرموز وتسريع الاستجابة."
-        }
       }
     ],
-    codeSnippet: `import numpy as np
-from typing import List
-
-class SemanticRAGPipeline:
-    def __init__(self, embedder, vector_db, llm):
-        self.embedder = embedder
-        self.db = vector_db
-        self.llm = llm
-
-    def ingest_document(self, text: str, doc_id: str, chunk_size: int = 500, overlap: int = 50):
-        chunks = self._recursive_chunk(text, chunk_size, overlap)
-        embeddings = self.embedder.encode_batch(chunks)
-        self.db.upsert(ids=[f"{doc_id}_{i}" for i in range(len(chunks))], 
-                       vectors=embeddings, 
-                       documents=chunks)
-
-    def query(self, user_question: str, top_k: int = 4):
-        q_vec = self.embedder.encode(user_question)
-        relevant_docs = self.db.similarity_search(q_vec, k=top_k)
-        
-        context_block = "\\n---\\n".join(relevant_docs)
-        prompt = (
-            f"Use ONLY the following context to answer the question:\\n"
-            f"{context_block}\\n\\n"
-            f"Question: {user_question}\\n"
-            f"Answer with exact citations:"
-        )
-        return self.llm.generate(prompt)`
+    codeSnippet: `def ingest_document(text: str, doc_id: str, chunk_size: int = 500):
+    chunks = recursive_chunk(text, chunk_size)
+    embeddings = embedder.encode_batch(chunks)
+    vector_db.upsert(ids=[f"{doc_id}_{i}" for i in range(len(chunks))], vectors=embeddings)`
   },
   {
     id: "bento-grid-saas-dashboard",
@@ -225,116 +692,12 @@ class SemanticRAGPipeline:
           en: "Configure `grid-template-columns: repeat(12, 1fr)` for fine-grained spans: 8 cols for primary charts, 4 cols for stat tiles, and 12 cols for activity tables.",
           ar: "ضبط نظام الـ 12 عموداً لتوزيع مرن: 8 أعمدة للرسوم البيانية الكبرى، 4 أعمدة لبطاقات الإحصائيات، و 12 عموداً لجداول الأنشطة اللحظية."
         }
-      },
-      {
-        title: { en: "2. Glassmorphism & Refraction Optics", ar: "2. مؤثرات الزجاج البلوري وانكسار الضوء" },
-        content: {
-          en: "Combine `backdrop-filter: blur(16px)` with a delicate 1px gradient border `linear-gradient(135deg, rgba(255,255,255,0.15), transparent)` for executive elegance.",
-          ar: "دمج فلتر التغبيش الزجاجي مع حدود دقيقة 1px بتدرج شفاف يعكس الضوء بسلاسة ويمنح عمقاً بصرياً ثلاثي الأبعاد."
-        }
       }
     ],
     codeSnippet: `.bento-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 1.25rem;
-  padding: 1.5rem;
-}
-
-.bento-card {
-  position: relative;
-  background: rgba(18, 24, 38, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 1.25rem;
-  padding: 1.75rem;
-  overflow: hidden;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-              border-color 0.3s ease;
-}
-
-.bento-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(99, 102, 241, 0.4);
-}
-
-.col-span-8 { grid-column: span 8; }
-.col-span-4 { grid-column: span 4; }
-.col-span-12 { grid-column: span 12; }
-
-@media (max-width: 992px) {
-  .col-span-8, .col-span-4 { grid-column: span 12; }
-}`
-  },
-  {
-    id: "zero-dependency-arabic-rtl",
-    category: "web",
-    difficulty: "beginner",
-    readTime: "12 min",
-    icon: "globe",
-    badge: { en: "Internationalization", ar: "التعريب وRTL" },
-    title: {
-      en: "Zero-Dependency Arabic RTL Web Engineering with CSS Logical Properties",
-      ar: "هندسة واجهات الويب العربية RTL بدون أي مكتبات باستخدام خصائص CSS المنطقية"
-    },
-    summary: {
-      en: "Eliminate flipped margins and duplicate stylesheets. Build pristine bilingual websites using inline-start, margin-inline, and bidirectional layout flow.",
-      ar: "تخلص تماماً من تكرار ملفات التنسيق وحسابات الهوامش المعكوسة، وتعلم بناء واجهات ثنائية اللغة تدعم العربية والإنجليزية بملف CSS واحد ذكي."
-    },
-    tags: ["CSS Logical Properties", "RTL Design", "Typography", "Cairo Font", "Clean Code"],
-    stats: [
-      { label: { en: "CSS Code Saved", ar: "توفير في الكود" }, value: "65% Smaller" },
-      { label: { en: "Switch Time", ar: "سرعة التبديل" }, value: "0ms Instant" },
-      { label: { en: "Browser Support", ar: "دعم المتصفحات" }, value: "99.8% Global" }
-    ],
-    architecture: {
-      en: "Unified design tokens utilizing CSS Logical Properties (`margin-inline-start`, `padding-inline`, `border-inline-end`) ensuring natural layout mirroring.",
-      ar: "نظام تصميم موحد يعتمد على الخصائص المنطقية الحديثة، مما يجعل العناصر تنعكس تلقائياً بمجرد تغيير خاصية dir دون أي تعديل إضافي."
-    },
-    diagramSteps: [
-      { en: "LTR Document Flow", ar: "تدفق LTR الإنجليزي" },
-      { en: "CSS Logical Tokens", ar: "متغيرات الخصائص المنطقية" },
-      { en: "Direction Attribute (dir=rtl)", ar: "خاصية الاتجاه في HTML" },
-      { en: "Automatic RTL Mirroring", ar: "الانعكاس التلقائي السلس" }
-    ],
-    steps: [
-      {
-        title: { en: "1. The Fallacy of margin-left and margin-right", ar: "1. استبدال الهوامش الثابتة بالمنطقية" },
-        content: {
-          en: "Never use left/right. Use `margin-inline-start` for start spacing and `margin-inline-end` for trailing spacing.",
-          ar: "توقف عن استخدام left و right واستخدم بدلاً منها `margin-inline-start` لبداية العنصر و `margin-inline-end` لنهايته في كل من اللغتين."
-        }
-      },
-      {
-        title: { en: "2. Arabic Typography Optical Balance", ar: "2. التوازن البصري للخطوط العربية" },
-        content: {
-          en: "Arabic typography (Cairo / Readex Pro) requires approximately 10-15% taller `line-height` compared to Latin fonts to prevent diacritic clipping.",
-          ar: "تحتاج الخطوط العربية لارتفاع سطر (line-height) أكبر بنسبة 10-15% مقارنة بالخطوط اللاتينية لضمان عدم تداخل التشكيل والنقاط."
-        }
-      }
-    ],
-    codeSnippet: `/* One single CSS rule works for BOTH English (LTR) and Arabic (RTL) */
-.nav-item {
-  display: flex;
-  align-items: center;
-  /* Instead of margin-left: 1rem; */
-  margin-inline-start: 1.25rem;
-  /* Instead of padding: 10px 20px 10px 15px; */
-  padding-block: 0.625rem;
-  padding-inline: 1.25rem 0.95rem;
-  /* Instead of border-left: 3px solid ... */
-  border-inline-start: 3px solid var(--accent-primary);
-}
-
-:root[dir="rtl"] {
-  --font-family-sans: 'Cairo', system-ui, sans-serif;
-  --base-line-height: 1.7;
-}
-
-:root[dir="ltr"] {
-  --font-family-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --base-line-height: 1.5;
+  gap: 1.5rem;
 }`
   },
   {
@@ -376,370 +739,21 @@ class SemanticRAGPipeline:
           en: "Avoid two-phase commits. Use choreographic Sagas where OrderCreated triggers InventoryReserved, and failures dispatch CompensatingRelease events.",
           ar: "تجنب المعاملات التقليدية ذات المرحلتين واستخدم نمط Saga حيث يرسل حدث إنشاء الطلب رسائل للخدمات الأخرى، مع إرسال أحداث إلغاء تعويضية عند أي فشل."
         }
-      },
-      {
-        title: { en: "2. Idempotency Key Architecture", ar: "2. هندسة مفاتيح التأكيد الفريدة (Idempotency)" },
-        content: {
-          en: "Prevent duplicate payments by verifying unique UUID transaction keys in Redis with atomicity before charging customer accounts.",
-          ar: "منع الخصم المزدوج للمدفوعات عبر التحقق اللحظي والذري من مفتاح العملية الفريد في ذاكرة Redis قبل اعتماد أي خصم مالي."
-        }
       }
     ],
-    codeSnippet: `// Event Producer Pattern for Kafka Order Events
-import { Kafka } from 'kafkajs';
-
-const kafka = new Kafka({ clientId: 'order-service', brokers: ['kafka-cluster:9092'] });
-const producer = kafka.producer();
-
-export async function dispatchOrderCreated(order) {
-  await producer.connect();
-  const payload = {
-    orderId: order.id,
-    userId: order.userId,
-    amount: order.totalAmount,
-    items: order.items,
-    timestamp: Date.now()
-  };
-
+    codeSnippet: `export async function dispatchOrderCreated(order) {
   await producer.send({
     topic: 'ecommerce.orders.created',
-    messages: [
-      {
-        key: order.id,
-        value: JSON.stringify(payload),
-        headers: { 'idempotency-key': order.idempotencyToken }
-      }
-    ]
+    messages: [{ key: order.id, value: JSON.stringify(order) }]
   });
-  console.log(\`Order event published: \${order.id}\`);
-}`
-  },
-  {
-    id: "relational-3nf-database-design",
-    category: "cloud",
-    difficulty: "intermediate",
-    readTime: "14 min",
-    icon: "database",
-    badge: { en: "Database Engineering", ar: "هندسة قواعد البيانات" },
-    title: {
-      en: "Relational Database Engineering: From Business Models to 3NF Normalization",
-      ar: "هندسة قواعد البيانات العلاقاتية: من متطلبات العمل إلى المستوى المعياري 3NF"
-    },
-    summary: {
-      en: "A rigorous guide to designing normalized, performant SQL schemas with composite indexes, foreign key constraints, and zero redundancy.",
-      ar: "دليل تطبيقي متقن لتصميم جداول SQL نظيفة ومتوافقة مع المعيار الثالث (3NF)، مع بناء الفهارس المركبة والعلاقات القياسية لمنع تكرار البيانات."
-    },
-    tags: ["PostgreSQL", "SQL", "Database Indexing", "Data Integrity", "Normalization"],
-    stats: [
-      { label: { en: "Standard", ar: "المعيار" }, value: "Third Normal Form" },
-      { label: { en: "Query Speedup", ar: "تسريع الاستعلامات" }, value: "10x Faster" },
-      { label: { en: "Data Anomalies", ar: "أخطاء التكرار" }, value: "Zero Duplication" }
-    ],
-    architecture: {
-      en: "Normalized relational schema with immutable ledger audit logs, foreign keys with ON DELETE RESTRICT, and B-Tree composite index coverage.",
-      ar: "مخطط علاقاتي معياري يضم سجلات تدقيق غير قابلة للتعديل، وقيود سلامة مرجعية صارمة، وفهارس B-Tree لتسريع استعلامات البحث المتعدد."
-    },
-    diagramSteps: [
-      { en: "Raw Business Entities", ar: "كيانات العمل الأولية" },
-      { en: "1NF: Atomic Columns", ar: "المستوى الأول: تفكيك الأعمدة" },
-      { en: "2NF: Full Key Dependency", ar: "المستوى الثاني: تبعية المفتاح الأساسي" },
-      { en: "3NF: Eliminate Transitive Keys", ar: "المستوى الثالث: استبعاد التبعيات الانتقالية" }
-    ],
-    steps: [
-      {
-        title: { en: "1. Achieving First Normal Form (1NF)", ar: "1. تحقيق المستوى المعياري الأول (1NF)" },
-        content: {
-          en: "Ensure every column holds atomic, single-valued data and every record is uniquely identified by a primary key.",
-          ar: "التأكد من أن كل عمود يحتوي على قيمة واحدة غير مجزأة، وأن كل سجل يمتلك مفتاحاً أساسياً فريداً يميزه."
-        }
-      },
-      {
-        title: { en: "2. Composite Indexing for High-Velocity Queries", ar: "2. الفهارس المركبة للاستعلامات السريعة" },
-        content: {
-          en: "Index columns based on query cardinality: place equality match columns first, followed by range filter columns.",
-          ar: "ترتيب أعمدة الفهرس المركب بحسب طريقة الاستعلام: وضع أعمدة التطابق المباشر أولاً، تليها أعمدة النطاقات الزمنية أو الأرقام."
-        }
-      }
-    ],
-    codeSnippet: `-- 3NF Standardized Schema with Composite Indexing
-CREATE TABLE customers (
-    customer_id BIGSERIAL PRIMARY KEY,
-    email VARCHAR(255) UNIQUE NOT NULL,
-    company_name VARCHAR(150),
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-);
-
-CREATE TABLE orders (
-    order_id BIGSERIAL PRIMARY KEY,
-    customer_id BIGINT NOT NULL REFERENCES customers(customer_id) ON DELETE RESTRICT,
-    order_status VARCHAR(50) NOT NULL DEFAULT 'PENDING',
-    currency_code CHAR(3) NOT NULL DEFAULT 'USD',
-    order_date DATE NOT NULL DEFAULT CURRENT_DATE
-);
-
-CREATE TABLE order_items (
-    order_item_id BIGSERIAL PRIMARY KEY,
-    order_id BIGINT NOT NULL REFERENCES orders(order_id) ON DELETE CASCADE,
-    sku_code VARCHAR(50) NOT NULL,
-    unit_price NUMERIC(12, 2) NOT NULL CHECK (unit_price >= 0),
-    quantity INT NOT NULL CHECK (quantity > 0)
-);
-
-CREATE INDEX idx_orders_customer_status_date 
-ON orders (customer_id, order_status, order_date DESC);`
-  },
-  {
-    id: "python-automation-bot",
-    category: "devtools",
-    difficulty: "beginner",
-    readTime: "10 min",
-    icon: "terminal",
-    badge: { en: "Automation", ar: "أتمتة وبرمجة" },
-    title: {
-      en: "Automated Data Extraction & PDF Executive Reporter with Python",
-      ar: "بناء روبوت أتمتة لاستخراج البيانات وتوليد تقارير PDF تنفيذية بلغة بايثون"
-    },
-    summary: {
-      en: "Create an end-to-end automation bot that queries data sources, builds statistical charts, compiles PDF dashboards, and delivers them via Telegram / Email.",
-      ar: "شرح عملي لبناء برنامج أتمتة يجمع البيانات من قواعد البيانات يومياً، ويرسم مؤشرات الأداء بيانيا، وينشئ ملف PDF تنفيذي ويرسله بالبريد أو تيليجرام."
-    },
-    tags: ["Python", "Pandas", "Automation", "Matplotlib", "PDF Generation"],
-    stats: [
-      { label: { en: "Time Saved", ar: "الوقت الموفر" }, value: "5 hrs/day" },
-      { label: { en: "Execution", ar: "وقت التشغيل" }, value: "3.2 seconds" },
-      { label: { en: "Output", ar: "المخرجات" }, value: "Vector PDF + Bot Alert" }
-    ],
-    architecture: {
-      en: "Modular Python ETL pipeline running on cron, aggregating operational datasets into structured DataFrames with automated exception alerting.",
-      ar: "خط معالجة بيانات مجدول زمنياً يقوم بسحب البيانات وتلخيصها إحصائياً وتوليد المخططات وحفظها كملفات تقارير أنيقة."
-    },
-    diagramSteps: [
-      { en: "Cron Trigger", ar: "مجدول الوقت التلقائي" },
-      { en: "Data Extraction (SQL/API)", ar: "سحب وتجميع البيانات" },
-      { en: "Pandas Aggregation", ar: "التحليل الإحصائي" },
-      { en: "Chart & PDF Compilation", ar: "توليد الرسوم وملف PDF" },
-      { en: "Automated Dispatch", ar: "الإرسال التلقائي الفوري" }
-    ],
-    steps: [
-      {
-        title: { en: "1. Data Aggregation with Pandas", ar: "1. تجميع وتلخيص البيانات باستخدام Pandas" },
-        content: {
-          en: "Read raw daily sales or performance logs and generate executive KPI sums, averages, and trend lines.",
-          ar: "قراءة سجلات الأداء أو المبيعات اليومية وتوليد مؤشرات الأداء التنفيذية (KPIs) ونسب التغير الأسبوعية والشهرية."
-        }
-      },
-      {
-        title: { en: "2. Vector Chart Generation", ar: "2. رسم المخططات البيانية عالية الدقة" },
-        content: {
-          en: "Export standalone, publication-ready charts using Matplotlib with crisp dark/light styling and annotations.",
-          ar: "توليد رسوم بيانية نقية بألوان عصرية وإشارات توضيحية على القمم والانخفاضات وحفظها بصيغة جاهزة للطباعة."
-        }
-      }
-    ],
-    codeSnippet: `import pandas as pd
-import matplotlib.pyplot as plt
-from datetime import datetime
-
-def generate_daily_executive_report(csv_path: str):
-    df = pd.read_csv(csv_path)
-    df['date'] = pd.to_datetime(df['date'])
-    
-    total_volume = df['amount'].sum()
-    avg_ticket = df['amount'].mean()
-    success_rate = (df['status'] == 'COMPLETED').mean() * 100
-    
-    fig, ax = plt.subplots(figsize=(10, 4), facecolor='#0f172a')
-    ax.set_facecolor('#0f172a')
-    ax.plot(df['date'], df['amount'], color='#38bdf8', linewidth=2.5)
-    ax.tick_params(colors='#94a3b8')
-    plt.title('24-Hour Throughput Analytics', color='#f8fafc', fontsize=14, pad=12)
-    plt.tight_layout()
-    plt.savefig('kpi_chart.png', dpi=300)
-    
-    print(f"Report Generated! Total: {total_volume} | Success: {success_rate:.1f}%")
-    return {"volume": total_volume, "rate": success_rate}`
-  },
-  {
-    id: "web-vitals-performance-mastery",
-    category: "web",
-    difficulty: "advanced",
-    readTime: "16 min",
-    icon: "zap",
-    badge: { en: "Performance Lab", ar: "مختبر الأداء" },
-    title: {
-      en: "Web Performance & Core Web Vitals: Achieving 100/100 Lighthouse Scores",
-      ar: "هندسة أداء الويب و Core Web Vitals: أسرار تحقيق 100/100 في Google Lighthouse"
-    },
-    summary: {
-      en: "Eliminate layout shifts, accelerate Largest Contentful Paint (LCP), and conquer Interaction to Next Paint (INP) with modern browser APIs.",
-      ar: "تعلم تقنيات القضاء على اهتزاز العناصر (CLS) وتسريع زمن ظهور أول محتوى مرئي (LCP) واستجابة التفاعل (INP) بأحدث تقنيات المتصفح."
-    },
-    tags: ["Core Web Vitals", "Lighthouse", "LCP", "INP", "Performance Tuning"],
-    stats: [
-      { label: { en: "LCP", ar: "زمن ظهور المحتوى" }, value: "< 0.8s" },
-      { label: { en: "CLS", ar: "اهتزاز التخطيط" }, value: "0.00" },
-      { label: { en: "Lighthouse Score", ar: "تقييم الأداء" }, value: "100 / 100" }
-    ],
-    architecture: {
-      en: "Resource prioritization via `fetchpriority='high'`, font subsetting with swap metrics, and critical CSS inlining to eliminate render-blocking roundtrips.",
-      ar: "إدارة أولوية الموارد عبر خاصية fetchpriority، وتجزئة الخطوط، وتضمين الـ CSS الحرج لتفادي أي تأخير في العرض الأولي للصفحة."
-    },
-    diagramSteps: [
-      { en: "Fetch Priority Tagging", ar: "تحديد أولويات التحميل" },
-      { en: "Critical CSS Inlining", ar: "تضمين الأنماط الحرجة" },
-      { en: "Font Metric Overrides", ar: "موازنة أبعاد الخطوط البديلة" },
-      { en: "Zero Shift Painting", ar: "الرسم الفوري بدون اهتزاز" }
-    ],
-    steps: [
-      {
-        title: { en: "1. Optimizing Largest Contentful Paint (LCP)", ar: "1. تسريع أكبر عنصر مرئي (LCP)" },
-        content: {
-          en: "Tag hero images with `fetchpriority='high'` and `loading='eager'` while ensuring modern AVIF/WebP image formats are served.",
-          ar: "إضافة خاصية `fetchpriority='high'` للعنصر الرئيسي في أول الصفحة وتوفير الصور بصيغتي AVIF و WebP لتنزيل فوري في أقل من ثانية."
-        }
-      },
-      {
-        title: { en: "2. Conquering Cumulative Layout Shift (CLS)", ar: "2. التخلص التام من اهتزاز التخطيط (CLS)" },
-        content: {
-          en: "Always reserve explicit `aspect-ratio` or `width` and `height` attributes on all media and dynamic banner slots before content renders.",
-          ar: "حجز مساحات ثابتة مسبقاً لجميع الصور والبانرات الديناميكية عبر خاصية `aspect-ratio` لمنع قفز الصفحة أثناء التحميل."
-        }
-      }
-    ],
-    codeSnippet: `<!-- Production Performance HTML Boilerplate -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link rel="preload" fetchpriority="high" as="image" href="/assets/hero-banner.webp" type="image/webp">
-
-<style>
-  :root { --bg-dark: #090d16; }
-  body { margin: 0; background: var(--bg-dark); color: #fff; }
-  .hero-img-slot { aspect-ratio: 16 / 9; width: 100%; display: block; }
-</style>
-
-<picture>
-  <source srcset="/assets/hero-banner.avif" type="image/avif">
-  <img src="/assets/hero-banner.webp" 
-       alt="High Performance Architecture"
-       fetchpriority="high"
-       loading="eager"
-       decoding="async"
-       class="hero-img-slot">
-</picture>`
-  },
-  {
-    id: "drag-and-drop-kanban-engine",
-    category: "web",
-    difficulty: "intermediate",
-    readTime: "12 min",
-    icon: "trello",
-    badge: { en: "Interactive Web", ar: "تطبيقات تفاعلية" },
-    title: {
-      en: "Zero-Dependency HTML5 Drag-and-Drop Interactive Kanban Board Engine",
-      ar: "بناء محرك لوحة كانبان تفاعلية بالسحب والإفلات بدون أي مكتبات خارجية"
-    },
-    summary: {
-      en: "Learn how to build a smooth, accessible drag-and-drop task workflow engine with real-time column state synchronization and local persistence.",
-      ar: "تعلم كيفية بناء نظام كانبان تفاعلي كامل بالسحب والإفلات باستخدام HTML5 Drag and Drop API مع حفظ الحالة تلقائياً وانسيابية الحركة."
-    },
-    tags: ["HTML5 DnD", "Vanilla JS", "State Management", "LocalStorage", "Animations"],
-    stats: [
-      { label: { en: "External Libs", ar: "مكتبات خارجية" }, value: "0 Dependencies" },
-      { label: { en: "Bundle Size", ar: "حجم الكود" }, value: "< 4 KB" },
-      { label: { en: "Drag Smoothness", ar: "انسيابية السحب" }, value: "Native 60 FPS" }
-    ],
-    architecture: {
-      en: "Clean event delegation listener tracking dragstart, dragover, drop, and dragend with DOM node insertion and state array reconciliation.",
-      ar: "إدارة تفويض الأحداث لمتابعة سحب وإفلات العناصر مع تحديث فوري لمصفوفة البيانات وحفظها في التخزين المحلي."
-    },
-    diagramSteps: [
-      { en: "Drag Start (Element Grip)", ar: "بدء السحب وتحديد العنصر" },
-      { en: "Drag Over (Column Detection)", ar: "المرور فوق العمود المستهدف" },
-      { en: "Visual Drop Indicator", ar: "إظهار مؤشر موضع الإفلات" },
-      { en: "Drop & State Sync", ar: "الإفلات وحفظ الترتيب" }
-    ],
-    steps: [
-      {
-        title: { en: "1. HTML5 Drag Event Lifecycle", ar: "1. دورة حياة أحداث السحب في HTML5" },
-        content: {
-          en: "Attach `draggable='true'` to cards and handle `e.dataTransfer.setData` to securely transfer entity identifiers.",
-          ar: "إضافة خاصية `draggable='true'` لكل بطاقة والتقاط معرّف العنصر لنقله بين الأعمدة بسلاسة."
-        }
-      },
-      {
-        title: { en: "2. Reordering & Persistence", ar: "2. إعادة الترتيب والحفظ اللحظي" },
-        content: {
-          en: "Calculate nearest sibling position using mouse Y coordinates to insert cards above or below adjacent items accurately.",
-          ar: "حساب موقع الماوس بالنسبة للبطاقات المجاورة لإدراج البطاقة في الموضع الدقيق قبل حفظ الترتيب الجديد."
-        }
-      }
-    ],
-    codeSnippet: `class KanbanEngine {
-  constructor(containerId) {
-    this.container = document.getElementById(containerId);
-    this.draggedCard = null;
-    this.initEvents();
-  }
-
-  initEvents() {
-    this.container.addEventListener('dragstart', (e) => {
-      if (e.target.classList.contains('kanban-card')) {
-        this.draggedCard = e.target;
-        e.target.classList.add('is-dragging');
-        e.dataTransfer.effectAllowed = 'move';
-      }
-    });
-
-    this.container.addEventListener('dragend', (e) => {
-      if (this.draggedCard) {
-        this.draggedCard.classList.remove('is-dragging');
-        this.draggedCard = null;
-        this.saveBoardState();
-      }
-    });
-
-    this.container.addEventListener('dragover', (e) => {
-      e.preventDefault();
-      const column = e.target.closest('.kanban-column-body');
-      if (!column || !this.draggedCard) return;
-
-      const afterElement = this.getDragAfterElement(column, e.clientY);
-      if (afterElement == null) {
-        column.appendChild(this.draggedCard);
-      } else {
-        column.insertBefore(this.draggedCard, afterElement);
-      }
-    });
-  }
-
-  getDragAfterElement(container, y) {
-    const cards = [...container.querySelectorAll('.kanban-card:not(.is-dragging)')];
-    return cards.reduce((closest, child) => {
-      const box = child.getBoundingClientRect();
-      const offset = y - box.top - box.height / 2;
-      if (offset < 0 && offset > closest.offset) {
-        return { offset: offset, element: child };
-      } else {
-        return closest;
-      }
-    }, { offset: Number.NEGATIVE_INFINITY }).element;
-  }
 }`
   }
-];
-
-const PLATFORM_STATS = [
-  { value: "24+", label: { en: "Deep Blueprints", ar: "شرح معماري وتطبيقي" } },
-  { value: "100%", label: { en: "Production Ready Code", ar: "أكواد برمجية جاهزة" } },
-  { value: "0ms", label: { en: "Instant Bilingual RTL", ar: "تبديل فوري عربي/إنجليزي" } },
-  { value: "SaaS", label: { en: "World-Class Design", ar: "تصميم عالمي بمعايير SaaS" } }
 ];
 
 const CATEGORIES = [
-  { id: "all", label: { en: "All Blueprints", ar: "كافة الشروحات والمشاريع" } },
-  { id: "ai", label: { en: "AI & Smart Agents", ar: "الذكاء الاصطناعي والوكلاء" } },
-  { id: "web", label: { en: "Modern Web & UI", ar: "الويب وتجربة المستخدم" } },
-  { id: "cloud", label: { en: "Cloud & Systems", ar: "السحابة والأنظمة الموزعة" } },
-  { id: "devtools", label: { en: "DevTools & Automation", ar: "أدوات المطورين والأتمتة" } }
+  { id: "all", label: { en: "All Blueprints & Showcases", ar: "كافة المشاريع والشروحات" } },
+  { id: "vm", label: { en: "Visual Merchandising & Retail", ar: "تنسيق العرض وهندسة المتاجر" } },
+  { id: "ai", label: { en: "AI & Smart Systems", ar: "الذكاء الاصطناعي والأنظمة" } },
+  { id: "web", label: { en: "Modern Web & UI Labs", ar: "الويب وتجربة المستخدم" } },
+  { id: "cloud", label: { en: "Cloud & Data Systems", ar: "السحابة وهندسة البيانات" } }
 ];

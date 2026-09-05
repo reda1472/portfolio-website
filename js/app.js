@@ -361,6 +361,21 @@
 
   // Generate Futuristic Card Visual Graphic Canvas
   function getVisualCanvasHtml(item) {
+    if (item.image) {
+      return `
+        <div class="card-visual-image-wrapper" style="position:relative; height:220px; overflow:hidden; border-bottom:1px solid var(--border-subtle); background:#070a13;">
+          <img src="${item.image}" alt="${item.title[state.lang] || item.title.en}" 
+               style="width:100%; height:100%; object-fit:cover; display:block; transition:transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);" 
+               loading="lazy" class="card-hero-img">
+          <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(5,7,13,0.1) 0%, rgba(5,7,13,0.75) 100%); pointer-events:none;"></div>
+          <div style="position:absolute; bottom:12px; inset-inline-start:14px; font-family:var(--font-mono); font-size:10px; font-weight:700; color:#fff; background:rgba(6,8,14,0.75); padding:3px 10px; border-radius:99px; backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.15); display:flex; align-items:center; gap:5px;">
+            <span style="width:6px; height:6px; border-radius:50%; background:#10b981; display:inline-block;"></span>
+            <span>HIGH-RESOLUTION VM ARCHITECTURE</span>
+          </div>
+        </div>
+      `;
+    }
+
     const id = item.id;
     let canvasInner = '';
 
@@ -692,6 +707,20 @@
 
     const title = item.title[state.lang] || item.title.en;
     elModalTitle.textContent = title;
+    let imageBannerHtml = '';
+    if (item.image) {
+      imageBannerHtml = `
+        <div style="position:relative; width:100%; height:280px; overflow:hidden; border-radius:var(--rad-lg); margin-bottom:2rem; box-shadow:0 20px 45px rgba(0,0,0,0.6); border:1px solid var(--border-medium);">
+          <img src="${item.image}" alt="${title}" style="width:100%; height:100%; object-fit:cover; display:block;">
+          <div style="position:absolute; inset:0; background:linear-gradient(180deg, transparent 40%, rgba(10,14,25,0.92) 100%);"></div>
+          <div style="position:absolute; bottom:16px; inset-inline-start:20px; font-size:0.85rem; font-weight:800; color:#fff; background:rgba(6,8,14,0.85); padding:5px 14px; border-radius:99px; backdrop-filter:blur(12px); border:1px solid rgba(6,182,212,0.4); display:flex; align-items:center; gap:8px;">
+            <span style="width:8px; height:8px; border-radius:50%; background:#06b6d4; display:inline-block; box-shadow:0 0 10px #06b6d4;"></span>
+            <span>MASTER VISUAL MERCHANDISING SHOWCASE</span>
+          </div>
+        </div>
+      `;
+    }
+
 
     const archDesc = item.architecture[state.lang] || item.architecture.en;
     const diagramSteps = item.diagramSteps || [];
@@ -699,6 +728,7 @@
     elModalBody.innerHTML = `
       <!-- Tab 1: Overview -->
       <div id="tab-pane-overview" class="tab-pane-view">
+        ${imageBannerHtml}
         <h4 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 1rem; color: var(--neon-cyan);">
           ${t('modal.tab_overview')}
         </h4>
