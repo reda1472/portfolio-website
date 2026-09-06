@@ -667,6 +667,11 @@
 .pill-web { background: rgba(99, 102, 241, 0.15); color: var(--neon-indigo); }
 .pill-cloud { background: rgba(168, 85, 247, 0.15); color: var(--neon-violet); }
 .pill-devtools { background: rgba(16, 185, 129, 0.15); color: var(--neon-emerald); }
+.pill-window { background: rgba(245, 158, 11, 0.18); color: #f59e0b; }
+.pill-floor { background: rgba(99, 102, 241, 0.18); color: #818cf8; }
+.pill-audits { background: rgba(16, 185, 129, 0.18); color: #10b981; }
+.pill-systems { background: rgba(6, 182, 212, 0.18); color: #06b6d4; }
+
 
 .card-top-right {
   display: flex;

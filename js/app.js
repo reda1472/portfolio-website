@@ -33,7 +33,7 @@
     check: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>`
   };
 
-  // Sandbox Templates
+  // Retail Visual Merchandising Sandbox Templates
   const SANDBOX_TEMPLATES = {
     bento: `<style>
   body {
@@ -45,37 +45,65 @@
     background: #060911;
     font-family: system-ui, sans-serif;
   }
-  .bento-card {
-    position: relative;
-    background: rgba(14, 21, 38, 0.8);
+  .table-card {
+    background: rgba(15, 23, 42, 0.85);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 20px;
-    padding: 32px;
-    max-width: 320px;
+    border-radius: 18px;
+    padding: 28px;
+    max-width: 360px;
     color: #ffffff;
     box-shadow: 0 20px 50px rgba(0,0,0,0.6);
-    transition: transform 0.3s ease;
   }
-  .bento-card:hover {
-    transform: translateY(-6px);
-    border-color: #6366f1;
-  }
-  .pill {
-    background: rgba(6, 182, 212, 0.15);
-    color: #06b6d4;
+  .spec-pill {
+    background: rgba(245, 158, 11, 0.18);
+    color: #f59e0b;
     padding: 4px 12px;
     border-radius: 99px;
     font-size: 11px;
     font-weight: 800;
   }
-  h3 { margin: 16px 0 8px; font-size: 19px; }
-  p { color: #94a3b8; font-size: 14px; line-height: 1.6; }
+  h3 { margin: 16px 0 8px; font-size: 18px; color: #fff; }
+  .grid-spec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 16px 0;
+  }
+  .cell {
+    background: rgba(255,255,255,0.04);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .cell-title { font-size: 10px; color: #94a3b8; text-transform: uppercase; }
+  .cell-val { font-size: 15px; font-weight: 800; color: #38bdf8; margin-top: 4px; }
+  .color-bar {
+    display: flex;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 12px;
+  }
+  .c1 { flex: 1; background: #f8fafc; }
+  .c2 { flex: 1; background: #cbd5e1; }
+  .c3 { flex: 1; background: #b45309; }
+  .c4 { flex: 1; background: #1e3a8a; }
+  .c5 { flex: 1; background: #0f172a; }
 </style>
-<div class="bento-card">
-  <span class="pill">BENTO ARCHITECTURE</span>
-  <h3>Glassmorphism UI</h3>
-  <p>Adaptive optical refraction, radiant neon border, and fluid responsive grid.</p>
+<div class="table-card">
+  <span class="spec-pill">FOLDING TABLE SOP (30x25cm)</span>
+  <h3>Nesting Table Folding Capacity</h3>
+  <div class="grid-spec">
+    <div class="cell"><div class="cell-title">Stack Max</div><div class="cell-val">8 Sweaters</div></div>
+    <div class="cell"><div class="cell-title">Size Order</div><div class="cell-val">S to XXL (Top-Down)</div></div>
+    <div class="cell"><div class="cell-title">Row Clearance</div><div class="cell-val">4 cm Gap</div></div>
+    <div class="cell"><div class="cell-title">Fold Board</div><div class="cell-val">30 x 25 cm Acrylic</div></div>
+  </div>
+  <div style="font-size:11px; color:#94a3b8;">5-Tone Color Gradient (Light to Dark):</div>
+  <div class="color-bar">
+    <div class="c1"></div><div class="c2"></div><div class="c3"></div><div class="c4"></div><div class="c5"></div>
+  </div>
 </div>`,
 
     glow: `<style>
@@ -88,24 +116,40 @@
     background: #05070d;
     font-family: system-ui, sans-serif;
   }
-  .neon-btn {
-    background: linear-gradient(135deg, #06b6d4, #6366f1, #a855f7);
+  .lux-box {
+    background: #0a0e1a;
+    border: 1px solid rgba(234, 179, 8, 0.4);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 340px;
     color: #ffffff;
-    border: none;
-    padding: 16px 36px;
-    border-radius: 14px;
-    font-size: 16px;
+    box-shadow: 0 0 35px rgba(234, 179, 8, 0.2);
+    text-align: center;
+  }
+  .lux-val {
+    font-size: 38px;
+    font-weight: 900;
+    color: #fbbf24;
+    text-shadow: 0 0 20px rgba(251, 191, 36, 0.6);
+    margin: 10px 0;
+  }
+  .ratio-badge {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 99px;
+    font-size: 12px;
     font-weight: 800;
-    cursor: pointer;
-    box-shadow: 0 0 35px rgba(99, 102, 241, 0.6);
-    transition: all 0.3s ease;
   }
-  .neon-btn:hover {
-    box-shadow: 0 0 50px rgba(6, 182, 212, 0.85);
-    transform: scale(1.06);
-  }
+  p { color: #94a3b8; font-size: 13px; line-height: 1.6; }
 </style>
-<button class="neon-btn">⚡ Deploy System</button>`,
+<div class="lux-box">
+  <div class="ratio-badge">5:1 THEATRICAL CONTRAST</div>
+  <div class="lux-val">1500 LUX</div>
+  <h4 style="margin:0 0 6px; font-size:16px;">Warm Spotlight (3000K)</h4>
+  <p>Calibrated directly onto hero mannequin textures with 300 Lux ambient backdrop for dramatic street impact.</p>
+</div>`,
 
     modal: `<style>
   body {
@@ -117,35 +161,39 @@
     background: #070a13;
     font-family: system-ui, sans-serif;
   }
-  .dialog-box {
-    background: rgba(14, 22, 40, 0.9);
-    backdrop-filter: blur(24px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+  .audit-sheet {
+    background: rgba(14, 22, 40, 0.95);
+    border: 1px solid rgba(16, 185, 129, 0.35);
     border-radius: 20px;
-    padding: 28px;
-    max-width: 320px;
+    padding: 24px;
+    max-width: 340px;
     color: #ffffff;
-    text-align: center;
     box-shadow: 0 25px 60px rgba(0,0,0,0.7);
   }
-  .badge-icon { font-size: 34px; margin-bottom: 12px; }
-  h4 { margin: 0 0 8px; font-size: 20px; }
-  p { color: #94a3b8; font-size: 14px; margin-bottom: 20px; }
-  .btn-ack {
-    background: #6366f1;
-    color: #fff;
-    border: none;
-    padding: 10px 24px;
-    border-radius: 10px;
-    font-weight: 700;
-    cursor: pointer;
+  .score-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+  .score-big { font-size: 32px; font-weight: 900; color: #10b981; }
+  .item-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 12px;
   }
+  .check-icon { color: #10b981; font-weight: 800; }
 </style>
-<div class="dialog-box">
-  <div class="badge-icon">🪐</div>
-  <h4>Cluster Online</h4>
-  <p>Distributed microservice mesh authenticated with zero latency.</p>
-  <button class="btn-ack">Acknowledge</button>
+<div class="audit-sheet">
+  <div class="score-header">
+    <div>
+      <div style="font-size:10px; color:#94a3b8; text-transform:uppercase;">Daily Branch Audit</div>
+      <div style="font-size:15px; font-weight:800; color:#fff;">AL NASSER Store #14</div>
+    </div>
+    <div class="score-big">98.6%</div>
+  </div>
+  <div class="item-row"><span>Window Display & Lighting (5:1)</span><span class="check-icon">✓ 10/10</span></div>
+  <div class="item-row"><span>Mannequin Styling & Pinning</span><span class="check-icon">✓ 10/10</span></div>
+  <div class="item-row"><span>Hanger Spacing (5cm Standard)</span><span class="check-icon">✓ 9.8/10</span></div>
+  <div class="item-row"><span>Garment Steaming & Crease-Free</span><span class="check-icon">✓ 10/10</span></div>
+  <div class="item-row"><span>Denim Bar Pigeon Holes (12/cubby)</span><span class="check-icon">✓ 9.5/10</span></div>
 </div>`
   };
 
@@ -342,10 +390,10 @@
       const btn = document.createElement('button');
       btn.className = `cat-chip-btn ${state.category === cat.id ? 'active' : ''}`;
       
-      const iconHtml = cat.id === 'ai' ? ICONS.brain 
-        : cat.id === 'web' ? ICONS.layout 
-        : cat.id === 'cloud' ? ICONS.server 
-        : cat.id === 'devtools' ? ICONS.terminal 
+      const iconHtml = cat.id === 'window' ? ICONS.layout 
+        : cat.id === 'floor' ? ICONS.trello 
+        : cat.id === 'audits' ? ICONS.check 
+        : cat.id === 'systems' ? ICONS.database 
         : ICONS.zap;
 
       btn.innerHTML = `${iconHtml} <span>${cat.label[state.lang] || cat.label.en} (${count})</span>`;
@@ -370,7 +418,7 @@
           <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(5,7,13,0.1) 0%, rgba(5,7,13,0.75) 100%); pointer-events:none;"></div>
           <div style="position:absolute; bottom:12px; inset-inline-start:14px; font-family:var(--font-mono); font-size:10px; font-weight:700; color:#fff; background:rgba(6,8,14,0.75); padding:3px 10px; border-radius:99px; backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.15); display:flex; align-items:center; gap:5px;">
             <span style="width:6px; height:6px; border-radius:50%; background:#10b981; display:inline-block;"></span>
-            <span>HIGH-RESOLUTION VM ARCHITECTURE</span>
+            <span>APPAREL VISUAL MERCHANDISING STANDARD</span>
           </div>
         </div>
       `;
@@ -593,7 +641,7 @@
         <div class="card-content-body">
           <div class="card-tag-row">
             <span class="cat-pill pill-${item.category}">
-              ${item.category === 'ai' ? ICONS.brain : item.category === 'web' ? ICONS.layout : item.category === 'cloud' ? ICONS.server : ICONS.terminal}
+              ${item.category === 'window' ? ICONS.layout : item.category === 'floor' ? ICONS.trello : item.category === 'audits' ? ICONS.check : ICONS.database}
               <span>${badgeText}</span>
             </span>
 
@@ -715,7 +763,7 @@
           <div style="position:absolute; inset:0; background:linear-gradient(180deg, transparent 40%, rgba(10,14,25,0.92) 100%);"></div>
           <div style="position:absolute; bottom:16px; inset-inline-start:20px; font-size:0.85rem; font-weight:800; color:#fff; background:rgba(6,8,14,0.85); padding:5px 14px; border-radius:99px; backdrop-filter:blur(12px); border:1px solid rgba(6,182,212,0.4); display:flex; align-items:center; gap:8px;">
             <span style="width:8px; height:8px; border-radius:50%; background:#06b6d4; display:inline-block; box-shadow:0 0 10px #06b6d4;"></span>
-            <span>MASTER VISUAL MERCHANDISING SHOWCASE</span>
+            <span>OFFICIAL APPAREL VISUAL MERCHANDISING SPECIFICATION</span>
           </div>
         </div>
       `;

@@ -1,759 +1,682 @@
-// TechCraft Hub - Master Showcase & Visual Merchandising Engineering Dataset (2026)
+// Reda Mohamed Salah - Senior Apparel Visual Merchandising & Store Standards Dataset (2026)
+// Grounded, Authentic Retail Merchandising Projects for AL NASSER & Premier Retail Fashion
+
 const TUTORIALS_DATA = [
   // ==========================================
-  // Visual Merchandising & Retail Design (10 Projects with AI Images)
+  // 1. Store Windows & Facades
   // ==========================================
   {
-    id: "vm-luxstore-facade",
-    category: "vm",
+    id: "vm-window-display",
+    category: "window",
     difficulty: "advanced",
-    readTime: "20 min",
+    readTime: "15 min",
     icon: "layout",
-    image: "assets/images/vm/vm-01-facade.jpg",
-    badge: { en: "Retail Architecture", ar: "هندسة واجهات ومتاجر" },
+    image: "assets/images/apparel-vm/vm-01-window-display.jpg",
+    badge: { en: "Window Architecture", ar: "فاترينات وواجهات العرض" },
     title: {
-      en: "LuxStore Facade & 3D Window Display Architecture",
-      ar: "استوديو تصميم واجهات المتاجر ونوافذ العرض الفاخرة ثلاثية الأبعاد"
+      en: "Apparel Store Window & Facade Architecture Planner",
+      ar: "نظام تخطيط وتنسيق فاترينات وواجهات متاجر الملابس"
     },
     summary: {
-      en: "Engineering high-end luxury storefronts and theatrical window displays. Master photometric sightlines, dramatic directional spotlights, and bespoke mannequin staging.",
-      ar: "هندسة وتصميم واجهات المتاجر الفاخرة ونوافذ العرض السينمائية. دراسة زوايا الرؤية الخارجية، حسابات الإضاءة المسلطة، وتنسيق منصات المانيكان وفق أعلى معايير بيوت الأزياء العالمية."
+      en: "Engineering high-impact apparel storefronts. Master pedestrian sightline geometry at 160cm eye level, 3000K warm directional spotlighting with 5:1 theatrical contrast, and balanced mannequin staging.",
+      ar: "هندسة وتنسيق فاترينات الملابس الخارجية الفاخرة. ضبط زوايا رؤية المارة على ارتفاع 160 سم، حسابات الإضاءة المسلطة بنسبة تباين 5:1، وتوزيع المانيكان وفق التكوين الهرمي المتوازن."
     },
-    tags: ["Window Display", "Facade Architecture", "Spotlight Lux", "Luxury Fashion", "Mannequin Staging"],
+    tags: ["Window Display", "Facade Architecture", "Spotlight Lux", "Mannequin Staging", "Visual Merchandising"],
     stats: [
-      { label: { en: "Visual Impact", ar: "قوة الجذب البصري" }, value: "+45%" },
-      { label: { en: "Pedestrian Stop Rate", ar: "نسبة توقف المارة" }, value: "38.4%" },
-      { label: { en: "Contrast Ratio", ar: "نسبة تباين الإضاءة" }, value: "5:1 Theatrical" }
+      { label: { en: "Footfall Attraction", ar: "جذب حركة المارة" }, value: "+34.8%" },
+      { label: { en: "Walk-in Conversion", ar: "معدل الدخول للمتجر" }, value: "28.5%" },
+      { label: { en: "Contrast Ratio", ar: "نسبة تباين الإضاءة" }, value: "5:1 Lux" }
     ],
     architecture: {
-      en: "Multi-layered visual depth composition: Front focal plane featuring hero mannequins on brushed brass pedestals, mid-ground architectural arches, and high-CRI 95+ warm spotlighting.",
-      ar: "تركيب بصري ثلاثي الطبقات: طبقة أمامية تضم المانيكانات الرئيسية على منصات نحاسية، طبقة وسطى من الأقواس المعمارية والرخام الداكن، وإضاءة مسلطة دافئة بمعامل CRI 95+."
+      en: "Tri-level depth composition: Foreground hero mannequins elevated on custom plinths, mid-ground architectural textured backdrop, and 3000K high-CRI (95+) directional spotlights framing the collection.",
+      ar: "تكوين بصري ثلاثي الأبعاد: منصة أمامية للمانيكانات الرئيسية، خلفية معمارية محايدة تبرز ألوان المجموعة، وإضاءة مسلطة دافئة 3000K بمعامل CRI 95+ لخلق عمق فخم يجذب المارة ليلاً."
     },
     diagramSteps: [
-      { en: "Sightline & Angle Analysis", ar: "تحليل زوايا رؤية المارة" },
-      { en: "Pyramid Mannequin Staging", ar: "التوزيع الهرمي للمانيكان" },
-      { en: "Photometric Beam Alignment", ar: "توجيه حزم الإضاءة المركزة" },
-      { en: "Prop & Material Contrast", ar: "موازنة المواد والرخام والنحاس" }
+      { en: "Sightline & Angle Analysis (160cm)", ar: "تحليل خط نظر المارة (160 سم)" },
+      { en: "Pyramid Mannequin Staging", ar: "التوزيع الهرمي للمانيكانات" },
+      { en: "Spotlight Calibration (1500 Lux)", ar: "معايرة الإضاءة المركزة (1500 لوكس)" },
+      { en: "Garment Drape & Pinning Check", ar: "فحص انسدال وتثبيت الملابس" }
     ],
     steps: [
       {
-        title: { en: "1. The 3-Second Pedestrian Sightline Formula", ar: "1. قاعدة الـ 3 ثوانٍ لخط رؤية المارة" },
+        title: { en: "1. The 3-Second Pedestrian Sightline Formula", ar: "1. معادلة خط نظر المارة (قاعدة الـ 3 ثوانٍ)" },
         content: {
-          en: "Align the primary focal point at 150cm to 170cm height from ground level to intersect natural human gaze at 4 meters distance from the glass window.",
-          ar: "ضبط نقطة الجذب البصري الرئيسية على ارتفاع 150 إلى 170 سم من مستوى الأرض لتتلاقى مع النظر الطبيعي للمارة على بُعد 4 أمتار من زجاج الواجهة."
+          en: "Position the focal point (lapel/chest of the central mannequin) at 155cm to 170cm height from pavement level to intersect natural human gaze at a 4-meter approach distance.",
+          ar: "ضبط نقطة الجذب البصري الرئيسية (منطقة الصدر والياقة للمانيكان المركزي) على ارتفاع 155 إلى 170 سم عن سطح الأرض لتتلاقى بدقة مع النظر الطبيعي للمتسوقين على بعد 4 أمتار من زجاج الفاترينة."
         }
       },
       {
-        title: { en: "2. Theatrical Contrast Ratio (5:1)", ar: "2. نسبة التباين المسرحي (5 إلى 1)" },
+        title: { en: "2. Theatrical Spotlighting Contrast Ratio (5:1)", ar: "2. معايير تباين الإضاءة المسرحية (5 إلى 1)" },
         content: {
-          en: "Direct concentrated 3000K warm spotlights at 1500 Lux onto the garments while keeping surrounding backdrop at 300 Lux to create dramatic perceived luxury.",
-          ar: "تسليط إضاءة موجهة دافئة 3000K بشدة 1500 لوكس على الملابس مع إبقاء الخلفية المحيطة عند 300 لوكس لصنع تباين درامي فخم يخطف الأنظار ليلاً."
+          en: "Direct 3000K narrow-beam (24°) spotlights at 1400-1600 Lux directly onto garment textures while keeping background ambient light at 300 Lux to eliminate reflections and command attention.",
+          ar: "توجيه إضاءة موجهة دافئة 3000K بزاوية حزمة 24 درجة وشدة 1400 إلى 1600 لوكس على أقمشة الملابس مع إبقاء إضاءة الخلفية عند 300 لوكس لإلغاء انعكاسات الزجاج وإبراز تفاصيل الخامات."
+        }
+      },
+      {
+        title: { en: "3. Garment Pinning & Anti-Crease Inspection", ar: "3. معايير التثبيت بالدبابيس وإزالة التجاعيد" },
+        content: {
+          en: "Ensure all garments are steamed wrinkle-free. Use invisible interior clip pinning along back seams to achieve flawless silhouettes without damaging fabric weave.",
+          ar: "التأكد من كوي جميع القطع بالبخار تماماً، واستخدام دبابيس ومشابك التثبيت غير المرئية من الداخل على طول خياطة الظهر لمنح المانيكان قواماً مثالياً مشدوداً دون إتلاف أنسجة القماش."
         }
       }
     ],
-    codeSnippet: `/* CSS / Visual Calculation Matrix for Window Lux Distribution */
-:root {
-  --focal-lux: 1500;
-  --ambient-lux: 300;
-  --contrast-ratio: calc(var(--focal-lux) / var(--ambient-lux)); /* 5.0 Theatrical Ratio */
-  --beam-angle-spotlight: 24deg;
-  --color-temp-kelvin: 3000K;
-  --cri-index: 97;
-}
-
-.window-display-spec {
-  elevation-focal-center: 160cm;
-  mannequin-spacing: 75cm;
-  materials: "Nero Marquina Marble", "Brushed Champagne Brass";
-}`
+    codeSnippet: `// Window Display Lux & Geometry Calibration Spec
+const windowDisplaySpecification = {
+  storeId: "AL-NASSER-FLAGSHIP-01",
+  windowType: "Closed-Back Street Facing",
+  pedestrianDistance: "4.0 meters",
+  focalCenterHeight: "162 cm",
+  lighting: {
+    spotlightLux: 1500,
+    ambientLux: 300,
+    contrastRatio: "5:1",
+    colorTemp: "3000K Warm White",
+    criIndex: 97
   },
+  mannequins: [
+    { id: "M1-Left", outfit: "Navy Blazer + Chinos", pose: "Walking Left" },
+    { id: "M2-Center", outfit: "Charcoal Overcoat + Knit", pose: "Apex Frontal" },
+    { id: "M3-Right", outfit: "Camel Trench + Denim", pose: "Slight Angle" }
+  ],
+  auditStatus: "VERIFIED_COMPLIANT"
+};`
+  },
+
+  // ==========================================
+  // 2. Mannequin Outfitting & Styling
+  // ==========================================
   {
     id: "vm-mannequin-styling",
-    category: "vm",
+    category: "window",
     difficulty: "intermediate",
     readTime: "16 min",
     icon: "layout",
-    image: "assets/images/vm/vm-02-mannequin.jpg",
-    badge: { en: "Styling Studio", ar: "استوديو المانيكان" },
+    image: "assets/images/apparel-vm/vm-02-mannequin-styling.jpg",
+    badge: { en: "Mannequin Studio", ar: "استوديو المانيكان" },
     title: {
-      en: "Haute Couture Mannequin Outfitting & Styling Studio",
-      ar: "استوديو تنسيق وتلبيس المانيكان والأزياء الراقية"
+      en: "Mannequin Outfitting & Capsule Styling Matrix",
+      ar: "مصفوفة تنسيق وتلبيس مانيكانات الملابس والمجموعات المتناسقة"
     },
     summary: {
-      en: "Master-level visual styling rules: Triangle and pyramid formations, fabric drape physics, silhouette balancing, and multi-piece capsule layering.",
-      ar: "قواعد تنسيق وتلبيس المانيكان الاحترافية: التكوين الهرمي والمثلثي المتوازن، فيزياء انسدال الأقمشة الفاخرة، ومطابقة التدرجات اللونية للمجموعات الموسمية."
+      en: "Standardized multi-piece apparel outfitting. Strict triangular silhouette balance, color harmonies (60-30-10 rule), size-appropriate pinning, and cross-merchandising add-ons.",
+      ar: "معايير تلبيس وتنسيق المانيكان بالأطقم الكاملة. التكوين الهرمي المتوازن، قاعدة تناسق الألوان 60-30-10، دبابيس التثبيت المخفية، وتنسيق الإكسسوارات المكملة للإطلالة."
     },
-    tags: ["Mannequin Styling", "Color Harmony", "Silhouette Balance", "Luxury Outfitting", "Visual Merchandising"],
+    tags: ["Mannequin Styling", "Capsule Wardrobe", "Color Harmony", "Garment Pinning", "Outerwear Layering"],
     stats: [
-      { label: { en: "Full Look Conversion", ar: "تحويل الطقم الكامل" }, value: "+32%" },
-      { label: { en: "Layering Pieces", ar: "متوسط قطع الإطلالة" }, value: "3.8 items" },
-      { label: { en: "Styling Hierarchy", ar: "التوازن الهرمي" }, value: "Triangle Rule" }
+      { label: { en: "Full Look UPT", ar: "معدل بيع الطقم الكامل" }, value: "+32.4%" },
+      { label: { en: "Avg Items / Mannequin", ar: "متوسط قطع الإطلالة" }, value: "3.8 Pieces" },
+      { label: { en: "Pinning Compliance", ar: "معيار التثبيت الخفي" }, value: "100% Invisible" }
     ],
     architecture: {
-      en: "Dynamic 3-point triangulation: Central apex mannequin in full editorial eveningwear flanked by two grounded supporting silhouettes creating visual rhythm.",
-      ar: "تكوين مثلثي ثلاثي الأبعاد: مانيكان محوري في قمة التكوين بالإطلالة المسائية الرئيسية، تحيط به إطلالتان مكملتان متوازنتان لصنع إيقاع بصري سلس."
+      en: "Balanced 3-silhouette capsule layout: Apex formal/smart centerpiece flanked by coordinated semi-formal and casual outfits sharing matching tonal palettes.",
+      ar: "تكوين كبسولي متوازن من 3 إطلالات: إطلالة رسمية مركزية في المنتصف، تحيط بها إطلالتان سمارت كاجوال مكملتان بنفس درجات الألوان لترغيب العميل في شراء الطقم كاملاً."
     },
     diagramSteps: [
-      { en: "Silhouette & Proportion", ar: "تحديد القوام والنسب" },
-      { en: "Base Outfit Layering", ar: "تلبيس الطبقة الأساسية" },
-      { en: "Capsule Outerwear & Draping", ar: "تنسيق المعطف والانسدال" },
-      { en: "Accessory Anchoring", ar: "إضافة الإكسسوارات والحقائب" }
+      { en: "Color Palette Selection (60-30-10)", ar: "تحديد لوحة الألوان (60-30-10)" },
+      { en: "Base Layer & Trousers Fit", ar: "تلبيس الطبقة الأساسية والبنطلون" },
+      { en: "Outerwear & Collar Draping", ar: "تنسيق المعطف والياقة" },
+      { en: "Accessories & Footwear Anchoring", ar: "إضافة الحذاء والإكسسوارات" }
     ],
     steps: [
       {
-        title: { en: "1. The Triangle Formation Rule", ar: "1. قاعدة التكوين المثلثي المتوازن" },
+        title: { en: "1. The 60-30-10 Apparel Color Rule", ar: "1. قاعدة 60-30-10 لتوزيع ألوان الملابس" },
         content: {
-          en: "Always position the tallest or most visually complex mannequin at the center-rear apex, with flanking figures staggered 30cm forward and angled 15 degrees inward.",
-          ar: "ضع المانيكان الأكثر تفصيلاً في قمة المثلث في الخلف، مع تقديم المانيكانين الجانبيين بمقدار 30 سم للأمام وتدويرهما 15 درجة نحو المركز لقيادة عين الزائر."
+          en: "Dominant color covers 60% of the silhouette (overcoat/suit), secondary color 30% (trousers/knitwear), and accent color 10% (pocket square, scarf, or belt).",
+          ar: "اللون السائد يشكل 60% من الإطلالة (المعطف أو البدلة)، واللون الثانوي 30% (البنطلون أو البلوفر)، ولون الإبراز 10% (منديل الجيب أو الوشاح أو الحزام) لصنع تباين جذاب."
         }
       },
       {
-        title: { en: "2. Pinning & Tailoring Tension", ar: "2. شد وقص وخياطة التثبيت غير المرئي" },
+        title: { en: "2. Natural Drape & Cuff Proportions", ar: "2. ضبط انسدال الأكمام وأساور القميص" },
         content: {
-          en: "Garments must fit as if custom bespoke: use hidden interior dressmaker pins along seam lines to eliminate wrinkles and sculpt ideal drape.",
-          ar: "يجب أن تظهر القطع وكأنها خياطة خاصة ومفصلة: استخدم دبابيس التثبيت المخفية على طول خطوط الخياطة الداخلية لإبراز القوام بدون أي تجاعيد غير مقصودة."
+          en: "Ensure shirt cuffs extend exactly 1.5 cm beyond jacket sleeves. Pants break should have a clean slight break over shoes without fabric bunching.",
+          ar: "إظهار أساور القميص بمسافة 1.5 سم بالضبط خارج كم الجاكيت، مع ضبط طول البنطلون بكسرة ناعمة واحدة فوق الحذاء دون أي تراكم للأقمشة."
         }
       }
     ],
-    codeSnippet: `// Mannequin Styling Proportion Rules
-const STYLING_RULES = {
-  formation: "Dynamic Triangle",
-  apexMannequin: { heightOffset: "+15cm", angle: "0deg", role: "Hero Statement" },
-  leftFlank: { offsetZ: "-30cm", angle: "+15deg", role: "Complementary Monochromatic" },
-  rightFlank: { offsetZ: "-30cm", angle: "-15deg", role: "Casual Tailored" },
-  colorPalette: ["Midnight Navy", "Forest Green", "Champagne Silk", "Charcoal Cashmere"]
-};`
-  },
-  {
-    id: "vm-planogram-density",
-    category: "vm",
-    difficulty: "advanced",
-    readTime: "22 min",
-    icon: "layout",
-    image: "assets/images/vm/vm-03-planogram.jpg",
-    badge: { en: "Spatial Engineering", ar: "هندسة المساحات" },
-    title: {
-      en: "Spatial Density & 3D Planogram Layout Optimizer",
-      ar: "محرك تخطيط البلانوجرام وكثافة المساحات والتوزيع الهندسي"
-    },
-    summary: {
-      en: "Algorithmic floor space and capacity allocation for flagship department stores. Prevent visual clutter, optimize aisle clearance, and maximize linear meter ROI.",
-      ar: "محرك حساب الكثافة المكانية للأرفف وطاولات العرض لمنع التكدس البصري، وتنسيق ممرات المشي المريحة، وتحقيق أعلى عائد مالي لكل متر طولي من العرض."
-    },
-    tags: ["Planogram 3D", "Floor Layout", "Capacity Planning", "Retail Density", "Visual Merchandising"],
-    stats: [
-      { label: { en: "Space Utilization", ar: "استغلال المساحة" }, value: "94.2%" },
-      { label: { en: "Aisle Comfort Clearance", ar: "عرض ممرات التسوق" }, value: "1.8 Meters" },
-      { label: { en: "Basket Lift", ar: "ارتفاع قيمة السلة" }, value: "+26%" }
-    ],
-    architecture: {
-      en: "Bi-symmetric floor layout with central low-profile folding display islands flanked by perimeter floating wall shelving units.",
-      ar: "تخطيط متماثل ثنائي المحور: جزر منخفضة في قلب الصالة لعرض الملابس المطوية مع جدران محيطية معلقة تمنح شعوراً بالاتساع والرحابة."
-    },
-    diagramSteps: [
-      { en: "Floor Blueprint Grid", ar: "رسم شبكة أبعاد المتجر" },
-      { en: "Aisle Clearance Buffer", ar: "تحديد ممرات الحركة المريحة" },
-      { en: "Fixture Density Balancing", ar: "موازنة كثافة الأرفف والشماعات" },
-      { en: "Color Wave Execution", ar: "تنفيذ التموج اللوني المنسق" }
-    ],
-    steps: [
-      {
-        title: { en: "1. Linear Density per Meter Metric", ar: "1. معيار كثافة القطع لكل متر طولي" },
-        content: {
-          en: "Luxury standards mandate maximum 12-14 hanging items per linear meter on display rails to preserve individual garment prestige and breathing room.",
-          ar: "المعايير العالمية للمتاجر الفاخرة تشترط ألا يزيد عدد القطع المعلقة عن 12 إلى 14 قطعة لكل متر طولي لمنح كل تصميم قيمته ومنع التزاحم."
-        }
-      },
-      {
-        title: { en: "2. Color Wave Sequencing", ar: "2. تسلسل التموج اللوني (Color Wave)" },
-        content: {
-          en: "Organize hanging garments from light to dark (White -> Camel -> Forest -> Navy -> Black) to guide natural reading direction.",
-          ar: "ترتيب القطع المعلقة من الفاتح إلى الداكن (أبيض، كاميل، أخضر، كحلي، أسود) ليتماشى مع اتجاه القراءة البصرية الطبيعية للعين."
-        }
-      }
-    ],
-    codeSnippet: `// Linear Merchandising Density Calculator
-function calculateOptimalDensity(railLengthMeters, luxuryTier = "PREMIUM") {
-  const maxItemsPerMeter = luxuryTier === "ULTRA_LUXURY" ? 10 : 14;
-  const targetItems = Math.floor(railLengthMeters * maxItemsPerMeter);
-  const spacingBetweenHangersCm = (railLengthMeters * 100) / targetItems;
-  
-  return {
-    targetCapacity: targetItems,
-    hangerSpacing: \`\${spacingBetweenHangersCm.toFixed(1)} cm\`,
-    visualClutterIndex: "OPTIMAL_BREATHING_ROOM"
+    codeSnippet: `// Mannequin Capsule Outfitting Algorithm
+function validateMannequinLook(outfit) {
+  const requirements = {
+    minLayers: 3,           // Base, Mid, Outer
+    colorDistribution: ["60%", "30%", "10%"],
+    steamed: true,
+    priceTagsHidden: true,
+    sizeRatio: "Sample Size Medium (M) or 50 European"
   };
+  return outfit.layers >= requirements.minLayers && outfit.steamed;
 }`
   },
-  {
-    id: "vm-ai-audit",
-    category: "vm",
-    difficulty: "advanced",
-    readTime: "25 min",
-    icon: "cpu",
-    image: "assets/images/vm/vm-04-ai-audit.jpg",
-    badge: { en: "AI & Computer Vision", ar: "ذكاء اصطناعي وتدقيق" },
-    title: {
-      en: "AI Computer Vision Visual Merchandising Compliance Suite",
-      ar: "منظومة الذكاء الاصطناعي لتدقيق هوية الفروع ومعايير العرض"
-    },
-    summary: {
-      en: "Autonomous computer vision system that audits store photographs against golden planograms. Detects missing SKUs, misaligned hangers, and wrong color orders instantly.",
-      ar: "منظومة ذكاء اصطناعي ورؤية حاسوبية تفحص صور الفروع ومقارنتها تلقائياً بالبلانوجرام المعتمد واكتشاف أي انحراف في ترتيب الألوان أو مسافات الشماعات في ثوانٍ."
-    },
-    tags: ["AI Vision", "Multi-Branch Audit", "Compliance Score", "Planogram Verification", "Automated Detection"],
-    stats: [
-      { label: { en: "Audit Accuracy", ar: "دقة الفحص الآلي" }, value: "98.9%" },
-      { label: { en: "Audit Speed", ar: "سرعة التدقيق" }, value: "1.2 seconds" },
-      { label: { en: "Brand Uniformity", ar: "مطابقة هوية الفروع" }, value: "99.4%" }
-    ],
-    architecture: {
-      en: "Edge tablet camera stream fed to YOLO-based object detection model segmenting individual display bays, bounding hanger spacing, and validating SKU color codes.",
-      ar: "التقاط صور العرض عبر الأجهزة اللوحية وتحليلها بنموذج ذكاء اصطناعي يحدد مربعات الفحص لكل رف ويقيس المسافات ويطابق رموز الألوان مع المعايير."
-    },
-    diagramSteps: [
-      { en: "Photo Capture", ar: "التقاط صورة واجهة العرض" },
-      { en: "Bay & Shelf Segmentation", ar: "تحديد الأرفف والأقسام" },
-      { en: "SKU & Spacing Analysis", ar: "مطابقة المنتجات والمسافات" },
-      { en: "Instant Compliance Score", ar: "توليد نسبة الامتثال الفورية" }
-    ],
-    steps: [
-      {
-        title: { en: "1. Bounding Box Alignment", ar: "1. تحديد مربعات المحاذاة الذكية" },
-        content: {
-          en: "The vision model detects shelf boundaries and calculates variance in hanger gaps, flagging any deviations exceeding 2cm threshold in red overlay.",
-          ar: "يقوم النموذج بتحديد حدود الأرفف وحساب المسافات بين الشماعات بدقة، ويبرز أي انحراف يتجاوز 2 سم بلون أحمر تحذيري لمعالجته فوراً."
-        }
-      }
-    ],
-    codeSnippet: `# AI Computer Vision Planogram Inspector
-import cv2
-import numpy as np
 
-def verify_display_compliance(image_path: str, reference_planogram_sku_order: list):
-    img = cv2.imread(image_path)
-    detected_items = model.detect_garments(img)
-    
-    compliance_score = 100.0
-    anomalies = []
-    
-    for idx, expected_sku in enumerate(reference_planogram_sku_order):
-        actual_sku = detected_items[idx]
-        if actual_sku.code != expected_sku:
-            compliance_score -= 10.0
-            anomalies.append(f"Mismatched SKU at pos {idx}: expected {expected_sku}")
-            
-    return {"compliance_percentage": compliance_score, "anomalies": anomalies}`
-  },
+  // ==========================================
+  // 3. Folding Tables & Color Blocking
+  // ==========================================
   {
-    id: "vm-lighting-lux",
-    category: "vm",
+    id: "vm-folding-tables",
+    category: "floor",
     difficulty: "intermediate",
-    readTime: "18 min",
-    icon: "zap",
-    image: "assets/images/vm/vm-05-lighting.jpg",
-    badge: { en: "Lighting Engineering", ar: "هندسة الإضاءة واللوكس" },
-    title: {
-      en: "Photometric Lighting & Lumens Visualizer for Boutiques",
-      ar: "نظام محاكاة الإضاءة البصرية وحسابات اللوكس وتركيز البقع الضوئية"
-    },
-    summary: {
-      en: "Architectural lighting engineering for high-end luxury stores. Balance 15° to 36° narrow beam accents, 3000K Kelvin warmth, and 98 CRI color rendering index.",
-      ar: "هندسة الإضاءة المعمارية للمتاجر الراقية. موازنة زوايا الحزم الضوئية الضيقة (15° إلى 36°)، درجة الحرارة الكلفنية 3000K، ومعامل نقاء الألوان 98 CRI."
-    },
-    tags: ["Photometrics", "Beam Angle", "Lux Calculations", "Theatrical Retail Lighting", "CRI 98"],
-    stats: [
-      { label: { en: "Focal Lux", ar: "شدة إضاءة النقطة البؤرية" }, value: "2,200 Lux" },
-      { label: { en: "Color Rendering (CRI)", ar: "معامل نقاء الألوان" }, value: "98 Ra" },
-      { label: { en: "Energy Efficiency", ar: "توفير الطاقة LED" }, value: "65% Saved" }
-    ],
-    architecture: {
-      en: "Multi-circuit ceiling track matrix with precision DALI dimming, isolating key pedestals with sharp elliptical spotlights while bathing perimeter in soft 400 Lux ambient.",
-      ar: "شبكة مسارات سقف متعددة الدوائر مع تحكم رقمي DALI، تسلط بقعاً ضوئية بيضاوية دقيقة على المنتجات البطلة مع إضاءة محيطية ناعمة لباقي المتجر."
-    },
-    diagramSteps: [
-      { en: "Ceiling Grid Map", ar: "تخطيط مسارات الإضاءة في السقف" },
-      { en: "Beam Angle Selection", ar: "اختيار زوايا الحزم الضوئية" },
-      { en: "Lux Ratio Calculation", ar: "حساب نسب تباين اللوكس" },
-      { en: "Glare Elimination Shielding", ar: "حجب الوهج المباشر عن المتسوق" }
-    ],
-    steps: [
-      {
-        title: { en: "1. Beam Angle Focus Formula", ar: "1. معادلة زاوية الحزمة الضوئية" },
-        content: {
-          en: "A 24-degree spot at 3.2m ceiling height yields an illuminated circle of exactly 1.35m diameter on display pedestals, perfectly framing hero accessories.",
-          ar: "كشاف بزاوية حزمة 24 درجة على ارتفاع سقف 3.2 متر ينتج دائرة ضوئية قطرها 1.35 متر على منصة العرض، مما يبرز القطعة الذهبية بإحكام تام."
-        }
-      }
-    ],
-    codeSnippet: `// Photometric Illumination Math
-function calculateBeamDiameter(beamAngleDegrees, mountingHeightMeters) {
-  const radians = (beamAngleDegrees * Math.PI) / 180;
-  const beamDiameterMeters = 2 * mountingHeightMeters * Math.tan(radians / 2);
-  const targetAreaSqMeters = Math.PI * Math.pow(beamDiameterMeters / 2, 2);
-  
-  return {
-    beamDiameter: \`\${beamDiameterMeters.toFixed(2)} meters\`,
-    coverageArea: \`\${targetAreaSqMeters.toFixed(2)} m²\`,
-    opticalClassification: "HERO_FOCAL_BEAM"
-  };
-}`
-  },
-  {
-    id: "vm-perfumery-display",
-    category: "vm",
-    difficulty: "intermediate",
-    readTime: "15 min",
-    icon: "layout",
-    image: "assets/images/vm/vm-06-perfumery.jpg",
-    badge: { en: "Sensory Merchandising", ar: "العرض الحسي الفاخر" },
-    title: {
-      en: "Luxury Perfumery & Cosmetics Display Architecture",
-      ar: "معرض ومنظومة عرض العطور ومستحضرات التجميل الفاخرة"
-    },
-    summary: {
-      en: "Display engineering for prestige fragrances, cosmetics, and jewelry. Backlit fluted glass shelves, brass trims, and ergonomic testing riser tiers.",
-      ar: "هندسة العرض الحسي للعطور ومستحضرات التجميل والمجوهرات. أرفف زجاجية مثلجة مضيئة خلفياً، حواف نحاسية فاخرة، ومدرجات عرض مخملية مريحة للمعاينة."
-    },
-    tags: ["Fragrance Display", "Backlit Acrylic", "Ergonomic Shelving", "Sensory Merchandising", "Luxury Retail"],
-    stats: [
-      { label: { en: "Tester Engagement", ar: "معدل تجربة العطور" }, value: "+54%" },
-      { label: { en: "Backlight Uniformity", ar: "تجانس الإضاءة الخلفية" }, value: "99.5%" },
-      { label: { en: "Dwell Time", ar: "متوسط وقت التوقف" }, value: "4.8 mins" }
-    ],
-    architecture: {
-      en: "Radial island counter with 360-degree perimeter circulation, integrated scent testing blotter slots, and concealed warm LED diffuser channels.",
-      ar: "منصة دائرية تتيح حركة حرة 360 درجة، مع قنوات إضاءة LED مخفية وأماكن مدمجة لشرائط التجربة وسلال المهملات النحاسية الفاخرة."
-    },
-    diagramSteps: [
-      { en: "Radial Island Blueprint", ar: "تصميم المنصة الدائرية" },
-      { en: "Backlit Fluted Glass Tier", ar: "تركيب الزجاج المضلع المضيء" },
-      { en: "Velvet Riser Ergonomics", ar: "تنسيق مدرجات العرض المخملية" },
-      { en: "Tester Bottle Placement", ar: "توزيع زجاجات التجربة الأمامية" }
-    ],
-    steps: [
-      {
-        title: { en: "1. Backlit Refraction Engineering", ar: "1. انكسار الضوء عبر الزجاج المضلع" },
-        content: {
-          en: "Direct 3500K edge-lit acrylic light guides behind fluted glass to transmit soft luminous gradients through crystal perfume bottles without creating heat.",
-          ar: "استخدام موجهات ضوء أكريليك 3500K خلف الزجاج المضلع لتمرير الضوء عبر زجاجات الكريستال الفاخرة دون توليد أي حرارة تؤثر على العطر."
-        }
-      }
-    ],
-    codeSnippet: `/* Luxury Backlit Fragrance Shelf */
-.perfume-shelf-tier {
-  background: linear-gradient(180deg, #161e2e, #0c121e);
-  border: 1px solid rgba(212, 175, 55, 0.3); /* Champagne Gold */
-  backdrop-filter: blur(20px);
-  padding: 18px 24px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 25px rgba(212, 175, 55, 0.15);
-}`
-  },
-  {
-    id: "vm-shopper-heatmap",
-    category: "vm",
-    difficulty: "advanced",
-    readTime: "24 min",
-    icon: "zap",
-    image: "assets/images/vm/vm-07-heatmap.jpg",
-    badge: { en: "Retail Analytics", ar: "تحليلات مسار المتسوق" },
-    title: {
-      en: "Shopper Foot-Traffic Heatmap & Journey Studio",
-      ar: "نظام الخرائط الحرارية لمسار الزوار ونقاط الجذب البصري"
-    },
-    summary: {
-      en: "Transform store spatial flow with AI traffic heatmaps. Identify dead zones, high-dwell hotspots, and optimize focal display placement along the primary circulation path.",
-      ar: "تتبع حركة المتسوقين داخل المتجر بالخرائط الحرارية الرقمية. اكتشاف المناطق الميتة ومناطق التوقف الطويل، ونقل المنتجات الأكثر ربحية إلى قلب مسار الحركة."
-    },
-    tags: ["Heatmap Analytics", "Customer Journey", "Dwell Time", "Visual Focal Points", "Foot Traffic"],
-    stats: [
-      { label: { en: "Dead Zone Recovery", ar: "تنشيط المناطق الميتة" }, value: "+41%" },
-      { label: { en: "Average Dwell Lift", ar: "زيادة وقت التوقف" }, value: "+3.2 mins" },
-      { label: { en: "Sales per Sq Meter", ar: "مبيعات المتر المربع" }, value: "+28%" }
-    ],
-    architecture: {
-      en: "Ceiling-mounted optical sensors triangulating customer velocity and dwell intervals, rendering 3-tier glowing heatmap trails (Cyan: Transitory, Violet: Moderate, Amber: Sustained).",
-      ar: "حساسات بصرية في السقف تقيس سرعة وفترات توقف المتسوقين، وترسم مسارات حرارية ملونة (السيان: عبور سريع، البنفسجي: توقف متوسط، البرتقالي: تفاعل طويل)."
-    },
-    diagramSteps: [
-      { en: "Store Floor Optical Tracking", ar: "التتبع البصري لأرضية المتجر" },
-      { en: "Dwell Time Clustering", ar: "تجميع فترات التوقف" },
-      { en: "Hotspot Identification", ar: "تحديد نقاط الجذب الساخنة" },
-      { en: "Display Re-merchandising", ar: "إعادة توزيع المنتجات والعرض" }
-    ],
-    steps: [
-      {
-        title: { en: "1. Decompression Zone Navigation", ar: "1. إدارة منطقة تخفيف السرعة عند المدخل" },
-        content: {
-          en: "The first 3-4 meters inside the store is the Decompression Zone. Never place key promotional products here; position high-impact focal displays starting at meter 5.",
-          ar: "أول 3 إلى 4 أمتار من المدخل تسمى منطقة تخفيف السرعة، ولا يجب وضع المنتجات المهمة فيها، بل تبدأ العروض البصرية الجاذبة ابتداءً من المتر الخامس."
-        }
-      }
-    ],
-    codeSnippet: `// Store Dwell Time & Hotspot Engine
-function analyzeStoreTraffic(trackingCoordinates) {
-  const hotspots = trackingCoordinates.filter(c => c.dwellDurationSeconds > 45);
-  const deadzones = trackingCoordinates.filter(c => c.dwellDurationSeconds < 5);
-  
-  return {
-    primaryGoldenPath: "Clockwise Perimeter Flow",
-    recommendedRelocation: "Move hero collection to Bay 4 (Amber Zone)",
-    roiIncreaseProjection: "+18.5%"
-  };
-}`
-  },
-  {
-    id: "vm-popup-architecture",
-    category: "vm",
-    difficulty: "advanced",
-    readTime: "20 min",
-    icon: "layout",
-    image: "assets/images/vm/vm-08-popup.jpg",
-    badge: { en: "Pop-Up Architecture", ar: "عمارة المتاجر المؤقتة" },
-    title: {
-      en: "Seasonal Campaign & Pop-Up Architecture Designer",
-      ar: "مصمم الحملات الموسمية والمتاجر المؤقتة الفاخرة (Pop-Up)"
-    },
-    summary: {
-      en: "Architecting ephemeral retail pavilions and high-impact seasonal fashion installations. Curved iridescent dichroic glass, neon ribbons, and brand immersion pedestals.",
-      ar: "تصميم الأجنحة المعمارية المؤقتة للمتاجر العالمية والحملات الحصرية. جدران زجاجية متغيرة الألوان (Dichroic Glass)، أشرطة نيون حركية، وقواعد عرض نحتية للأزياء."
-    },
-    tags: ["Pop-Up Pavilion", "Retail Installation", "Seasonal Campaigns", "Brand Immersion", "Dichroic Glass"],
-    stats: [
-      { label: { en: "Footfall Multiplier", ar: "مضاعفة حركة الزوار" }, value: "3.4x" },
-      { label: { en: "Social Media Shares", ar: "المشاركات الرقمية" }, value: "+120%" },
-      { label: { en: "Modular Reusability", ar: "إعادة الاستخدام المعياري" }, value: "85%" }
-    ],
-    architecture: {
-      en: "Self-supporting double-curved glass shell with integrated linear floor illumination and plug-and-play modular display units for 48-hour rapid deployment.",
-      ar: "هيكل زجاجي منحني ذاتي التدعيم مزود بإضاءة خطية مدمجة في الأرضية ووحدات عرض معيارية قابلة للتركيب والتفكيك السريع في غضون 48 ساعة."
-    },
-    diagramSteps: [
-      { en: "Atrium Space Blueprint", ar: "مخطط موقع البهو الرئيسي" },
-      { en: "Dichroic Glass Fabrication", ar: "تصنيع الألواح الزجاجية المتدرجة" },
-      { en: "Integrated Floor Neon Runs", ar: "تمديد مسارات النيون الأرضية" },
-      { en: "VIP Product Podiums", ar: "تركيب منصات العرض الحصرية" }
-    ],
-    steps: [
-      {
-        title: { en: "1. 360-Degree Photogenic Design", ar: "1. التصميم البصري الجذاب للمشاركة (360°)" },
-        content: {
-          en: "Every angle of the pop-up pavilion must serve as a high-contrast editorial photo backdrop for visitors, multiplying viral social reach organically.",
-          ar: "يجب أن تكون كل زاوية في الجناح المؤقت خلفية تصوير مثالية ومبهرة للمتسوقين، مما يضاعف الانتشار الرقمي للحملة على منصات التواصل بشكل طبيعي."
-        }
-      }
-    ],
-    codeSnippet: `// Modular Pop-Up Deployment Blueprint
-const POPUP_CONFIG = {
-  footprintArea: "120 sq meters",
-  materials: ["Curved Dichroic Glass", "Cast Concrete Benches", "Brushed Aluminum Trim"],
-  lighting: "Addressable DMX Neo-Pixel Runs",
-  assemblyDurationHours: 48,
-  expectedDailyEngagement: 4500
-};`
-  },
-  {
-    id: "vm-color-harmony",
-    category: "vm",
-    difficulty: "beginner",
     readTime: "14 min",
-    icon: "globe",
-    image: "assets/images/vm/vm-09-color-harmony.jpg",
-    badge: { en: "Color & Capsule", ar: "تناغم الألوان والكبسولة" },
+    icon: "trello",
+    image: "assets/images/apparel-vm/vm-03-folding-table.jpg",
+    badge: { en: "Folding Tables", ar: "طاولات العرض والطي" },
     title: {
-      en: "Color Harmony & Seasonal Wardrobe Capsule Matrix",
-      ar: "مصفوفة تناغم الألوان وتنسيق المجموعات الموسمية الكبسولية"
+      en: "Nesting Folding Tables & Color-Blocking Engine",
+      ar: "مخطط طاولات الملابس المطوية وتدرج الألوان وتدريج المقاسات"
     },
     summary: {
-      en: "Color theory mastery in retail visual merchandising. Gradient tonal transitions, triadic wardrobe balancing, and capsule collection wall coordination.",
-      ar: "إتقان نظرية الألوان في تنسيق الجدران العرضية للمتاجر. التدريج اللوني الانسيابي (من الأزرق الملكي إلى الكاميل والأبيض)، وتنسيق المجموعات الكبسولية المترابطة."
+      en: "Precision folding and color-blocking standard for central display tables. Acrylic folding board dimensions (30x25cm), top-to-bottom size progression (S to XXL), and left-to-right tonal gradients.",
+      ar: "المعيار القياسي لطي وترتيب الملابس على الطاولات المركزية. استخدام لوح الطي الموحد (30×25 سم)، تدريج المقاسات عمودياً من الأصغر للأكبر، وتدرج الألوان من الفاتح إلى الداكن."
     },
-    tags: ["Color Blocking", "Capsule Wardrobe", "Tonal Balancing", "Wall Display", "Visual Merchandising"],
+    tags: ["Folding Tables", "Color Blocking", "Size Progression", "Acrylic Folding Board", "Table Merchandising"],
     stats: [
-      { label: { en: "Cross-Sell Ratio", ar: "نسبة البيع المتقاطع" }, value: "+34%" },
-      { label: { en: "Visual Balance Index", ar: "مؤشر التوازن البصري" }, value: "100%" },
-      { label: { en: "Browse Duration", ar: "زمن استعراض الجدار" }, value: "3.5 mins" }
+      { label: { en: "Fold Uniformity", ar: "دقة تطابق مقاس الطي" }, value: "100% Precision" },
+      { label: { en: "Restock Cycle Time", ar: "سرعة إعادة ترتيب الطاولة" }, value: "-40% Faster" },
+      { label: { en: "Color Progression", ar: "التدرج اللوني الأفقي" }, value: "Light to Dark" }
     ],
     architecture: {
-      en: "Tonal rhythm wall architecture: Long hanging garments flanked by coordinated folded knitwear stacks, illuminated by recessed 3000K warm cove uplighting.",
-      ar: "هندسة الجدار الإيقاعي: ملابس معلقة طويلة تتوسطها أعمدة أزياء مطوية منسقة لونياً، مع إضاءة خفية دافئة تبرز ألوان الأقمشة الطبيعية."
+      en: "Nesting wooden tables configured with 5-stack knitwear rows. Height-tiered layout: Small accessories on top tier, color-blocked folded sweaters on main tier, and matching chinos on lower tier.",
+      ar: "طاولات خشبية متدرجة الارتفاع (Nesting Tables): المستوى العلوي للإكسسوارات الجلدية، المستوى الأوسط للبلوفرات المطوية بانتظام، والمستوى السفلي للبنطلونات المكملة."
     },
     diagramSteps: [
-      { en: "Color Palette Selection", ar: "اختيار لوحة ألوان الموسم" },
-      { en: "Tonal Flow Left-to-Right", ar: "التدريج اللوني من اليسار لليمين" },
-      { en: "Hanging vs Folding Balance", ar: "الموازنة بين المعلق والمطوي" },
-      { en: "Accessory Color Anchors", ar: "توزيع الإكسسوارات كمثبتات لونية" }
+      { en: "Folding Board Alignment (30x25cm)", ar: "استخدام لوح الطي القياسي (30×25 سم)" },
+      { en: "Vertical Size Stack (S to XXL)", ar: "رص المقاسات رأسياً (S في الأعلى إلى XXL)" },
+      { en: "Left-to-Right Color Gradient", ar: "تدرج الألوان من الفاتح إلى الداكن" },
+      { en: "Size Sticker Placement Check", ar: "محاذاة ملصقات المقاسات على حافة الطي" }
     ],
     steps: [
       {
-        title: { en: "1. The 60-30-10 Retail Color Ratio", ar: "1. قاعدة 60-30-10 لتوزيع ألوان الجدار" },
+        title: { en: "1. The Standard 30x25cm Folding Board Protocol", ar: "1. بروتوكول لوح الطي القياسي 30×25 سم" },
         content: {
-          en: "Assign 60% dominant neutral (Midnight Navy), 30% secondary warmth (Camel & Sand), and 10% high-contrast accent (Crisp White) for optical luxury.",
-          ar: "خصص 60% للون الأساسي الهادئ (الكحلي الملكي)، 30% للون الثانوي الدافئ (الكاميل والبيج)، و 10% للون الساطع (الأبيض الناصع) لتحقيق أعلى درجات الأناقة."
+          en: "Every knit sweater, polo, or tee must be folded around an acrylic template (30cm length x 25cm width) so all edges align with zero variance.",
+          ar: "يتم طي كافة البلوفرات وتيشيرتات البولو باستخدام قالب أكريليك موحد (30 سم طول × 25 سم عرض) لتتطابق حواف الأعمدة بنسبة 100%."
+        }
+      },
+      {
+        title: { en: "2. Top-to-Bottom Size Hierarchy", ar: "2. التسلسل الهرمي للمقاسات من الأعلى للأسفل" },
+        content: {
+          en: "Stack maximum 6 to 8 sweaters per pile. Place Size S on top, progressing down through M, L, XL, to XXL at the bottom. Clear size stickers facing front.",
+          ar: "الحد الأقصى لكل عمود هو 6 إلى 8 قطع لمنع السقوط، مع وضع المقاس الأصغر (S) في الأعلى ثم (M, L, XL) وتثبيت (XXL) في القاعدة مع محاذاة ملصق المقاس للأمام."
         }
       }
     ],
-    codeSnippet: `// 60-30-10 Color Harmonizer
-const CAPSULE_PALETTE = {
-  dominant: { name: "Midnight Navy", percentage: "60%", hex: "#0f172a" },
-  secondary: { name: "Camel Cashmere", percentage: "30%", hex: "#b48b60" },
-  accent: { name: "Crisp Ivory", percentage: "10%", hex: "#f8fafc" },
-  rule: "Left-to-Right Tonal Gradient Progression"
+    codeSnippet: `// Table Folding Capacity & Layout Calculation
+function calculateTableCapacity(tableWidthCm, stackDepthCm) {
+  const stackWidth = 28; // cm with clearance
+  const stackDepth = 33; // cm
+  const maxStacksAcross = Math.floor(tableWidthCm / stackWidth);
+  const maxStackHeightUnits = 6; // sweaters
+  return {
+    totalStacks: maxStacksAcross,
+    totalGarmentCapacity: maxStacksAcross * maxStackHeightUnits,
+    colorGradientOrder: ["Off-White", "Oatmeal", "Camel", "Navy", "Charcoal"]
+  };
+}`
+  },
+
+  // ==========================================
+  // 4. Daily Store VM Compliance & Audits
+  // ==========================================
+  {
+    id: "vm-store-audit",
+    category: "audits",
+    difficulty: "advanced",
+    readTime: "18 min",
+    icon: "check",
+    image: "assets/images/apparel-vm/vm-04-store-audit.jpg",
+    badge: { en: "Store Audits", ar: "التدقيق الميداني" },
+    title: {
+      en: "Daily Store VM Compliance & Inspection Suite",
+      ar: "نظام التدقيق اليومي الميداني لمعايير عرض الملابس بالفروع"
+    },
+    summary: {
+      en: "Comprehensive mobile branch inspection system auditing 45 retail touchpoints: hanger spacing, steam quality, price tag visibility, shelf cleanliness, and planogram fidelity with instant scoring.",
+      ar: "نظام التدقيق الميداني اليومي لفروع المتاجر لقياس 45 نقطة فحص معتمدة: استقامة الشماعات، جودة الكوي، وضوح بطاقات الأسعار، نظافة الرفوف، وتطابق البلانوجرام بنتيجة تقييم فورية."
+    },
+    tags: ["Daily Store Audit", "Compliance Checklist", "Quality Assurance", "Retail Operations", "Branch Standards"],
+    stats: [
+      { label: { en: "Audit Time", ar: "وقت تدقيق الفرع" }, value: "18 Minutes" },
+      { label: { en: "Avg Branch Compliance", ar: "نسبة المطابقة التشغيلية" }, value: "97.6%" },
+      { label: { en: "Corrective Action SLA", ar: "سرعة معالجة الملاحظات" }, value: "< 2 Hours" }
+    ],
+    architecture: {
+      en: "Systematic branch audit protocol: Morning opening walk-through, mid-day recovery check, and pre-closing floor readiness, synced directly to regional visual merchandising management.",
+      ar: "بروتوكول فحص الفروع اليومي المعتمد: جولة الفحص الصباحي قبل الافتتاح، جولة ترتيب أوقات الذروة، وجولة الجاهزية المسائية، مع رفع التقرير المباشر للإدارة الإقليمية."
+    },
+    diagramSteps: [
+      { en: "Storefront & Facade Walkthrough", ar: "فحص نظافة الواجهة والفاترينات" },
+      { en: "Mannequin Outfit & Pin Check", ar: "تدقيق أطقم المانيكان والتثبيت" },
+      { en: "Racks Hanger Spacing (5cm)", ar: "فحص مسافة الشماعات (5 سم)" },
+      { en: "Folding Tables Size Integrity", ar: "فحص اكتمال مقاسات الطاولات" }
+    ],
+    steps: [
+      {
+        title: { en: "1. The 45-Point VM Checksheet", ar: "1. استمارة الـ 45 نقطة لمعايير العرض" },
+        content: {
+          en: "Inspect entrance focal points, check all clothing tags are facing inward/tucked, verify hanger hooks point left, and ensure no empty hangers remain on racks.",
+          ar: "فحص نقاط الجذب عند المدخل، التأكد من إخفاء بطاقات الأسعار داخل الياقات، توجيه خطافات الشماعات لليسار، وسحب أي شماعات فارغة فوراً من صالة العرض."
+        }
+      },
+      {
+        title: { en: "2. Scoring & Corrective Action", ar: "2. احتساب نقاط الفرع والإجراءات التصحيحية" },
+        content: {
+          en: "Branches scoring below 92% must execute immediate 1-hour visual recovery before afternoon shopping peak hours.",
+          ar: "أي فرع يحصل على تقييم أقل من 92% يُلزم بتنفيذ خطة ترتيب فوري لمدة ساعة واحدة قبل بدء ذروة تسوق المساء."
+        }
+      }
+    ],
+    codeSnippet: `// Daily Branch VM Compliance Checklist Schema
+const dailyAuditChecklist = {
+  branchCode: "AL-NASSER-BRANCH-14",
+  auditor: "Reda Mohamed Salah (Senior VM)",
+  timestamp: "2026-09-06T10:00:00Z",
+  touchpoints: [
+    { section: "Window Display", score: 10, max: 10, notes: "Flawless lighting and drape" },
+    { section: "Mannequin Styling", score: 10, max: 10, notes: "All layers pinned cleanly" },
+    { section: "Hanger Spacing (5cm)", score: 9.5, max: 10, notes: "Outerwear rail spaced correctly" },
+    { section: "Folding Tables", score: 10, max: 10, notes: "Color blocking S-to-XXL verified" },
+    { section: "Steam Quality", score: 9.8, max: 10, notes: "Zero visible creases on shirts" }
+  ],
+  totalCompliance: "98.6%",
+  certification: "OFFICIALLY_VERIFIED"
 };`
   },
-  {
-    id: "vm-digital-signage",
-    category: "vm",
-    difficulty: "intermediate",
-    readTime: "17 min",
-    icon: "zap",
-    image: "assets/images/vm/vm-10-digital-signage.jpg",
-    badge: { en: "Phygital Retail", ar: "العرض الرقمي التفاعلي" },
-    title: {
-      en: "Dynamic Digital Signage & Shelf-Edge Synchronizer",
-      ar: "نظام الشاشات الرقمية التفاعلية وتحديث أرفف العرض الذكية"
-    },
-    summary: {
-      en: "Merging digital media with physical merchandising. Ultra-wide curved micro-LED fascias playing ambient brand motion synchronized with smart illuminated product shelves.",
-      ar: "دمج الوسائط الرقمية مع العرض الفعلي للمنتجات. شاشات micro-LED منحنية تعرض حملات الفيديو التفاعلية متزامنة مع إضاءة الأرفف وأسعار الباركود الرقمية الذكية."
-    },
-    tags: ["Digital Signage", "Shelf-Edge LED", "Ambient Motion", "Phygital Retail", "Smart Shelves"],
-    stats: [
-      { label: { en: "Shopper Recall", ar: "تذكر العلامة التجارية" }, value: "+62%" },
-      { label: { en: "Price Sync Latency", ar: "سرعة تحديث الأسعار" }, value: "0.2s Instant" },
-      { label: { en: "Screen Contrast", ar: "وضوح شاشة الـ LED" }, value: "HDR 1500 nits" }
-    ],
-    architecture: {
-      en: "Architectural curved wood fascia housing 32:9 micro-LED panel synchronized with smart shelf weight sensors and directional audio speakers.",
-      ar: "إطار خشبي معماري منحني يضم شاشة ميكرو LED فائقة العرض بنسبة 32:9 متزامنة مع حساسات الأرفف الذكية والإضاءة الموجهة."
-    },
-    diagramSteps: [
-      { en: "Curved Wall Integration", ar: "دمج الشاشة في جدار المتجر" },
-      { en: "Motion Video CMS Sync", ar: "مزامنة محتوى الفيديو الإعلاني" },
-      { en: "Shelf Light Modulation", ar: "تنسيق نبضات إضاءة الأرفف" },
-      { en: "Customer Lift Trigger", ar: "تفاعل الشاشة عند رفع المنتج" }
-    ],
-    steps: [
-      {
-        title: { en: "1. Ambient Phygital Subtlety", ar: "1. نعومة الحركة الرقمية التفاعلية" },
-        content: {
-          en: "Motion on shelf-edge screens must be slow and atmospheric (flowing fabric, water ripples) rather than rapid flashes, keeping customer focus on the physical product.",
-          ar: "يجب أن تكون الحركة الرقمية على الشاشات ناعمة وانسيابية (كتموج الأقمشة أو الضوء) لتجنب تشتيت عين الزائر والحفاظ على التركيز على المنتج الفعلي."
-        }
-      }
-    ],
-    codeSnippet: `// Phygital Shelf Synchronization Event
-function onProductLifted(shelfId, sku) {
-  triggerScreenMedia({
-    targetScreen: "CURVED_MICRO_LED_HEADER",
-    campaignClip: \`editorial_\${sku}_story.mp4\`,
-    transition: "Crossfade 0.8s",
-    shelfUnderglow: "Pulse Cyan 100%"
-  });
-}`
-  },
 
   // ==========================================
-  // Modern Software Engineering & AI Blueprints
+  // 5. Denim Wall & Capacity
   // ==========================================
   {
-    id: "ai-multi-agent-system",
-    category: "ai",
-    difficulty: "advanced",
-    readTime: "25 min",
-    icon: "cpu",
-    badge: { en: "AI & Agents", ar: "ذكاء اصطناعي ووكلاء" },
-    title: {
-      en: "Building Autonomous Multi-Agent AI Systems with Tool Calling",
-      ar: "بناء منظومة وكلاء الذكاء الاصطناعي الذاتية مع استدعاء الأدوات"
-    },
-    summary: {
-      en: "A comprehensive deep dive into orchestrating multi-agent LLM systems with autonomous task planning, vector memory, and self-correction loops.",
-      ar: "دليل معماري متقدم لبناء وتنسيق وكلاء الذكاء الاصطناعي متعددي المهام مع التخطيط الذاتي وإدارة الذاكرة وحلقات التصحيح الذاتي."
-    },
-    tags: ["Python", "FastAPI", "LangChain", "VectorDB", "Redis"],
-    stats: [
-      { label: { en: "Architecture", ar: "المعمارية" }, value: "Multi-Agent" },
-      { label: { en: "Latency", ar: "زمن الاستجابة" }, value: "< 450ms" },
-      { label: { en: "Reliability", ar: "دقة التنفيذ" }, value: "99.4%" }
-    ],
-    architecture: {
-      en: "Event-driven orchestrator distributing specialized sub-tasks across Planner, Executor, and Critic agents backed by Redis Pub/Sub.",
-      ar: "معمارية موجهة بالأحداث تقوم بتوزيع المهام بين وكيل التخطيط ووكيل التنفيذ ووكيل التدقيق مع ذاكرة مشتركة عبر Redis."
-    },
-    diagramSteps: [
-      { en: "User Request", ar: "طلب المستخدم" },
-      { en: "Planner Agent", ar: "وكيل التخطيط" },
-      { en: "Tool Execution (Python/SQL)", ar: "استدعاء الأدوات البرمجية" },
-      { en: "Critic & Reflection", ar: "المراجعة والتصحيح الذاتي" },
-      { en: "Verified Response", ar: "المخرجات النهائية الموثقة" }
-    ],
-    steps: [
-      {
-        title: { en: "1. Define Agent Roles & System Prompts", ar: "1. تحديد أدوار الوكلاء والتعليمات الأساسية" },
-        content: {
-          en: "Configure strict role boundaries for each agent: The Planner decomposes objectives into a DAG; the Worker executes tool calls; the Critic reviews correctness.",
-          ar: "تحديد حدود صارمة لكل وكيل: يقوم مخطط المهام بتفكيك الهدف إلى رسم بياني مهام (DAG)، بينما يقوم المنفذ باستدعاء الأدوات، ويقوم المدقق بمراجعة السلامة والنتائج."
-        }
-      }
-    ],
-    codeSnippet: `class MultiAgentOrchestrator:
-    def __init__(self, memory_client):
-        self.memory = memory_client
-        self.planner = PlannerAgent()
-        self.worker = WorkerAgent()
-        self.critic = CriticAgent()
-
-    async def execute_workflow(self, objective: str):
-        plan = await self.planner.create_dag(objective)
-        return {"status": "SUCCESS", "artifacts": plan}`
-  },
-  {
-    id: "rag-semantic-search",
-    category: "ai",
-    difficulty: "intermediate",
-    readTime: "18 min",
-    icon: "file-text",
-    badge: { en: "RAG & Search", ar: "بحث دلالي RAG" },
-    title: {
-      en: "Production RAG Pipeline: Semantic Search & Document Chat Without Hallucination",
-      ar: "بناء نظام RAG إنتاجي: البحث الدلالي والدردشة مع المستندات بدون هلوسة"
-    },
-    summary: {
-      en: "Step-by-step engineering guide to creating an enterprise Retrieval-Augmented Generation pipeline with hybrid search and citation tracking.",
-      ar: "دليل تطبيقي متكامل لبناء منظومة RAG مؤسسية تجمع بين البحث الدلالي بالمتجهات والبحث الكلماتي الدقيق مع تتبع المصادر."
-    },
-    tags: ["Python", "Vector Embeddings", "ChromaDB", "Chunking", "FastAPI"],
-    stats: [
-      { label: { en: "Chunk Size", ar: "حجم المقاطع" }, value: "512 Tokens" },
-      { label: { en: "Recall Rate", ar: "نسبة الدقة" }, value: "98.2%" },
-      { label: { en: "Zero Hallucination", ar: "تجنب الهلوسة" }, value: "Strict Citations" }
-    ],
-    architecture: {
-      en: "Multi-stage ingestion pipeline with recursive character splitting, embedding generation, dense+sparse vector retrieval, and context compression.",
-      ar: "خط معالجة متعدد المراحل يبدأ بتفكيك المستندات ذكياً وتوليد المتجهات الرقمية والدمج بين البحث النصي والدلالي وإعادة ترتيب النتائج."
-    },
-    diagramSteps: [
-      { en: "Document Upload", ar: "رفع المستند" },
-      { en: "Smart Chunking", ar: "التفكيك الذكي للمقاطع" },
-      { en: "Vector Embeddings", ar: "توليد المتجهات العددية" },
-      { en: "Hybrid Retrieval", ar: "البحث الهجين المدمج" },
-      { en: "Source Citation Response", ar: "الإجابة الموثقة بالمصادر" }
-    ],
-    steps: [
-      {
-        title: { en: "1. Document Parsing & Semantic Chunking", ar: "1. قراءة المستندات والتقطيع الدلالي" },
-        content: {
-          en: "Split documents into cohesive sections maintaining header context and semantic overlap rather than fixed character cuts.",
-          ar: "تقسيم الوثائق إلى مقاطع متماسكة منطقياً مع الحفاظ على تسلسل العناوين وهوامش التداخل الدلالي لتجنب بتر المعاني."
-        }
-      }
-    ],
-    codeSnippet: `def ingest_document(text: str, doc_id: str, chunk_size: int = 500):
-    chunks = recursive_chunk(text, chunk_size)
-    embeddings = embedder.encode_batch(chunks)
-    vector_db.upsert(ids=[f"{doc_id}_{i}" for i in range(len(chunks))], vectors=embeddings)`
-  },
-  {
-    id: "bento-grid-saas-dashboard",
-    category: "web",
+    id: "vm-denim-wall",
+    category: "floor",
     difficulty: "intermediate",
     readTime: "15 min",
-    icon: "layout",
-    badge: { en: "Modern UI/UX", ar: "واجهات وتصميم" },
+    icon: "database",
+    image: "assets/images/apparel-vm/vm-05-denim-wall.jpg",
+    badge: { en: "Denim Bar", ar: "جدار الجينز والبنطلونات" },
     title: {
-      en: "Architecting Ultra-Modern Bento Grid Dashboards with CSS Grid & Glassmorphism",
-      ar: "هندسة لوحات تحكم SaaS الحديثة بنظام Bento Grid والمؤثرات الزجاجية"
+      en: "Denim Wall & Trousers Capacity Optimizer",
+      ar: "منظومة تنسيق جدار الجينز والبنطلونات وسعة العرض"
     },
     summary: {
-      en: "Mastering the layout patterns used by Apple, Linear, and Vercel. Learn responsive CSS grid placement, backdrop filters, and subtle ambient glows.",
-      ar: "تعلم أسرار تصميم شبكات Bento Grid العصرية المعتمدة في كبرى المنصات العالمية مثل Linear و Apple مع الخلفيات الزجاجية والتأثيرات الضوئية."
+      en: "Strategic layout of the denim bar. Pigeon hole allocation by wash (light, medium, dark, black) and fit (Skinny, Slim, Straight), with strict 12-piece stack limits to prevent shelf collapse.",
+      ar: "التخطيط الهندسي لجدار الجينز. توزيع الخانات الخشبية حسب درجة الغسيل وقصة البنطلون، مع ضبط الحد الأقصى بـ 12 قطعة مطوية في الخانة الواحدة لضمان ثبات الترتيب."
     },
-    tags: ["CSS Grid", "Glassmorphism", "Responsive Design", "UI Architecture", "Dark Mode"],
+    tags: ["Denim Bar", "Pigeon Holes", "Jeans Folding", "Wash Hierarchy", "Capacity Calculation"],
     stats: [
-      { label: { en: "Layout Type", ar: "نوع الهيكل" }, value: "Dynamic Bento" },
-      { label: { en: "Zero Frameworks", ar: "بدون إطارات عمل" }, value: "Pure CSS3" },
-      { label: { en: "FPS Performance", ar: "معدل الإطارات" }, value: "60 FPS Smooth" }
+      { label: { en: "Stack Stability", ar: "الحد الأقصى لكل خانة" }, value: "12 Pairs/Cubby" },
+      { label: { en: "Size Search Speed", ar: "سرعة استخراج المقاس" }, value: "4.5 Seconds" },
+      { label: { en: "Denim Category Sales", ar: "نمو مبيعات الجينز" }, value: "+22.8%" }
     ],
     architecture: {
-      en: "Pure CSS Grid with auto-fit and minmax formulas paired with CSS Custom Properties for dynamic lighting and glass refraction.",
-      ar: "شبكة CSS Grid نقية بتركيبة auto-fit و minmax مع متغيرات CSS ذكية لإدارة الانعكاسات الزجاجية وتوزيع الأبعاد."
+      en: "Grid pigeonhole structure: Top row displays hanging front-facing hero styles on metal clamps; lower grid rows contain folded inventory arranged horizontally by cut and vertically by size (30 to 40).",
+      ar: "هيكل شبكي لخانات الجينز: الصف العلوي لعرض الموديلات المميزة معلقة بمشابك معدنية، والصفوف السفلية تضم البنطلونات المطوية أفقياً حسب القصة ورأسياً حسب المقاسات (30 إلى 40)."
     },
     diagramSteps: [
-      { en: "CSS Grid Architecture", ar: "هيكل شبكة CSS Grid" },
-      { en: "Backdrop Blur & Borders", ar: "تأثير الزجاج البلوري والحدود" },
-      { en: "Interactive Hover Glow", ar: "تأثير التوهج التفاعلي" },
-      { en: "Responsive Fluid Flow", ar: "التكيف اللحظي مع الشاشات" }
+      { en: "Wash Sorting (Light to Raw Indigo)", ar: "ترتيب درجات الغسيل من الفاتح للغامق" },
+      { en: "Fit Clustering (Slim, Regular, Straight)", ar: "تجميع القصات (سليم، ريجولار، ستريت)" },
+      { en: "Waistband Tag Front Alignment", ar: "محاذاة شارة الخصر الجلدية للأمام" },
+      { en: "Replenishment Threshold Trigger", ar: "تنبيه إعادة تعبئة النواقص عند 4 قطع" }
     ],
     steps: [
       {
-        title: { en: "1. The Bento Grid Dimension Formula", ar: "1. معادلة أبعاد شبكة Bento" },
+        title: { en: "1. The Denim Bar Folding Standard", ar: "1. معيار طي البنطلون الجينز لجدار العرض" },
         content: {
-          en: "Configure `grid-template-columns: repeat(12, 1fr)` for fine-grained spans: 8 cols for primary charts, 4 cols for stat tiles, and 12 cols for activity tables.",
-          ar: "ضبط نظام الـ 12 عموداً لتوزيع مرن: 8 أعمدة للرسوم البيانية الكبرى، 4 أعمدة لبطاقات الإحصائيات، و 12 عموداً لجداول الأنشطة اللحظية."
+          en: "Fold legs in half with back pockets facing upward. Turn waist over so leather brand patch and size label face directly outward toward the customer.",
+          ar: "طي أرجل البنطلون للمنتصف مع جعل الجيوب الخلفية لأعلى، وثني منطقة الخصر بحيث تظهر شارة الماركة الجلدية وبطاقة المقاس مواجهة للمتسوق مباشرة."
+        }
+      },
+      {
+        title: { en: "2. Pigeon Hole Capacity Limits", ar: "2. حدود السعة التخزينية لكل خانة" },
+        content: {
+          en: "Maintain strictly between 8 and 12 pairs per pigeon hole. More than 12 causes stack tipping; less than 6 makes the display look depleted.",
+          ar: "الحفاظ على عدد 8 إلى 12 بنطلوناً في كل خانة. زيادة العدد عن 12 تؤدي لسقوط الأعمدة، ونقصانه عن 6 يعطي انطباعاً بنفاذ المخزون."
         }
       }
     ],
-    codeSnippet: `.bento-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1.5rem;
+    codeSnippet: `// Denim Wall Capacity & Replenishment Logic
+function calculateDenimWallSlots(totalCubbies) {
+  return {
+    washes: ["Stone Wash 01", "Mid Blue 02", "Deep Indigo 03", "Raw Black 04"],
+    fits: ["Slim Fit", "Regular Straight", "Tapered Stretch"],
+    sizesPerColumn: [30, 31, 32, 33, 34, 36, 38],
+    optimalUnitsPerCubby: 10,
+    replenishAlertThreshold: 4
+  };
 }`
   },
+
+  // ==========================================
+  // 6. Seasonal Sale & Signage Kit
+  // ==========================================
   {
-    id: "microservices-ecommerce-blueprint",
-    category: "cloud",
-    difficulty: "advanced",
-    readTime: "30 min",
-    icon: "server",
-    badge: { en: "Cloud & Scale", ar: "سحابة ومعمارية" },
+    id: "vm-seasonal-sale",
+    category: "floor",
+    difficulty: "intermediate",
+    readTime: "14 min",
+    icon: "zap",
+    image: "assets/images/apparel-vm/vm-06-seasonal-sale.jpg",
+    badge: { en: "Promotional Zones", ar: "لافتات وعروض التخفيضات" },
     title: {
-      en: "High-Throughput Distributed Microservices Architecture for E-Commerce Platforms",
-      ar: "معمارية الأنظمة الموزعة فائقة التحمل لمنصات التجارة الإلكترونية الضخمة"
+      en: "Seasonal Sale & Clearance Signage Allocation Kit",
+      ar: "مخطط لافتات التخفيضات ومساحات العروض الموسمية بالمتجر"
     },
     summary: {
-      en: "Blueprint for building resilient e-commerce microservices handling 50,000+ orders/min with Kafka event streams, Redis distributed caching, and Saga patterns.",
-      ar: "مخطط معماري شامل لبناء أنظمة تجارة إلكترونية موزعة تتحمل أكثر من 50,000 طلب بالدقيقة باستخدام مسارات أحداث Kafka ونمط الـ Saga لإدارة العمليات."
+      en: "Professional promotional zone planning. Acrylic header brackets, percentage discount groupings (30%, 50%), controlled hanger density (max 18 items/meter), and elevated brand perception during sales.",
+      ar: "التخطيط الاحترافي لمساحات التخفيضات والعروض الموسمية. حوامل لافتات الخصم الأكريليكية الأنيقة، تصنيف الاستاندات بنسب الخصم، وضبط كثافة الشماعات (بحد أقصى 18 قطعة للمتر)."
     },
-    tags: ["Microservices", "Kafka", "Docker", "Redis", "Distributed Systems"],
+    tags: ["Sale Signage", "Promotional Merchandising", "Rack Density", "Clearance Zones", "Store Aesthetics"],
     stats: [
-      { label: { en: "Throughput", ar: "القدرة الاستيعابية" }, value: "50K req/sec" },
-      { label: { en: "Data Pattern", ar: "نمط البيانات" }, value: "Event Sourcing" },
-      { label: { en: "Availability", ar: "التوافرية" }, value: "99.99%" }
+      { label: { en: "Clearance Sell-Through", ar: "سرعة تصريف المخزون" }, value: "+38.2%" },
+      { label: { en: "Max Rail Density", ar: "أقصى كثافة شماعات للمتر" }, value: "18 Units/m" },
+      { label: { en: "Brand Aesthetic Index", ar: "الحفاظ على فخامة المتجر" }, value: "Premium" }
     ],
     architecture: {
-      en: "Asynchronous choreography using Apache Kafka for order lifecycle states, eliminating distributed locks with idempotency keys and compensating transactions.",
-      ar: "تواصل لا متزامن بالكامل عبر Apache Kafka لإدارة دورة حياة الطلبات بدون أقفال موزعة، مع مفاتيح تأكيد فريدة وعمليات تعويضية تلقائية."
+      en: "Tiered discount zoning: New season transition at front entrance, mid-season offers in central zones, and final clearance racks positioned at back corners to draw customer traffic throughout the store.",
+      ar: "توزيع هندسي للعروض: المجموعات الجديدة عند المدخل، عروض الخصم الجزئي في منتصف الصالة، واستاندات التخفيض النهائي في الأركان الخلفية لجذب حركة الزوار داخل المتجر كاملاً."
     },
     diagramSteps: [
-      { en: "Client Request", ar: "طلب العميل" },
-      { en: "API Gateway & Rate Limiter", ar: "بوابة الخدمات وحماية النطاق" },
-      { en: "Order Service", ar: "خدمة الطلبات" },
-      { en: "Kafka Event Broker", ar: "وسيط الأحداث Kafka" },
-      { en: "Inventory & Payment Workers", ar: "خدمات الدفع والمخزون الموزعة" }
+      { en: "Signage Bracket Mounting", ar: "تثبيت حوامل اللافتات الأكريليكية" },
+      { en: "Category & Discount Segmentation", ar: "فرز الملابس بنسب الخصم (30% - 50%)" },
+      { en: "Hanger Density Regulation (18/m)", ar: "ضبط كثافة الشماعات (18 قطعة للمتر)" },
+      { en: "Markdown Price Sticker Audit", ar: "تدقيق وضوح السعر القديم والجديد" }
     ],
     steps: [
       {
-        title: { en: "1. The Saga Pattern for Distributed Transactions", ar: "1. نمط Saga لإدارة المعاملات المالية الموزعة" },
+        title: { en: "1. Preventing 'Bargain Basement' Clutter", ar: "1. منع العشوائية والتكدس أثناء التخفيضات" },
         content: {
-          en: "Avoid two-phase commits. Use choreographic Sagas where OrderCreated triggers InventoryReserved, and failures dispatch CompensatingRelease events.",
-          ar: "تجنب المعاملات التقليدية ذات المرحلتين واستخدم نمط Saga حيث يرسل حدث إنشاء الطلب رسائل للخدمات الأخرى، مع إرسال أحداث إلغاء تعويضية عند أي فشل."
+          en: "Even during clearance events, never exceed 18 hangers per linear meter of rack. Garments must slide freely to prevent wrinkling and maintain luxury store feel.",
+          ar: "حتى في فترات التخفيضات الكبرى، يمنع منعاً باتاً تجاوز 18 شماعة لكل متر طولي من الاستاند، لضمان سهولة تحريك القطع ومنع تجعدها والحفاظ على المظهر الراقي."
+        }
+      },
+      {
+        title: { en: "2. Standardized Signage Height", ar: "2. توحيد ارتفاع لافتات الخصم" },
+        content: {
+          en: "All promotional signs must sit at a consistent 175cm eye-level height mounted in matte black or brushed brass metal frames.",
+          ar: "يجب تثبيت كافة لافتات الخصم على ارتفاع موحد 175 سم في إطارات معدنية أنيقة بلون أسود مطفي أو نحاسي هادئ متناغم مع ديكور المتجر."
         }
       }
     ],
-    codeSnippet: `export async function dispatchOrderCreated(order) {
-  await producer.send({
-    topic: 'ecommerce.orders.created',
-    messages: [{ key: order.id, value: JSON.stringify(order) }]
-  });
+    codeSnippet: `// Seasonal Promotional Rack Density Formula
+function calculateSaleRackDensity(rackLengthMeters, discountTier) {
+  const maxItemsPerMeter = 18;
+  const totalCapacity = Math.floor(rackLengthMeters * maxItemsPerMeter);
+  return {
+    discountTier: discountTier, // "UP TO 40% OFF"
+    maxHangerCapacity: totalCapacity,
+    spacingBetweenHangers: "5.5 cm",
+    signagePosition: "Center-Mounted Acrylic Frame"
+  };
+}`
+  },
+
+  // ==========================================
+  // 7. Garment Quality & Steam-Pressing
+  // ==========================================
+  {
+    id: "vm-steam-pressing",
+    category: "audits",
+    difficulty: "beginner",
+    readTime: "12 min",
+    icon: "check",
+    image: "assets/images/apparel-vm/vm-07-steam-pressing.jpg",
+    badge: { en: "Garment Care", ar: "الكوي بالبخار والجودة" },
+    title: {
+      en: "Garment Quality, Steaming & Finishing Standards",
+      ar: "دليل ومعايير فحص وكوي بالبخار وتجهيز الملابس للعرض"
+    },
+    summary: {
+      en: "Back-of-house garment finishing SOP. 3-stage vertical steaming protocol, wrinkle-free inspection under 1000 Lux inspection lighting, standardized price tagging, and anti-slip wooden hangers.",
+      ar: "دليل إجراءات التشغيل القياسية لفحص وتجهيز الملابس قبل العرض. بروتوكول الكوي بالبخار العمودي ثلاثي المراحل، فحص إزالة التجاعيد، وتوحيد مكان بطاقات السعر على الياقة الداخلية."
+    },
+    tags: ["Garment Steaming", "Quality Control", "Finishing SOP", "Price Tagging", "Hanger Standards"],
+    stats: [
+      { label: { en: "Steaming Quality", ar: "معيار الكوي بالبخار" }, value: "Zero Creases" },
+      { label: { en: "Prep Time / Garment", ar: "متوسط وقت التجهيز" }, value: "75 Seconds" },
+      { label: { en: "Defect Catch Rate", ar: "دقة اكتشاف العيوب" }, value: "99.1%" }
+    ],
+    architecture: {
+      en: "Ergonomic backroom preparation flow: Unpacking and size verification on stainless steel counter -> Vertical commercial steam station -> Quality lint-rolling & tag verification -> Floor transport rack.",
+      ar: "مسار عمل انسيابي في غرفة التجهيز: استلام الكراتين ومطابقة المقاسات -> محطة الكوي بالبخار العمودي الاحترافي -> إزالة الوبر وفحص بطاقات السعر -> نقل الملابس للصالة على استاندات متحركة."
+    },
+    diagramSteps: [
+      { en: "Inspection Under 1000 Lux Lighting", ar: "فحص القماش تحت إضاءة مركزة 1000 لوكس" },
+      { en: "Vertical Steaming (Top to Bottom)", ar: "الكوي بالبخار رأسياً من الياقة للأسفل" },
+      { en: "Thread Clipping & Lint Rolling", ar: "قص الخيوط الزائدة وإزالة الوبر" },
+      { en: "Standard Price Tag Gun Placement", ar: "تثبيت بطاقة السعر بالمسدس في الدرز الداخلي" }
+    ],
+    steps: [
+      {
+        title: { en: "1. Vertical Commercial Steaming Technique", ar: "1. الطريقة الصحيحة للكوي بالبخار العمودي" },
+        content: {
+          en: "Hold garment hem taut with one hand while stroking the steamer nozzle smoothly downward at a 45° angle. Never let steam condense into water spots on delicate silks or wools.",
+          ar: "شد طرف القماش بيد وتمرير رأس مكواة البخار بزاوية 45 درجة بحركة هبوطية متصلة لمنع تكثف قطرات الماء على الأقمشة الحساسة كالحرير والصوف."
+        }
+      },
+      {
+        title: { en: "2. Standardized Price Tagging Location", ar: "2. توحيد مكان بطاقة السعر" },
+        content: {
+          en: "Always insert the kimble tag fastener into the garment's internal care label seam or under the left armhole seam to avoid piercing visible outer fabric.",
+          ar: "تثبيت خيط بطاقة السعر البلاستيكي دائماً في درز بطاقة العناية الداخلية أو تحت الإبط الأيسر لتجنب ثقب القماش الخارجي الظاهر للزبون."
+        }
+      }
+    ],
+    codeSnippet: `// Garment Finishing & Quality Control SOP Specification
+const garmentFinishingProtocol = {
+  steamerType: "Commercial Continuous Flow Vertical Steamer",
+  operatingTemp: "100°C Steam Vapor",
+  inspectionCheckpoints: [
+    "Collar structure stiff and symmetrical",
+    "Sleeves free of transit fold creases",
+    "No hanging loose threads",
+    "Lint-roller pass on dark wool fabrics",
+    "Hanger hook pointing LEFT when facing front"
+  ],
+  status: "APPROVED_FOR_SALES_FLOOR"
+};`
+  },
+
+  // ==========================================
+  // 8. Retail Floor Fixtures & Planograms
+  // ==========================================
+  {
+    id: "vm-store-fixtures",
+    category: "floor",
+    difficulty: "advanced",
+    readTime: "18 min",
+    icon: "layout",
+    image: "assets/images/apparel-vm/vm-08-store-fixtures.jpg",
+    badge: { en: "Store Planograms", ar: "مساقط وتوزيع المتجر" },
+    title: {
+      en: "Retail Floor Fixture & Planogram Circulation Layout",
+      ar: "تخطيط توزيع وحدات عرض الملابس ومسارات حركة المتسوقين"
+    },
+    summary: {
+      en: "Floor planogram engineering. Strategic placement of 4-way racks, rounders, and gondolas ensuring 120cm ADA-compliant primary walkways and natural customer circulation toward high-margin categories.",
+      ar: "الهندسة المعمارية لمساقط المتجر وتوزيع وحدات العرض. الموازنة بين الاستاندات الدائرية والرباعية مع ضمان ممرات حركة رئيسية بعرض 120 سم لانسيابية حركة الزوار وزيادة المبيعات."
+    },
+    tags: ["Store Planogram", "Fixture Layout", "Aisle Clearance", "Customer Circulation", "Retail Floor Architecture"],
+    stats: [
+      { label: { en: "Main Aisle Clearance", ar: "عرض الممرات الرئيسية" }, value: "120cm Minimum" },
+      { label: { en: "Customer Dwell Time", ar: "زيادة زمن بقاء الزائر" }, value: "+26.0%" },
+      { label: { en: "Floor Space Efficiency", ar: "كفاءة استغلال المساحة" }, value: "88.5%" }
+    ],
+    architecture: {
+      en: "Open-sightline retail zoning: Low-height nesting tables (75cm) at front, mid-height 4-way fixtures (135cm) in middle aisles, and high perimeter wall fixtures (240cm) ensuring visibility across the entire floor.",
+      ar: "تدرج بصري مفتوح: طاولات منخفضة (75 سم) في المقدمة، استاندات رباعية متوسطة (135 سم) في الممرات، وجدران العرض المحيطية العالية (240 سم) في الخلف لتمكين الزائر من رؤية المتجر كاملاً."
+    },
+    diagramSteps: [
+      { en: "120cm Walkway Clearance Grid", ar: "تخطيط ممرات المشي بعرض 120 سم" },
+      { en: "Low-to-High Fixture Graduation", ar: "تدرج ارتفاع الاستاندات من المنخفض للعالي" },
+      { en: "Sightline Focal Point Placement", ar: "تحديد نقاط الجذب البصري المركزية" },
+      { en: "Fitting Room Pathway Linkage", ar: "تأمين مسار مريح لغرف القياس" }
+    ],
+    steps: [
+      {
+        title: { en: "1. The 120cm Walkway Clearance Standard", ar: "1. المعيار الإلزامي لعرض الممرات (120 سم)" },
+        content: {
+          en: "Maintain a minimum 120cm clearance between all fixtures. Narrower aisles create shopper collision, while wider spacing dissipates product presentation energy.",
+          ar: "الحفاظ على مسافة لا تقل عن 120 سم بين كافة الاستاندات والطاولات لضمان حرية حركة المتسوقين وتجنب الاحتكاك أو الشعور بالازدحام."
+        }
+      },
+      {
+        title: { en: "2. Rounder & 4-Way Placement Logic", ar: "2. قواعد توزيع الاستاندات الدائرية والرباعية" },
+        content: {
+          en: "Place 4-way racks displaying complete coordinated outfits at aisle intersections. Use circular rounders exclusively for single-category promotional deep stock (e.g. polo tees).",
+          ar: "وضع الاستاندات الرباعية (4-Way) عند تقاطعات الممرات لعرض أطقم متناسقة، وتخصيص الاستاندات الدائرية (Rounders) للموديلات ذات العمق التخزيني الكبير كتيشيرتات البولو."
+        }
+      }
+    ],
+    codeSnippet: `// Store Fixture Planogram Spacing Matrix
+function calculateFloorPlanogram(floorAreaSqMeters) {
+  const primaryAisleWidthCm = 120;
+  const secondaryAisleWidthCm = 90;
+  return {
+    totalArea: floorAreaSqMeters,
+    recommendedFixtures: {
+      nestingTables: Math.floor(floorAreaSqMeters / 60),
+      fourWayRacks: Math.floor(floorAreaSqMeters / 40),
+      perimeterWallBays: Math.floor(floorAreaSqMeters / 25)
+    },
+    circulationStandard: "Loop & Spine Layout"
+  };
+}`
+  },
+
+  // ==========================================
+  // 9. Staff Training & Recovery Guide
+  // ==========================================
+  {
+    id: "vm-staff-training",
+    category: "audits",
+    difficulty: "beginner",
+    readTime: "12 min",
+    icon: "trello",
+    image: "assets/images/apparel-vm/vm-09-staff-training.jpg",
+    badge: { en: "Staff Training", ar: "تدريب الموظفين والانضباط" },
+    title: {
+      en: "Branch Sales Staff VM Execution & Training Manual",
+      ar: "دليل تدريب وتطبيق معايير العرض اليومي لفريق مبيعات الفروع"
+    },
+    summary: {
+      en: "Practical training framework for store teams. Two-finger (5cm) hanger spacing rule, shoulder seam alignment, recovery routine every 3 hours, and customer interaction without disrupting displays.",
+      ar: "برنامج تدريبي عملي لموظفي الفروع. قاعدة مسافة الإصبعين (5 سم) بين الشماعات، محاذاة خياطة الأكتاف لليسار، وجدول إعادة ترتيب الصالة (Store Recovery) كل 3 ساعات أثناء أوقات الذروة."
+    },
+    tags: ["Staff Training", "Store Recovery SOP", "Hanger Spacing (5cm)", "Team Onboarding", "Retail Discipline"],
+    stats: [
+      { label: { en: "Hanger Spacing", ar: "معيار مسافة الشماعات" }, value: "5cm Exact" },
+      { label: { en: "Store Recovery Time", ar: "وقت دورة الترتيب السريع" }, value: "15 Min/Cycle" },
+      { label: { en: "Staff VM Certified", ar: "نسبة تدريب الموظفين" }, value: "100% Onboarded" }
+    ],
+    architecture: {
+      en: "Floor-level operational discipline manual: Daily 10-minute morning briefing, hands-on folding coaching, and continuous 3-hour cycle recovery keeping branches in audit-ready condition.",
+      ar: "دليل الانضباط الميداني لصالة البيع: اجتماع صباحي مدته 10 دقائق لتوضيح أولويات اليوم، تدريب عملي على سرعة طي الملابس، وجولات إعادة الترتيب كل 3 ساعات للحفاظ على المتجر في أبهى صورة."
+    },
+    diagramSteps: [
+      { en: "Two-Finger (5cm) Spacing Rule", ar: "قاعدة مسافة الإصبعين (5 سم)" },
+      { en: "Left-Facing Hanger Hook Check", ar: "توجيه خطاف الشماعة لليسار" },
+      { en: "Shoulder Seam Alignment", ar: "محاذاة خياطة الأكتاف على استقامة واحدة" },
+      { en: "Size Ring Placement Standard", ar: "وضع حلقات المقاسات الملونة على الشماعة" }
+    ],
+    steps: [
+      {
+        title: { en: "1. The Two-Finger (5cm) Hanger Spacing Rule", ar: "1. قاعدة مسافة الإصبعين (5 سم) بين الشماعات" },
+        content: {
+          en: "Train staff to measure the distance between adjacent wooden hangers using two fingers (5 cm). This ensures garments do not crush or touch, creating a clean premium rhythm.",
+          ar: "تدريب الموظف على قياس المسافة بين الشماعات الخشبية بإصبعين (5 سم تقريباً) لمنع تلاصق الملابس وإعطاء إيقاع بصري مريح يعكس العناية بالمنتجات."
+        }
+      },
+      {
+        title: { en: "2. The 15-Minute Peak Recovery Routine", ar: "2. جولة الترتيب السريع (15 دقيقة) أثناء الذروة" },
+        content: {
+          en: "Every 3 hours, sales associates spend 15 minutes refolding central tables, replacing missing hangers, and returning stray garments to their designated sections.",
+          ar: "يقوم فريق المبيعات كل 3 ساعات بجولة سريعة مدتها 15 دقيقة لإعادة طي الملابس على الطاولات، سحب الشماعات الفارغة، وإعادة القطع لأقسامها الصحيحة فور مغادرة الزبائن."
+        }
+      }
+    ],
+    codeSnippet: `// Branch Staff VM Daily Training Checklist
+const staffTrainingModule = {
+  moduleName: "Apparel VM Floor Excellence",
+  author: "Reda Mohamed Salah",
+  keyDisciplines: [
+    "Hanger hook points LEFT toward back of store",
+    "Shoulder seams aligned in straight horizontal plane",
+    "Size order: XS -> S -> M -> L -> XL -> XXL (Left to Right)",
+    "Folded knitwear: Max 8 units per stack",
+    "All price tags tucked inside garments"
+  ],
+  frequency: "Daily Morning Briefing + Weekly Audit"
+};`
+  },
+
+  // ==========================================
+  // 10. Sample & Stock Synchronizer
+  // ==========================================
+  {
+    id: "vm-sample-sync",
+    category: "systems",
+    difficulty: "intermediate",
+    readTime: "15 min",
+    icon: "database",
+    image: "assets/images/apparel-vm/vm-10-sample-sync.jpg",
+    badge: { en: "Inventory Sync", ar: "الأنظمة والمخزون" },
+    title: {
+      en: "Display Sample & Backroom Size Stock Synchronizer",
+      ar: "نظام مطابقة عينات العرض مع مخزون المقاسات بالمستودع الداخلي"
+    },
+    summary: {
+      en: "Real-time inventory matching tool for visual merchandisers. Barcode scanning ensures every piece displayed on mannequins and front racks has full size runs (S-XXL) in the backroom stock.",
+      ar: "نظام تقني لمطابقة عينات العرض بالمخزون الفعلي. يتيح للمنسق وموظف المبيعات مسح كود القطعة المعروضة على المانيكان والتأكد من توفر مقاساتها فورياً في كراتين المستودع الداخلي."
+    },
+    tags: ["Inventory Sync", "Barcode Scanning", "Size Run Availability", "Backroom Replenishment", "Retail Technology"],
+    stats: [
+      { label: { en: "Display Stock Match", ar: "نسبة مطابقة المعروض بالمخزن" }, value: "99.4%" },
+      { label: { en: "Size Fetch Speed", ar: "سرعة إحضار المقاس للزبون" }, value: "< 30 Sec" },
+      { label: { en: "Lost Sales Reduction", ar: "انخفاض فرص البيع الضائعة" }, value: "-78.0%" }
+    ],
+    architecture: {
+      en: "Handheld barcode and RFID scanner integrated with store POS system. Alerts visual merchandisers when a displayed mannequin outfit drops below minimum stock in sizes M or L.",
+      ar: "تطبيق ماسح باركود محمول متصل بنظام مبيعات الفرع (POS). ينبه منسق العرض فوراً عند انخفاض مخزون أي مقاس رئيسي (M أو L) للقطعة المعروضة على المانيكان لتغييرها بقطعة متوفرة."
+    },
+    diagramSteps: [
+      { en: "Barcode Scan on Mannequin Tag", ar: "مسح باركود القطعة المعروضة" },
+      { en: "Real-time Size Run Query", ar: "الاستعلام الفوري عن المقاسات (S-XXL)" },
+      { en: "Backroom Bin Location Guidance", ar: "تحديد رقم الرف والكرتونة بالمستودع" },
+      { en: "Automatic Floor Restock Dispatch", ar: "إرسال إشعار تعبئة الاستاند لصالة البيع" }
+    ],
+    steps: [
+      {
+        title: { en: "1. The 'Never Display What You Cannot Sell' Rule", ar: "1. قاعدة 'لا تعرض ما لا تملك مقاساته في المخزن'" },
+        content: {
+          en: "Displaying a sample without available sizes in the backroom frustrates customers and causes lost sales. The system alerts when a displayed hero item has less than 2 units in stock.",
+          ar: "عرض قطعة على المانيكان مع نفاذ مقاساتها من المخزن يسبب إحباطاً للمتسوقين وخسارة للمبيعات. يقوم النظام بتنبيه المنسق لتغيير الطقم فور وصول المقاسات لقطعتين فقط."
+        }
+      },
+      {
+        title: { en: "2. Instant Backroom Bin Routing", ar: "2. التوجيه المباشر لمكان التخزين بالمستودع" },
+        content: {
+          en: "Store associates view the exact warehouse shelf number (e.g. Rack B, Box 14) directly on their handheld screen, retrieving requested sizes for fitting room customers in under 30 seconds.",
+          ar: "يظهر النظام لموظف الفرع رقم الرف والكرتونة في المستودع (مثال: استاند B، كرتونة 14) لجلب المقاس المطلوب لغرفة القياس في أقل من 30 ثانية."
+        }
+      }
+    ],
+    codeSnippet: `// Display Sample & Backroom Stock Synchronization API
+async function checkDisplayAvailability(skuCode) {
+  const stockRecord = await fetchStockLevel(skuCode);
+  const isHealthyRun = stockRecord.sizes.M > 2 && stockRecord.sizes.L > 2;
+  
+  return {
+    sku: skuCode,
+    garmentName: "Tailored Navy Wool Blazer",
+    displayLocation: "Front Window Mannequin #2",
+    backroomShelf: "Aisle-3 / Shelf-B / Box-14",
+    sizeRunStatus: isHealthyRun ? "AVAILABLE_FULL_RUN" : "ACTION_REQUIRED_CHANGE_DISPLAY",
+    unitsRemaining: { S: 5, M: 8, L: 10, XL: 3 }
+  };
 }`
   }
 ];
 
 const CATEGORIES = [
-  { id: "all", label: { en: "All Blueprints & Showcases", ar: "كافة المشاريع والشروحات" } },
-  { id: "vm", label: { en: "Visual Merchandising & Retail", ar: "تنسيق العرض وهندسة المتاجر" } },
-  { id: "ai", label: { en: "AI & Smart Systems", ar: "الذكاء الاصطناعي والأنظمة" } },
-  { id: "web", label: { en: "Modern Web & UI Labs", ar: "الويب وتجربة المستخدم" } },
-  { id: "cloud", label: { en: "Cloud & Data Systems", ar: "السحابة وهندسة البيانات" } }
+  { id: "all", label: { en: "All Projects & Standards", ar: "كافة المشاريع والمعايير" } },
+  { id: "window", label: { en: "Window Displays & Mannequins", ar: "الفاترينات وتنسيق المانيكان" } },
+  { id: "floor", label: { en: "Store Floor & Fixtures", ar: "أرضية المتجر والاستاندات" } },
+  { id: "audits", label: { en: "Store Audits & Quality SOPs", ar: "التدقيق الميداني ومعايير الجودة" } },
+  { id: "systems", label: { en: "Digital Retail Systems", ar: "الأنظمة الرقمية والمخزون" } }
 ];
